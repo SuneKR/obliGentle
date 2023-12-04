@@ -1,10 +1,17 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import { Text, View } from 'react-native';
+import 'react-native-gesture-handler';
 
-const ProfileScreen = () => {
-    return (
-        <Text>Profile</Text>
-    )
+import styles from '../designs';
+
+class ProfileScreen extends React.Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text>Go home!</Text>
+            </View>
+        );
+    }
 }
 
 export default ProfileScreen;

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Stylesheet } from 'react-native';
+import { Text, View } from 'react-native';
 import Tooltip from '@mui/material/Tooltip';
-import { format } from 'react-string-format';
 
 // local imports
 
-import styles from './styles'
+import styles from '../designs'
 
 const DataFetcher = (URLSpecifier) => {
     const [tasksData,setTasksData] = useState([]);
@@ -13,9 +12,9 @@ const DataFetcher = (URLSpecifier) => {
 
     const url = `http://127.0.0.1:8000/${URLSpecifier}/`;
 
-    const fetchTasks = async() => {
+    async function fetchTasks() {
         try{
-            const reponse = await fetch(url);
+            const reponse = await fetch(url, { method: "GET" });
             const tasks = await reponse.json();
             setTasksData(tasks)
         }
@@ -24,9 +23,9 @@ const DataFetcher = (URLSpecifier) => {
     }
 
     useEffect(() => {
-        setFetchedState('loading')
-        setTimeout(() => fetchTasks(),3000);
-    },[])
+        setFetchedState('loading');
+        setTimeout(() => fetchTasks(), 3000);
+    }, [])
     
     return (
         <View style={styles.container}>

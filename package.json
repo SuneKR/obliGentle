@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.21.0",
+    "parse": "^4.3.1"
+  }
+}
