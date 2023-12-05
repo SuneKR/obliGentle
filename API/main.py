@@ -3,25 +3,35 @@
 
 #imports
 
-from fastapi import FastAPI, status
+from beanie import init_beanie
+from fastapi import Depends, FastAPI, status
 from fastapi.middleware.cors import CORSMiddleware
 from pymongo import MongoClient
 from motor.motor_asyncio import AsyncIOMotorClient
 
 #local imports
 
-from configurations import databaseConfigurations as dbc
-from routers import appointmentRouter as aRouter, choreRouter as cRouter, projectRouter as pRouter, taskRouter as tRouter, routerNoClass as ncRouter
+from configurations.database import db, User
+from configurations.schemas import UserCreate, UserRead, UserUpdate
+from configurations.users import auth_backend, current_active_user, fastapi_users, google_oauth_client, SECRET
+from routers import appointmentRouter as aRouter, choreRouter as cRouter, projectRouter as pRouter, taskRouter as tRouter
+
 
 # Initiation of FastAPI and configuration
 
 app = FastAPI()
 
+## Origins and middleware files which allows
+## cross origin and different origins connections.
+
 origins = [
     "http://localhost",
+    "http://localhost:80",
+    "http://localhost:443",
     "http://localhost:8000",
     "http://localhost:8080",
     "http://localhost:8081",
+    "http://localhost:8443",
     "http://localhost:19006"
 ]
 
@@ -38,8 +48,12 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup_db_client():
-    app.mongodb_client = AsyncIOMotorClient(dbc.databaseURL)
-    app.mongodb = app.mongodb_client[dbc.databaseName]
+    await init_beanie(
+        database=db,
+        document_models=[
+            User,
+        ],
+    )
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
@@ -52,13 +66,27 @@ async def shutdown_db_client():
 @app.get("/")
 async def root(): return {"message": "Working"}
 
+@app.get("/authticated-route")
+async def authenticated_route(user: User = Depends(current_active_user)):
+    return {"message": f"Hello {user.email}!"}
+
 @app.get("/status")
 async def getStatus(): return {"status": "Running"}
 
 # The following are routes to the routers
 
+## These are the user and authentication related routes
+
+app.include_router(fastapi_users.get_auth_router(auth_backend), prefix="/auth/jwt", tags=["auth"])
+app.include_router(fastapi_users.get_register_router(UserRead, UserCreate), prefix="/auth", tags=["auth"])
+app.include_router(fastapi_users.get_reset_password_router(), prefix="/auth", tags=["auth"])
+app.include_router(fastapi_users.get_verify_router(UserRead), prefix="/auth", tags=["auth"])
+app.include_router(fastapi_users.get_users_router(UserRead, UserUpdate), prefix="/users", tags=["users"])
+app.include_router(fastapi_users.get_oauth_router(google_oauth_client, auth_backend, "SECRET"), prefix="/auth/google", tags=["auth"])
+
+## These are the different task routes
+
 app.include_router(aRouter.appointmentRouter().router,tags=["appointments"],prefix="/appointments")
 app.include_router(cRouter.choreRouter().router,tags=["chores"],prefix="/chores")
 app.include_router(pRouter.projectRouter().router,tags=["projects"],prefix="/projects")
 app.include_router(tRouter.taskRouter().router,tags=["tasks"],prefix="/tasks")
-#app.include_router(ncRouter.router,tags=["testNC"],prefix="/testNC")
