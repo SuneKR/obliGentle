@@ -6,8 +6,10 @@
 from beanie import init_beanie
 from fastapi import Depends, FastAPI, status
 from fastapi.middleware.cors import CORSMiddleware
-from pymongo import MongoClient
 from motor.motor_asyncio import AsyncIOMotorClient
+from pymongo import MongoClient
+import uvicorn
+
 
 #local imports
 
@@ -90,3 +92,8 @@ app.include_router(aRouter.appointmentRouter().router,tags=["appointments"],pref
 app.include_router(cRouter.choreRouter().router,tags=["chores"],prefix="/chores")
 app.include_router(pRouter.projectRouter().router,tags=["projects"],prefix="/projects")
 app.include_router(tRouter.taskRouter().router,tags=["tasks"],prefix="/tasks")
+
+# For running the application with uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run("app.app:app", host="0.0.0.0", log_level="info")
