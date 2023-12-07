@@ -12,7 +12,12 @@ import AddTaskScreen from './taskScreens/AddTaskScreen';
 import TaskDetailScreen from './taskScreens/TaskDetailScreen';
 import TaskScreen from './taskScreens/TaskScreen';
 
+import ForgottenScreen from './loginScreens/ForgottenScreen';
+import LoginScreen from './loginScreens/LoginScreen';
+import RegistrationScreen from './loginScreens/RegistrationScreen';
+
 export { HomeScreen, AppointmentsScreen, CalendarScreen, ChoresScreen, NewTaskScreen, ProfileScreen, 
     ProjectsScreen, SettingsScreen, TasksScreen,
-    AddTaskScreen, TaskDetailScreen, TaskScreen
+    AddTaskScreen, TaskDetailScreen, TaskScreen,
+    ForgottenScreen, LoginScreen, RegistrationScreen
 }

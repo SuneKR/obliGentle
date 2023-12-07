@@ -9,7 +9,7 @@ from beanie import init_beanie
 from fastapi import Depends, FastAPI, status
 from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
-from pymongo import MongoClient
+#from pymongo import MongoClient
 #import uvicorn
 #from beanie import init_beanie
 
@@ -89,19 +89,6 @@ app.include_router(tRouter.taskRouter().router,tags=["tasks"],prefix="/tasks")
 # It links to it's own separate configuration file (later)
 
 @app.on_event("startup")
-#async def on_startup():
-async def on_startup():
-    await init_beanie(
-        database=dbc,
-        document_models=[
-            User,
-        ],
-    )
-
-'''
-
-@app.on_event("startup")
-#async def on_startup():
 async def on_startup():
     await init_beanie(
         database=dbc,
@@ -113,6 +100,8 @@ async def on_startup():
             User,
         ],
     )
+
+'''
 
 # For running the application with uvicorn
 

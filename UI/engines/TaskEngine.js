@@ -14,7 +14,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import axios from 'axios';
 
 // local imports
-import styles from '../designs';
+import { styles } from '../designs';
 
 
 

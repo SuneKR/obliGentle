@@ -16,7 +16,7 @@ import 'react-native-gesture-handler';
 
 // Local imports
 
-import { BottomTabsBar } from './components';
+import { BottomTabsBar } from '../components';
 
 //import { HomeScreen, AppointmentsScreen, CalendarScreen, ChoresScreen, ProfileScreen, ProjectsScreen, SettingsScreen } from './screens';
 /*

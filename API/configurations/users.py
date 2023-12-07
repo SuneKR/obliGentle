@@ -3,23 +3,28 @@ from beanie import PydanticObjectId
 from fastapi import Depends, Request
 from fastapi_users import BaseUserManager, FastAPIUsers
 from fastapi_users.authentication import ( AuthenticationBackend, BearerTransport, JWTStrategy )
-from fastapi_users.db import BeanieUserDatabase, ObjectIDIMixin
-from httpx_oauth.clients.google import GoogleOAuth2
+#from fastapi_users.db import BeanieUserDatabase, ObjectIDIDMixin
+from fastapi_users_db_beanie import BeanieUserDatabase, ObjectIDIDMixin
+#from fastapi_users import db
+#from httpx_oauth.clients.google import GoogleOAuth2
 from typing import Optional
 import os
 
 # Local imports
+#from configurations.database import get_user_db, User
 from configurations.database import get_user_db, User
 
 # A secret to yet be defined
 SECRET = "undefined"
 
+'''
 google_oauth_client = GoogleOAuth2(
     os.getenv("GOOGLE_OAUTH_CLIENT_ID", ""),
     os.getenv("GOOGLE_OAUTH_CLIENT_SECRET", ""),
 )
+'''
 
-class UserManager(ObjectIDIMixin, BaseUserManager[User, PydanticObjectId]):
+class UserManager(ObjectIDIDMixin, BaseUserManager[User, PydanticObjectId]):
     reset_password_token_secret = SECRET
     verification_token_secret = SECRET
     

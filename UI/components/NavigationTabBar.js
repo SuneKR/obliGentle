@@ -9,11 +9,10 @@ import { Pressable, View } from 'react-native';
 //import NavigationIcon from './navigationIcon';
 //import Icon from 'react-native-vector-icons';
 //import uicons from '@flaticon/flaticon-uicons';
-import Icon from 'react-native-ionicons';
 
 // local imports
 
-import styles from '../designs';
+import { styles } from '../designs';
 
 
 //const { width } = Dimensions.get('window')

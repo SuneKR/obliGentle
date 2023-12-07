@@ -4,7 +4,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 // local imports
 
-import styles from '../designs'
+import { styles } from '../designs'
 
 const DataFetcher = (URLSpecifier) => {
     const [tasksData,setTasksData] = useState([]);

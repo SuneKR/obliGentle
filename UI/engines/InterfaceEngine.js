@@ -11,7 +11,7 @@ import axios from 'axios';
 import { createTask, deleteTask } from '../actions';
 import { ListItem } from '../components';
 //import { FlatList } from 'react-native-gesture-handler';
-import styles from '../designs'
+import { styles } from '../designs'
 
 
 const InterfaceEngine = (props) => {

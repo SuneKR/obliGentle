@@ -8,7 +8,7 @@ import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 // local import
 
-import styles from '../designs';
+import { styles } from '../designs';
 
 let colours = ["#ff8e42", "#4F6384"];
 

@@ -7,5 +7,5 @@ class UserRead(schemas.BaseUser[PydanticObjectId]):
 class UserCreate(schemas.BaseUserCreate):
     pass
 
-class UserUpdate(schemas.BseUserUpdate):
+class UserUpdate(schemas.BaseUserUpdate):
     pass

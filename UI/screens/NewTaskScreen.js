@@ -11,7 +11,7 @@ import axios from 'axios';
 
 // Local imports
 import { createTask, updateTask } from '../actions';
-import styles from '../designs';
+import { styles } from '../designs';
 
 
 const MAX_LENGTH = 250;

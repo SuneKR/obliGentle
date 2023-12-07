@@ -23,11 +23,12 @@ const HomeScreen = () => {
         InterfaceEngine()
         
         
+        /*
         <Provider store={ store }>
             <Router />
         </Provider>
 
-        /*
+        
         <View>
             <Text>Hej</Text>
         </View>
