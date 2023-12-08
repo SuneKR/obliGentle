@@ -1,0 +1,444 @@
+%%%%%%
+%	Præamble
+%%%%%%
+
+\documentclass{report}
+
+\include{./dele/praeambel}
+
+% individuel report konfiguration
+\renewcommand{\reportType}{Procesrapport}
+
+%%%%%%
+%	Indhold
+%%%%%%
+
+\begin{document}
+
+\maketitle
+\makeTechTitlecard
+\tableofcontents
+
+\chapter{Formalia}
+
+\section{Indledning}
+
+\section{Læsevejledning}
+I forbindelse med svendeprøven er vi blevet pålagt at aflevere to rapporter, en om projektets proces og en om dets produkt. Dette er procesrapporten, som  fokuserer på min overvejelser og refleksioner i forhold til projektet.
+Jeg antager, at læseren har en teknisk viden på niveau med en færdiguddannet datateknikker.
+
+
+\section{problemformulering}
+Lav en opgaveorganiserings-/kalenderapplikation, hvor brugere har mulighed for at styre forskellige typer af opgaver:
+\begin{itemize}
+\item \textbf{Aftaler}: Opgaver som bruger skal gøre på, eller inden et bestemt tidspunkt og som automatisk bliver færdiggjort på det pågældende tidspunkt.
+\item \textbf{Projekter}: Opgaver som brugeren selv har valgt, hvor brugeren kan notere fremgang og færdiggørelse.
+\item \textbf{Tjanser}: Tilbagevendende opgaver som brugeren skal have gjort ved lejlighed og hvor kun de vigtigste tjanser vises. 
+\end{itemize}	
+Applikationen skal laves som en \textit{RESTful API} med \textit{Crossplatform} brugerflader. Det skal være muligt for brugere at tilgå deres profil både fra et webinterface og en android app.
+Applikationen skal være modulært opbygget og rumme mulighed for, at jeg eller andre udviklere, kan udviklere videre på den.
+Applikationen skal i udgangspunktet sættes op online og have en \textit{proof-of-concept tilgængelig.}
+
+\section{case}
+
+\include*{./dele/case}
+
+\chapter{Metode- og teknologivalg}
+
+\section{Udvikling og planlægning}
+Valget af udviklingsmetode endte med at være en større udfordring for mig, end jeg egentlig havde antaget. På den ene side er jeg primært blevet oplært i \textit{scrum} og har trives så godt i det, at jeg ikke rigtigt har søgt erfaringer i så mange andre; men på den anden side er det tvivlsomt, i hvilken grad en én-persons \textit{scrum} proces overhovedet er mulig.\par{}
+Hvorvidt en én-persons scrum proces overhovedet er mulig, er et forbløffende debatteret emne på nettet\footnote{https://www.scrum.org/forum/scrum-forum/36139/one-man-scrum-team-possible}\footnote{https://pm.stackexchange.com/questions/9081/a-one-man-project-methodology}, og egentlig en debat, som jeg  ikke ser nogen væsentlig grund til tage del i, men jeg vidste, at jeg ikke havde i sinde at udnævne mig selv hverken til \textit{Scrummaster} eller \textit{produktowner}, fordi det, i hvert fald i min læsning af scrum, er ret vigtigt, at disse er separate opgaver. Jeg forsøgte at gøre op med mig selv, hvad jeg egentlig på et dybere plan ønskede at få ud af Scrum, når det nu ikke var de faste roller: Det var i virkeligheden dens rod i agile udvikling, så det besluttede jeg mig for at fokusere på, i særdeleshed Agile Alliance 101\footnote{https://www.agilealliance.org/agile101/}.\par{}
+
+Særligt fokuserede jeg på:s
+\begin{itemize}
+\item Holde daglige ajourføringer
+\item Dele projektet op i 3 iterationer/sprint
+\item Hvert sprint indebærer en planlægnings- og evalueringssession
+\item Indstille mig på, at processen kan ændres efter behov og de daglige ajourføringer og særlig sprintevalueringen skal danne et rum for dette
+\end{itemize}
+
+Derudover forsøgte jeg også at have de 12 principper\footnote{http://agilemanifesto.org/principles.html}\footnote{https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/}, hvor princip 1 og 4 naturligvis blev  ret frit fortolket, da jeg dårligt kan agere min egen kunde.Apar{}
+Jeg forsøgte endvidere at planlægge både for mit produkt og dokumentation og delte forløbet op i 3 sprints, hvor jeg havde 2 halve uger til start og slut, som fokuserede på helholdsvis at begynde og afslutte forløbet.\par{}
+Sidste men ikke mindst, så brugte jeg kanban-bræt for at holde overblik over opgaver. I slutningen af projektet, bevægede jeg mig lidt væk fra brættet og styrede det mere igennem logbogen, ajourføringerne og evalueringerne, men særligt i starten af projektet var det et vanvittigt godt redskab.
+\begin{lstlisting}
+Daglige ajourføringer:
+Hver formiddag afholdte jeg en daglig ajourføring, hvor jeg stillede følgende spørgsmål:
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal uddybes, så gør det nede i loggen.
+
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+
+Hvad er dagens prioriteter?
+
+\end{lstlisting}
+Disse er dokumenterede i logbogen. Ajourføringerne holdt samme form igennem hele processen. Dette skyldes, at jeg haft et svendeforløb før, hvor jeg lærte en del om, hvordan jeg arbejdede bedst med ajourføringerne.
+
+\begin{lstlisting}
+Procesevalueringer:
+Ved slutningen af hvert sprint, holdt jeg en procesevaluering, som endte med at tage denne form:
+Evaluering af…
+Sidste evaluering
+Seneste sprint
+Tidsplanen
+Produkt
+Konklusion
+\end{lstlisting}
+
+De 3 evalueringer kan også findes i bilagsmaterialet. Procesevalueringerne skifter i højere grad form, hvor den første er helt andet format end de efterfølgende
+Sprintplanlægning:
+Sprintplanlægningen endte med at blive indtastet i kanban-brættet for at  sikre mig, at det var ført ordentligt ajour.
+
+Dette er Agile development og jeg mener også, at man kan se en klar inspiration fra Scrum, om end det er underimplementeret, men det leder jo til et naturligt spørgsmål. Hvordan kan det være, at man ikke anvendte egentligvis Extreme Programming (XP), som  er et agile framework, men som godt kan bruges af en person? Der er svaret simpelthen blot, at det er det her, som jeg vil have ud af det.
+
+\section{RESTful API Arkitektur}
+RESTful API kombinerer REST, som står for \textit{Representational state transfer} , softwarearkitekturen med en API.
+RESTful API indeholder 5-6 arkitektoniske retningslinjer\footnote{i ingen særlig rækkefølge}:\footnote{https://www.redhat.com/en/topics/api/what-is-a-rest-api}\footnote{https://en.wikipedia.org/wiki/REST}\footnote{https://www.ibm.com/topics/rest-apis}
+\begin{itemize}     
+\item Klient-server arkitektur igennem HTTP
+\item "Stateless" klient kommunikation, hvilket vil sige, at hver "\textit{request}" er separat og der ikke gemmes data om klienten
+\item "\textit{Cacheable}" data - for bedre performance for klientsiden og bedre skalering på serversiden.
+\item Ensartet interaktion med \textit{API’en}, hvor data anmodes tydeligt og separat fra klientens repræsentation deraf
+\item \textit{lag}-inddelt serverarkitektur, hvor data sendes igennem flere lag, usynligt for klienten.
+\item "\textit{Code-on-demand}" er at serveren kan sende kode, som eksekveres af klienten. Denne retningslinje er dog bredt anerkendt, som værende valgfri og ikke nødvendig.
+\end{itemize}
+
+Med andre ord, så handler RESTful API om, at man giver klienter mulighed for let og tydeligt at anmode og indsende data igennem http-request, men man styrer selv behandlingen af dataen på serveren grundet sikkerheds- og skaleringshensyn. Data sendes frem og tilbage mellem server og klient og ansvaret for at repræsentere dataen placeres i højest mulige grad hos klienten. For at RESTful API faktisk er "\textit{performance}"-let og sikker, er det alfa-omega, at man sørger for at grænsefladerne fungerer, som de skal.\par{}
+SOAP\footnote{\textbf{S}imple \textbf{O}bject \textbf{A}ccess \textbf{P}rotocol} er et ældre alternativ. SOAP få request igennem en eller flere "\textit{application layer}"-protokoler, så som \textit{HTTP}, \textit{SMTP} eller \textit{TCP}, men returnerer altid et \textit{XML} dokument. Kontra \textit{RESTful API} så har \textit{SOAP} flere indbyggede standarder og servicer, eksempelvis i forhold til sikkerhed, men er også markant tungere for serveren\footnote{https://www.redhat.com/en/topics/integration/whats-the-difference-between-soap-rest}. Af mere moderne alternativer eksisterer også \textit{GraphQL}, som fokuserer på kun at overføre det korrekte data fremfor at minimere server ressourcer, og \textit{RPC}\footnote{\textbf{R}emote \textbf{P}rocedure \textbf{C}all}, som fokusere på at køre kode lokalt på klienten, men bruger serveren som en "\textit{dependency}", som om den var lokal og man kan have logikken på serveren\footnote{  https://blog.bitsrc.io/not-all-microservices-need-to-be-rest-3-alternatives-to-the-classic-41cedbf1a907}. Både GraphQL og RPC er ret spændende, men jeg tror, at det er korrekt valgt at fokusere på ressourceforbrug i dette tilfælde og SOAP virker dateret i forhold til andre alternativer.\par{}
+Potentielt kunne det være spændende at se på at sammenligne projektet med et ellers lignende \textit{GraphQL}-og \textit{RPC}-projekt, men herfra hvor jeg står nu, virker \textit{RESTful API} som det korrekte valg.
+
+\section{Software design: SOLID-principper}
+\textbf{SOLID} er en række principper for at lave den bedst mulige \textit{objekt-orienterede programmering} som muligt og inkluderer fem principper.\par{}
+\textbf{SOLID}-principper kan fuldt ud implementeres i \textit{Python}\footnote{https://realpython.com/solid-principles-python/} og \textit{JavaScript}\footnote{https://dev.to/denisveleaev/5-solid-principles-with-javascript-how-to-make-your-code-solid-1kl5}\footnote{https://blog.logrocket.com/solid-principles-single-responsibility-in-javascript-frameworks/} , men ingen af dem har egentlige interface implantationer, som man eksempelvis finder C\#. Begge bruger såkaldt ”\textit{duck typing}”  i stedet for normativ eller strukturel typesystem. Ikke desto mindre kan interfaces sagtens implementeres, men det har jeg lige forklaret i dets eget afsnit.\par{}
+Alle \textbf{SOLID}-principper kan der skrives og siges meget om, hvilket er blevet gjort. Jeg vil forsøge at forklare dem så simpelt som muligt, hvilket vil medføre, at jeg flere steder vil være reduktiv og oversimplificerende i min gennemgang. For en længere og væsentlig mere grundig gennemgang kan jeg anbefale følgende ressourcer\footnote{https://stackify.com/solid-design-principles/}\footnote{http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod}\footnote{https://realpython.com/solid-principles-python/}.\par{}
+
+\subsection{Single-Responsibility Principle}
+Nok det simpleste af principper og kan i bund og grund reduceres til, at en klasse skal gøre en ting og ikke flere.
+\subsection{Open-Closed Principle}
+Det skal være muligt at udvide en klasse/module/software entitet, men ikke ændre den. Så det er godt og positivt at bygge videre på andet software, men vores klasser skal ikke kunne ændre hinanden.
+\subsection{Liskov Substitution Principle}
+Reglerne og bestemmelserne for en ting, skal også gælde for dens undertyper af samme ting. Hvad vigtigere er, så er det, at tingen ikke skal have en masse regler og bestemmelser, som ikke også er gældende for undertyperne.
+\subsection{Interface Segregation Principle}
+"interfaces" tilhører klasserne og omvendt. Derfor skal klasser ikke gøres afhængige af funktioner, som de ikke bruger. I stedet for skal interfaces underinddeles og gøres mere specifikke, så det passer til klasserne.
+\subsection{Dependency Inversion Principle}
+Dette er desværre et lidt misvisende navn, for det handler ikke om at vende afhængelighederne rundt, men afkoble dem og have abstraktioner i mellem.
+
+\subsection{”Duck typing” og interfaces}
+I normativ typesætning, som man finder vi blandt andet C++, C\# og Java\footnote{  https://en.wikipedia.org/wiki/Nominal\_type\_system}, eksplicit deklarerer deres type og så er den såkaldte ”\textit{duck typing”} kendt for, at hvis ”\textit{det går som en and og ligner en and, så er det en and}”, så programmet bestemmer typen efter opførelse og hvad det ligner og ikke deklarationer. ”\textit{Duck typing}” adskiller sig fra strukturel typesystemet, som man finder i eksempelvis typescript, \textit{Go} og \textit{OCaml}\footnote{https://en.wikipedia.org/wiki/Structural\_type\_system} ,  ved kun noget, af den ”\textit{duck type}”’ede struktur evalueres, hvorimod der det strukturelle typesystem evalueres på hele strukturen  for at se, om to er kompatible. Så selvom \textit{Python} og \textit{Javascript} ikke rigtigt har interfaces, så kan man lave klasser, som opfører sig som et interface, og som også vil virke som et \textit{interface}. Så man  kan  lave en klasse, som man aldrig initierer og på den måde vil de agere som en abstrakt klasse.\par{}
+\textbf{SOLID}-principperne står ret stærkt i \textit{Objekt-Orienteret Programming (OOP)}. Personligt, sådant helt anekdotisk, er min oplevelse, at programmører  oftere kritisere \textit{OPP} end \textbf{SOLID}. Et direkte alternativt til \textbf{SOLID} er der dog i \textit{GRASP}\footnote{https://en.wikipedia.org/wiki/GRASP\_(object-oriented\_design)}, som er et ældre \textit{OPP} principsæt, men så kan man vel næsten lige så godt bruge \textbf{SOLID}. \textbf{SOLID} er også blevet bearbejdet, således, at det angiveligt også skulle omfavne funktionelt programming og multiparadigme \textit{microservices}, men der er ikke helt enighed, om det rent faktisk er det mest fornuftige og \textit{Poul Merson} har eksempelvis foreslået hans egne \textit{IDEALS}-principper til \textit{microservices}\footnote{https://www.infoq.com/articles/microservices-design-ideals/}.\par{}
+Personligt er min erfaring, at \textbf{SOLID} i langt højere grad indeholder nogle mål at aspirere i mod, men at man altid kan få ens kode til at blive mere og bedre \textbf{SOLID} og det særligt er anvendt som målestok, når man refactor ens kode.
+
+\section{Tech Stack: FAR(n)M}
+\textbf{FARM}-tech-stack står \textbf{FastAPI}, \textbf{React} og \textbf{MongoDB}. Jeg har tilføjet et lille n efter R’et, fordi jeg bruger \textbf{React Native}. \textbf{FARM}-techstack’en er langt fra at være bredt etableret, men er eksempelvis nævnt af \textit{MongoDB}\footnote{https://www.mongodb.com/developer/languages/python/farm-stack-fastapi-react-mongodb/}. 
+Ikke desto mindre er det en valid \textit{tech-stack}, som tillader mig at arbejde med \textbf{Python} og \textbf{JavaScript} i et \textit{MEVN/MERN} lignende stack. Stack’en er også valgt for at prøve en nyere og spændende tech-stack, som ikke er helt så etableret og som jeg har lidt mindre erfaring med.
+
+\subsection{Sprog: Python}
+\textbf{Python} bliver blot ved med a stige i popularitet og selvom det kan blive anset lidt som \textit{datascience}- og begynderfokuseret sprog, har det en bred palette af anvendelighed.\par{}
+På trods af, jeg selv er lidt af en \textbf{Python} fortaler, har jeg ikke brugt sproget i \textit{full}- eller \textit{web}-stack sammenhæng og derfor ønskede jeg at lave \textit{backend}’en i \textbf{Python}.\par{}
+Til projektet har jeg lavet et min nyt environment med \textit{Anaconda}\footnote{https://www.anaconda.com/download/}, som min package manager, for at undgå, at projektet løber ind i nogle problemer fra tidligere. Jeg endte dog med at reinstallere det, fordi jeg troede, at der var gået noget galt med miljøet, hvilket vidste sig at være en nedarvingsfejl fra \textit{FastAPI-users}' \textit{beanie} modul.\par{}
+
+\subsection{FastAPI}
+\textbf{FastAPI}\footnote{https://fastapi.tiangolo.com/} er både \textbf{F}’et og \textbf{A}’et i \textbf{FARnM}, så vigtig er den for stack’en.\par{}
+\textbf{FastAPI} er et framework til at bygge \textit{API’er} i \textit{Python} hurtigt, og det er blevet ret populært.\par{}
+\textbf{FastAPI} er den primære grund til, at jeg gerne ville arbejde med denne stack.
+
+\subsection{Anvendte Python og FastAPI moduler}
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{White}{Gray!25}
+\begin{tabularx}{\textwidth}{p{.20\linewidth} X X}
+
+Modul og link
+&
+Beskrivelse
+&
+Anvendelse
+\\
+
+
+Beanie\tablefootnote{https://pypi.org/project/beanie/} 
+&
+Asynkron ODM for MongoDB baseret på pydantic
+&
+FastAPI-users dependant	
+\\
+
+FastAPI\tablefootnote{https://pypi.org/project/fastapi/} 
+&
+API framework
+&
+Til at lave API’en. Alt fra fouter, Reponse, exception, json encoding, CORS og Middleware med mere	
+\\
+
+Motor\tablefootnote{https://pypi.org/project/motor/} 
+&
+MongoDB driver
+&
+Sammen med asyncio til at oprette asynkron forbindelse MongoDB
+\\
+
+Pymongo\tablefootnote{https://pypi.org/project/pymongo/} 
+&
+Endnu en MongoDB driver
+&
+Til at lave synkrone forbindelser.
+\\	
+
+uvicorn\tablefootnote{https://pypi.org/project/uvicorn/} 
+&
+Asynchronous Server Gateway Interface web server
+&
+Til at kører min API
+\\
+
+BSON\tablefootnote{https://pypi.org/project/bson/}
+&
+Et BSON kodeks uafhængig af MongoDB
+&
+Til at generere ObjectId kompatible med MongoDb
+\\
+
+datetime\tablefootnote{https://pypi.org/project/DateTime/} 
+&
+Inkludere en Datetime
+&
+Til at sætte dato og klokkeslæt på oprettelser og opdateringer
+\\
+
+typing\tablefootnote{https://pypi.org/project/typing/} 
+&
+Type hints
+&
+til datamodeller, således de kan opdateresuden alle værdier sættes.
+\\
+
+Pydantic	\tablefootnote{https://pypi.org/project/pydantic/} 
+&
+Data validerings type hints
+&
+Datavalidering til datamodellerne
+\\
+
+FastAPI\_users\tablefootnote{https://pypi.org/project/fastapi-users/} 
+&
+Registrering og autentifikation til FastAPI
+&
+Håndtere bruger registering og autentifikation
+\\
+
+HTTPX OAuth\tablefootnote{https://pypi.org/project/httpx-oauth/} 
+&
+Asynkront OAuth
+&
+Til at lave 2faktor autentifikation
+\\
+
+os\tablefootnote{https://www.w3schools.com/python/module\_os.asp} 
+&
+Indbygget os modul
+&
+Til at få 2fa miljøet fra systemet
+\\
+
+\hline
+\end{tabularx}
+\end{table}
+
+
+\subsection{Sprog: JavaScript}
+Jeg brugte \textbf{JavaScript} som mit frontend sprog. Oprindeligt designet til at være et letanvendeligt \textit{object scripting language} med fokus på HTML\footnote{https://web.archive.org/web/20070916144913/https://wp.netscape.com/newsref/pr/newsrelease67.html}. Det blev født, da \textit{Netscape} bad en en scheme udvikler, Brendan Eich, om at skrive et scripting programmeringssprog, hvis syntaks mindede om Java’s, som Netscape allerede havde fået implementeret i deres browser \textit{Navigator}\footnote{https://web.archive.org/web/20200227184037/https://speakingjs.com/es5/ch04.html}. \textbf{JavaScript’s} navn har ofte været en kilde til forvirring, men dets forbindelse til Java er ikke tættere end denne.\par{}
+\textit{JavaScript} er dog et af de, hvis ikke det, mest populære programmeringssprog til webudvikling og var derfor et oplagt valg til at udvikle min \textit{frontend}.
+
+\subsection{Framework: React Native}
+Er et open-source UI-framework udviklet og driftet primært af Facebook/Meta\footnote{https://www.oreilly.com/library/view/learning-react-native/9781491929049/ch01.html}.  \textbf{React Native} er baseret \textit{React}, \textit{facebook’s} UI-framework til webudvikling, men målrettet mod at kunne køre ”native” på mobile platforme.\par{}
+Mit oprindelige valg var \textit{Ionic}, men endte med at fravælge det, da ionic er ret langsomt og, selvom det formentlig er brugbart til at lave et \textit{proof-of-concept} som dette, så tænkte jeg, at det formentlig var bedre bruge et mere industriegnet framework – også selvom jeg havde mindre erfaring.
+
+\subsection{Anvendte JavaScript og React Native modul}
+\begin{table}[H]
+\centering
+\rowcolors{2}{White}{Gray!25}
+\begin{tabularx}{\textwidth}{p{.20\linewidth} X X}
+
+Modul og link
+&
+Beskrivelse
+&
+Anvendelse
+\\
+
+react\tablefootnote{https://www.npmjs.com/package/react}
+&
+Bibliotek til at lave UI
+&
+Brugt det til at lave UI
+\\
+
+react-native\tablefootnote{https://www.npmjs.com/package/react-native} 
+&
+React Native biblioteket til at lave native UI
+&
+Brugt det til at lave UI
+\\
+
+axios\tablefootnote{https://www.npmjs.com/package/axios} 
+&
+”Promise”-baseret http-klient
+&
+Brugte det til mine frontend API kald
+\\
+
+react-native-modal\tablefootnote{https://www.npmjs.com/package/react-native-modal} 
+&
+Modal komponent, som håndterer pop-ups
+&
+Til når der opdateres eller skabes et nyt ”task”-element
+\\
+
+expo-constants\tablefootnote{https://www.npmjs.com/package/expo-constants} 
+&
+Giver informationer om konstanter
+&
+Til at få højde på statusbaren på android enheder
+\\
+
+react-navigation/bottom-tabs\tablefootnote{https://www.npmjs.com/package/@react-navigation/bottom-tabs} 
+&
+bottom tab navigator
+&
+Bottom-tab navigatiosnbaren.
+\\
+
+react-navigation/native\tablefootnote{https://www.npmjs.com/package/@react-navigation/} 
+&
+React native’s navigations håndtering
+&
+native	Til at lave min ”navigations container”
+\\
+
+react-navigation/stack\tablefootnote{https://www.npmjs.com/package/@react-navigation/stack} 
+&
+App navigation ved at ”stack”’e sider oven på
+&
+Til at lave min ”stack” navigation
+\\
+
+\hline
+\end{tabularx}
+\end{table}
+
+
+\subsection{MongoDB}
+Jeg har arbejdet med \textbf{MongoDB}\footnote{https://www.mongodb.com/try/download/community} før og føler også, at \textit{NoSQL} database imødekommer projektets behov for at kunne blive udbygget modulært og over længere tid. Det er bare en kæmpe fordel ikke at skulle have defineret en database, hvis man senere beslutter sig for, at produktet skal kunne rumme noget helt andet.\par{}
+Desuden er \textbf{MongoDB}’s \textit{NoSQL} også mere fleksibel og selvom \projectName{} ikke kommer til at blive stort nok til, at jeg for alvor kan gøre brug af \textit{NoSQL}’s skaleringsmuligheder, så er det rart at arbejde med og ville være vigtig, hvis jeg beslutter mig for senere at ville færdigudvikle \projectName{}.\par{}
+Der er åbenlyse alternativer til \textit{FARM}-stack’en, så som \textit{MEVN}\footnote{\textbf{M}ongoDB, \textbf{E}xpress.js, \textbf{V}ue.JS \& \textbf{N}ode.js}  - eller \textit{MERN}\footnote{\textbf{M}ongoDB, \textbf{E}xpress.js, \textbf{R}eact.js \& \textbf{N}ode.js}-stack. De kunne begge have fungeret godt, og som nævnt før, så skyldes det i højere grad en præference for at bruge Python og FastAPI, end at der er noget i vejen med de andre stack’er. \textit{LAMP}\footnote{\textbf{L}inux, \textbf{A}pache, \textbf{M}ySQL \& \textbf{P}HP} -stack er også oplagt at nævne, men vil helst ikke arbejde i PHP. Et spændende alternativ kunne være \textit{PERN}\footnote{\textbf{P}ostgreSQL, \textbf{E}xpress.js, \textbf{R}eact.js \& \textbf{N}ode.js}-stack’en, men ville gerne arbejde med en \textit{NoSQL} database. R\textit{uby on Rails} havde også været en spændende mulighed.\par{}
+Alt i alt er jeg dog tilfreds med stack’en som den blev. \textit{MEVN} var den anden store mulighed for mig, men med \textit{Python} vandt \textit{FARM} bare for mig.
+
+\subsection{GitHub}
+Helt fra starten af projektet har jeg benyttet \textbf{Github} til versionering. Jeg brugte VS code’s indbyggede værktøjer til at forbinde til \textbf{GitHub} det meste af tiden, men da jeg skulle ligge to repositories sammen, så måtte jeg også bruge noget \textit{Git Bash}.\par{}
+Det var målet at få brugt det flittigt og det lykkes ikke for mig. Men jeg mistede ikke noget data, så den del er ok.
+
+\subsection{MongoDB Compass}
+\textbf{MongoDB Compas} har jeg brugt til at interagere direkte med databasen. Den er ikke fantastisk, men er rar at have til at fejlfinde, teste og gøre ting, som jeg ikke ønsker at skrive ind i programmet.\par{}
+Jeg brugte \textbf{MongoDB Compass} til at oprette databasen og collections samt inspicere databasens indhold.\par{}
+\textbf{MongoDB Compass} er \textbf{MongoDB’s} \textit{native GUI}, og jeg vidste, at de havde de begrænsede funktioner, som jeg havde brug for og derfor valgte jeg blot at bruge dem.\par{}
+
+\subsection{OneNote}
+Til at føre og holde styr på min noter brugte jeg \textbf{OneNote}\footnote{https://www.onenote.com/Download}. Det er en fantastisk hjælp at kunne holde styr på tanker om projektet på farten.\par{}
+Logbøgerne er siden hen blevet skrevet over i \LaTeX , men det har været guld værd i arbejdsprocessen.
+
+\subsection{Swagger UI}
+Jeg brugte \textbf{Swagger UI}\footnote{https://swagger.io/tools/swagger-ui/} til at teste min API.\par{}
+SwaggerUI kommer som en del af \textbf{FastAPI}  og kan teste ens \textbf{API} fra browseren. Jeg har tidligere brugt \textit{Postman} og har haft gode erfaringer med den.
+
+\subsection{TexMaker og MikTek}
+En \textit{opensource} \LaTeX-editor (TexMaker\footnote{https://www.xm1math.net/texmaker/}) og package-manager (MikTeX\footnote{https://miktex.org/}). Der er et væld af alternativer, men disse er jeg vandt til og glade for at bruge.
+
+\subsection{Visual Studio Code}
+\textbf{VSC} er nærmest en industristandard og den vi har brugt mest på skolen. Den kan godt føles lidt bloatet  til tider, men det er klart den, som jeg har mest erfaring med og fordi jeg eksperimenterede med andre ting, ønskede jeg ikke også at gøre det med mit \textit{editor}-valg.\par{}
+Jeg kunne formentligt med fordel af gjort brug af en fuld IDE, særligt i forhold til \textit{React Native}, men kan simpelthen ikke lide at programmere på den måde. Så for mig er \textbf{VSC} en god mellemvej.\par{}
+
+\chapter{Tidsplan}
+
+\include*{./dele/tidsplanRea}
+
+\chapter{udvalgte refleksioner}
+
+\section{AI}
+Det var min tanke, at jeg ville have udviklet noget AI. Der kom forskellige ting i vejen, navnlig tidspres. Det gik det også op for mig, at det kunne være fedt for mig at have udviklet, men det formentlig ikke vidste mine bedste kompetencer frem\par{}
+AI udvikling har en tendens til at bestå nogle relativt anonyme API kald og handler om noget teknologi, som vi heller ikke forstår særligt godt.\par{}
+Derfor kan det være svært egentlig at vise meget teknisk formåen med det medmindre, at man laver rigtig meget af det og det var der nok aldrig tid til. Jeg var tæt på at udvikle en funktion til at populere de forskellige opgaver.\par{}
+Sidst er der også en nogle etiske udfordringer for den måde, som AI bliver udviklet på nu, som jeg ville skulle forholde mig til på en anden måde, end jeg synes, at jeg har haft tid til.\par{}
+Med det sagt er det grundet tidspres, at det ikke er blevet en del af opgaven, fordi selvom det potentielt er relativt nemt, så kunne det have være spændende at vise lidt frem af.
+
+\section{”Comment first”-kodning}
+Jeg besluttede mig at forsøge at lave ”Comment first”-kodning, som for de uindviede er, at man kommenterer først og koder bagefter.  Det skulle give mere meningsfyldte kommenterer, og tvinger også én til at tænke over koden før i stedet for siden.
+Det gik rigtigt godt i starten, men i forbindelse med, at tiden blev knappere og jeg oplevede, at frontend’en drillede, mistede jeg fokus på det.
+Jeg oplever dog stadig, at det var et fornuftigt valg, fordi API’en er bedre kommenteret end jeg er vant til.
+
+\section{Modulærudvikling}
+Det var en del af idéen med opgaven, at programmet skulle udvikles så modulært, som muligt, og have mulighed for ikke blot at blive bygget videre på, men også at bygge det i forskellige retninger.
+For at opnå dette,  har jeg i særdeleshed gjort to ting:
+Først og fremmest har jeg valgt en NoSQL database, således at det ikke er nødvendigt at ændre database-strukturen.
+Desuden har jeg sørget for, at både min frontend og backend ”task”-operationer er bygget op efter ”solid” principper og med en ”interface”, som andre opgavetyper kan nedarve fra. 
+Jeg havde en idé om, at det kunne være fedt, hvis brugerne selv kunne vælge at oprette den slags opgaver, som passede til dem – eventuelt ved hjælp af noget AI.
+
+\section{React Native}
+Som tidligere skrevet i metodeafsnittet , så endte jeg med at vælge React Native over Ionic, som egentlig havde været min første valg. Grunden hertil var, at Ionic er langsomt og ikke lige så anvendt i industrien. Jeg overvejede også flutter i stedet for React Native. Modargumentet var, at jeg skulle fokusere på, hvad jeg allerede kendte.
+Grundet min begrænsede erfaring og entusiasme for Ionic og frontend udvikling generelt; samt at jeg gerne ville forbedre mine full-stack kvalifikationer, gik jeg med React Native. Det var en fejl.
+Det har været rigtig lærerigt at lære et helt nyt framework fra bunden af og havde det ikke været en svendeprøve, så kunne jeg nok også have hygget mig med det, men det var simpelthen et dårligt valg til en svendeprøve, så jeg skulle have holdt fast i Ionic.
+Det har simpelthen taget for lang tid og alt for meget arbejdstid er gået med frontend udvikling i stedet for noget der kan vises frem, så jeg skulle have fokuseret mere på at fremvise mine kvalifikationer end at tillære mig nye.
+
+\chapter{Konklusion}
+
+\clearpage
+
+\pagenumbering{Roman}
+\appendix
+\renewcommand{\thechapter}{\Alph{chapter}}
+
+\chapter{Foreløbig literaturliste}
+
+Dette er ikke en begrænsning af fremtidige anvendte ressourcer, men beskrivelse af allerede anvendte ressourcer.
+
+\section{Internet ressourcer}
+\begin{itemize}
+\item atlassian.com
+\item baeldung.com
+\item code.visualstudio.com
+\item christophergs.com
+\item codevoweb.com
+\item colorhexa.com
+\item ctan.org
+\item devwithdave.co.uk
+\item geeksforgeeks.org
+\item github.com
+\item fastapi.tiangolo.com
+\item flaticon.com
+\item ionicframework.com
+\item merriam-webster.com
+\item mongodb.com
+\item multimediedesigneren.dk
+\item ordbogen.com
+\item ordnet.dk
+\item overleaf.com
+\item panabee.com
+\item purepng.com
+\item pythontutorial.net
+\item scrumguides.org
+\item shortcut.com
+\item stackexchange.com
+\item thefreedictionary.com
+\item thesaurus.com
+\item realpython.com
+\item vuejs.org
+\item whois.domaintools.com
+\item wikipedia.org
+\end{itemize}
+
+%%%%%%
+%	Afslutning
+%%%%%%
+	
+\end{document}

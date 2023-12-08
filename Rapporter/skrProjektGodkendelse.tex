@@ -1,0 +1,270 @@
+%%%%%%
+%	Præamble
+%%%%%%
+
+\documentclass{report}
+
+\include{./dele/praeambel}
+
+% individuel report konfiguration
+\renewcommand{\reportType}{Godkendelsespakke}
+
+%%%%%%
+%	Indhold
+%%%%%%
+
+\begin{document}
+
+\maketitle
+\makeTechTitlecard
+\tableofcontents
+
+\chapter{Materiale til Godkendelse}
+
+\section{Problemformulering}
+\label{probform}
+
+Lav en opgave organiserings-/kalenderapplikation, hvor brugere har mulighed for at styrer forskellige typer opgaver:
+\begin{itemize}
+\item \textbf{Aftaler}: Opgaver som bruger skal gøre på eller inden et bestemt tidspunkt og bliver automatisk færdiggjort på det pågældende tidspunkt.
+\item \textbf{Projekter}: Opgaver som brugeren selv har valg, hvor brugeren kan notere progres og færdiggørelse. 
+\item \textbf{Tjanser}: Tilbagevendende opgaver som brugeren skal have gjort ved lejlighed og hvor der kun virker de vigtigste.
+\end{itemize}
+
+Applikationen skal være skal laves som en \textit{RESTful API} med\textit{Crossplatform} brugerflader. Det skal være muligt for brugere at tilgå deres profil både fra et \textit{webinterface} og en \textit{android app}.\par{}
+
+Applikationen skal være modulært opbygget og mulighed for jeg eller andre udviklere, kan udviklere videre på.\par{}
+
+Applikationen skal i udgangspunkt sættes op online og have en \textit{proof-of-concept} tilgængelig.
+
+\section{Casebeskrivelse}
+\label{case}
+
+\include*{./dele/case}
+
+\section{Kravsspecifikation}
+\label{kravspec}
+
+\projectName{} er en opgave-organiserings-/kalenderapplikation, som har til formål at hjælpe brugeren med at organisere deres hverdag ved at give brugeren en positiv oplevelse med, hvad brugeren faktisk når og mindre skyldfølelse med hvad brugeren ikke når. \projectName{} forsøger at opnå dette ved behandle opgaver forskelligt og deler\footnote{I hvert fald i første omgang} op i 3 slags opgaver. Aftaler, opgaver som skal være færdige til eller før et bestemt tidspunkt, projekter, selvvalgte opgaver fokusere på fremskridt i stedet færdiggørelse, og tjanser, gentagende opgaver.
+
+\subsection{Funktionalitet}
+
+\projectName{} er i sin essens 3 klasser/lister, som hver rummer opgaver. De forskellige klasser/lister har forskellige regler. Endvidere har det også følgende funktioner:
+\begin{itemize}
+\item uulighed for at tilføje nye opgaver
+\item mulighed for at vise udvalgte opgaver
+\item \textit{crossplatform accessibility}
+\item mulighed for at let at kunne tilføje ekstra funktioner til programmet\footnote{Altså programmet er skrevet modulært; skal ikke forstås som om brugere selv kan ændre programmet}
+\item mulighed for brugerne kan bruge \textit{two factor authentication}
+\end{itemize}
+
+\subsection{Begrænsninger}
+
+\projectName{} bliver ikke tilgængeligt på \textit{IOS}-enheder.
+
+Selvom \projectName{} vil være tilgængeligt online, vil de juridiske sider i forhold til GDPR og databeskyttelse ikke være en prioritet at færdiggør i en sådan grad, at det frit kan afbenyttes.
+
+\projectName{} er ikke baseret på forskning, men på personlige præferencer.
+
+Sidst men ikke mindst bliver \projectName{} kun en prototype og ikke alle funktioner vil være færdigudviklet.
+
+\projectName{} designes til at kunne videreudvikles til at kunne overkomme alle de begrænsninger, men det kan ikke nås under svendeprøven.
+
+\subsection{Testkonditioner}
+
+\begin{itemize}
+\item API'en skal kunne tilgås
+\item Skal virke crossplatform i både en \textit{browser} og på en \textit{tablet}
+\item Skal kunne gemme profiler
+\item skal kunne klare ændringer fra forskellige profiler
+\item Skal kunne oprette nye brugere
+\item Skal kunne live opdatere data
+\item Skal kunne håndtere, at brugere forsøger at ændre det samme objekt fra forskellige enheder på samme tid
+\item Kan ikke logge ind logge ind med den forkerte \textit{two factor authentication} kode
+\item Virker på forskellige enheder på forskellige netværk
+\end{itemize}
+
+\section{Flowchart}
+
+Flowchat'et bærer er væsentligt færdigudviklet for login delen, som også er mest ekspansiv. For de 3 opgave menuer har jeg fokuseret på processer og funktioner fremfor de enkelte knapper, da de sidder endnu ikke færdigudviklet og jeg ikke vil sætte mig for fast på det helt specifikke forløb\footnote{Se dog mock-up for en forklaring af, hvad de menuer kunne se ud og indeholde af specifikke knapper: \autoref{mockup}}. De 3 resterende menuer, for \textit{"Kalender"}, \textit{"Profil"} og \textit{"Indstillinger"}, er mindre beskrevet, fordi jeg endnu mindre grad ønsker at ligge mig fast.\par
+
+\include{./dele/flowchart}
+
+\section{Mockup}
+\label{mockup}
+
+Jeg har valgt at inkludere 6 skærme i denne mock-up. Kun 3 er en del af kernen opgaven og derfor har jeg fokuseret på dem. Ville har dog indkluderet de 3 ekstra faner, Kalender-, Profil- og Indstillingsfanen, fordi jeg på den ene side håber at kunne nå dem og for at vise, at der tænkt yderligere menuer ind. Jeg vil dog koncentrere mig tid på de 3 vigtigste faner.\par{}
+Billedet af en tablet er fundet her\footnote{https://purepng.com/photo/25263/electronics-android-tablet}. Farverne har jeg valgt en tertiære farve, som jeg kunne lide og brugte \textit{colorhex.com} til at finde dens triadiske farveskema\footnote{https://www.colorhexa.com/ff99ff}. Jeg valgte et triadisk farveskema, fordi det både er farverigt og udtryksfuld, men stadig harmoniserende\footnote{https://multimediedesigneren.dk/farveteori-og-farvehjul/}. Det bliver dog ikke endelige farvevalg, da dette specifikke triadiske farveskema ikke er så harmoniserende.\footnote{Bortset fra centsors version af programmet, som ikke har mulighed for at skifte farveskemaet}.\par{}
+Jeg har ikke lavet et flowchart, men i stedet for at forsøgt at forklare det her.\par{}
+
+\pic[jpg]{mockUpTjans}
+Her viser programmet de top 5 vigtigste Tjanser. Tjanser er tilbagevendende og har beskrivelse, en nuværende eller kommende tilstand, et interval og en prioritet.
+\begin{itemize}
+\item \textbf{Lav ny} lader dig oprette en tjans.
+\item \textbf{Se alle} viser alle nuværende tjanser og ikke kun de 5 højest prioriterede.
+\item \textbf{Kommende} viser alle kommende tjanser
+\item Tjanserne er de vigtigste interaktioner og der kan man trykke flere forskellige steder på knappen:
+\begin{itemize}
+\item \textbf{I midten} viser beskrivelse ad tjansen og mulighed for at kunne ændre tjansens indstillinger.
+\item \textbf{Venstre side}: sætter tjansen til kommende for dens intervallet og øger dens prioritet.
+\item \textbf{Højre side}: sætter tjansen til kommende for dens intervallet og dens prioritet til, hvad den var da den oprettes.
+\item Når knapperne bliver smalle nok, forsvinder først den venstre knap og derefter den højre. I de ville kunne tilgås ved at trykke \textbf{i midten}.
+\end{itemize}
+\end{itemize}
+
+\pic[jpg]{mockUpProjekt}
+Her vises de 5 aktive projekter med den seneste aktivitet. Projekter har blot en beskrivelse, aktiv eller passiv tilstand; og en fremskridtstræller.
+\begin{itemize}
+\item \textbf{Ny}: Opretter en nyt projekt.
+\item \textbf{Aktive} viser alle aktive projekter og ikke kun de 5 med seneste aktivitet.
+\item \textbf{Passive} viser alle passive projekter.
+\item Projekter er de vigtigste interaktioner og der kan man trykke flere forskellige steder på knappen:
+\begin{itemize}
+\item \textbf{I midten} viser beskrivelse af projektet, dets fremskridt, mulighed for at ændre dens indstilliger eller nulstille dens fremskridt.
+\item \textbf{Venstre side}: sætter projektet til passiv.
+\item \textbf{Højre side}: sætter projektets en højere.
+\item Når knapperne bliver smalle nok, forsvinder først den venstre knap og derefter den højre. I de ville kunne tilgås ved at trykke \textbf{i midten}.
+\end{itemize}
+\end{itemize}
+
+\pic[jpg]{mockUpAftale}
+Her vises de 5 næste relevante alle. Aftaler har en beskrivelse, relevans-status, tidspunkt og indstillinger for påmindelser.
+\begin{itemize}
+\item \textbf{Ny}: Opretter en ny aftale..
+\item \textbf{Se alle} viser alle kommende aftaler og ikke kun de 5 næste.
+\item \textbf{Tidligere} viser alle tidligere aftaler samt kommende ikke-relevante aftaler.
+\item Aftaler er de vigtigste interaktioner og der kan man trykke flere forskellige steder på knappen:
+\begin{itemize}
+\item \textbf{I midten} viser beskrivelse af aftalen og får mulighed for at ændre dens indstilliger-
+\item \textbf{Venstre side}: mulighed for at ændre dens tidspunkt eller påmindelse.
+\item \textbf{Højre side}: sætte aftalen til ikke-relevante.
+\item Når knapperne bliver smalle nok, forsvinder først den venstre knap og derefter den højre. I de ville kunne tilgås ved at trykke \textbf{i midten}.
+\end{itemize}
+\end{itemize}
+
+\pic[jpg]{mockUpKalender}
+Viser en, endnu ikke desginet, kalender, hvor man kan se ens aktivitet. De forskellige opgaver vises lidt forskellige. Der ville også skulle være en række styringsknapper.\par{}
+Aftales tidspunkter vises samt hvornår aftaler ikke længere relevante, om det så skyldes om man færdiggjorde dem før tid eller de blot oprendte, gøres der ikke forskel på.\par{}
+For projekter vises der, hver gang man har trykket fremskridt for et projekt.\par{}
+For tjanser vises der hver gang en sættes til kommende, uanset om den har ændret prioritet.
+
+\pic[jpg]{mockUpProfil}
+Her vises, en endnu udesignet, profilfane, hvor det vil være muligt at få et overblik over ens profil og ændre den.
+
+\pic[jpg]{mockUpIndstillinger}
+Her vises, en endnu udesignet, indstillingsfane, hvor det vil være muligt at styre en række ting fra. Eksempelvis antallet af tjanser, aftaler og projekter eller lignende ting.
+
+\section{Estimeret Tidsplan}
+\label{estTid}
+
+\include*{./dele/tidsplanEst}
+
+\begin{comment}
+
+\section{Kravsspecifikation}
+\label{kravspec}
+
+\projectName{} er et virtuel bræt, som udgør det et alternativ den helt almindelige bordflade, som normalt bruges til rollespil og brætspil. I modsætning til mange eksisterende \textit{Virtual TableTop (VTT)}s, er \projectName{}s designet og optimeret til at fungere i et hybridformat, hvor brugerne sidder sammen om et bord, men stadig gerne vil opnå flere af fordele ved at have et virtuel flade, men ønsker at holde fokus på spillet og situationen dem i mellem fremfor at blive suget helt ind i digitalt rum.\par{}
+Essentielt er det også, at \projectName{} vil lade brugerne bestemme og give dem mulighederne for at definere, hvilke regler og funktion, som er implementeret i deres session.\par{}
+
+\subsection{Funktionalitet}
+
+\projectName{} er i sin simpleste form en digitalt flade, hvor brugerne kan flytte brikker på.
+Endvidere har det også følgende funktioner:
+\begin{itemize}
+\item mulighed for at skifte brættets udseende og egenskaber
+\item mulighed for at vælge, manipulere og ændre forskellige brikker
+\item mulighed for at gemme, bevare og have flere sessioner
+\item mulighed for at let at kunne tilføje ekstra funktioner til programmet\footnote{Altså programmet er skrevet modulært; skal ikke forstås som om brugere selv kan ændre programmet}
+\end{itemize}
+
+\subsection{Begrænsninger}
+
+\projectName{} er optimeret til være et værktøj ved fysiske spil og ikke sit eget virtuelle rum. Derfor vil i udgangspunket ikke indeholde mulighed for, at en bruger kan gemme information fra andre brugere.\par{}
+Det er også tanken, at \projectName{}, så vidt muligt, kun skal implementere regler i det omfang, at brugerne kan slå det og styrer dem selv.\par{}
+Sidst men ikke mindst bliver \projectName{} kun en prototype og ikke alle funktioner vil være færdigudviklet.
+
+\subsection{Testkonditioner}
+
+\begin{itemize}
+\item API'en skal kunne tilgås
+\item Skal virke crossplatform i både en \textit{browser} og på en \textit{tablet}
+\item Skal kunne gemme sessioner
+\item Skal kunne oprette nye session
+\item Skal stadig fungere efter der implementeres en ny feature.
+\end{itemize}
+
+\section{Estimeret Tidsplan}
+\label{estTid}
+
+\include*{./dele/tidsplanEst}
+
+\section{Mockup}
+\label{mockup}
+
+Dette \textit{mock up} er meget spartansk. Jeg håber, og regner med, at der bliver tid til at lave et pænere og bedre design, men dette \textit{mock up} er det design, som jeg gerne vil hen til, før jeg begynder at implementere \textit{features} og yderligere design.\footnote{billedet af tablet'en er fundet her: https://purepng.com/photo/25263/electronics-android-tablet}\par{}
+
+\section{Flowchart}
+\label{flowchart}
+
+Dette flowchart afspejler, at prototypen i sit udgangspunkt er meget simpel. Når prototypen tager mere form, vil det formentligt var nødvendigt at revidere dette \textit{flowchart}.\par{}
+
+\section{Note angående tidligere projekt}
+\label{tidlProj}
+
+På \textbf{H5} lavede jeg et lignende projekt kaldet \textbf{\textit{encoutner Assistient}}, som var specifik til rollespil. Dette projekt blev ikke færdigt og endte udelukkende med et \textit{proof-of-concept} og endte med at have signifikante arkitektoniske udfordringer.\par{}
+For at undgå selvplagiering har jeg valgt at generalisere dette projekt og skrive det i en helt anden tech-stack.\par{}
+Den ældre rapport kan udleveres ved forsørgelse og projektet kan findes på git her\footnote{https://github.com/SuneKR/encounterAssitient}.
+
+\end{comment}
+
+\clearpage
+
+\pagenumbering{Roman}
+\appendix
+\renewcommand{\thechapter}{\Alph{chapter}}
+
+\chapter{Foreløbig literaturliste}
+
+Dette er ikke en begrænsning af fremtidige anvendte ressourcer, men beskrivelse af allerede anvendte ressourcer.
+
+\section{Internet ressourcer}
+\begin{itemize}
+\item atlassian.com
+\item baeldung.com
+\item code.visualstudio.com
+\item christophergs.com
+\item codevoweb.com
+\item colorhexa.com
+\item ctan.org
+\item devwithdave.co.uk
+\item geeksforgeeks.org
+\item github.com
+\item fastapi.tiangolo.com
+\item flaticon.com
+\item ionicframework.com
+\item merriam-webster.com
+\item mongodb.com
+\item multimediedesigneren.dk
+\item ordbogen.com
+\item ordnet.dk
+\item overleaf.com
+\item panabee.com
+\item purepng.com
+\item pythontutorial.net
+\item scrumguides.org
+\item shortcut.com
+\item stackexchange.com
+\item thefreedictionary.com
+\item thesaurus.com
+\item realpython.com
+\item vuejs.org
+\item whois.domaintools.com
+\item wikipedia.org
+\end{itemize}
+
+%%%%%%
+%	Afslutning
+%%%%%%
+	
+\end{document}

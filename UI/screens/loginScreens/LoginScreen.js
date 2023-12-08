@@ -11,19 +11,13 @@ import config from '../../config';
 
 
 const LoginScreen = ({ navigation }) => {
-    //const [username, setUsername] = useState("");
-    //const [email, setEmail] = useState("");
-    //const [password, setPassword] = useState("");
     const [error, setError] = useState({ email: "", password: ""})
     const [loginInfo, setLoginInfo] = useState({ email: '', password: ''})
     const [loading, setLoading] = useState(false);
 
-    //const navigate = useNavigate();
-
     const loginer = new ClientController(config);
 
     const onLogin = (event) => {
-        console.log(`Login: Email: ${ loginInfo.email } Password: ${ loginInfo.password }`);
         event.preventDefault();
         setError(false);
         setLoading(true)
@@ -42,7 +36,6 @@ const LoginScreen = ({ navigation }) => {
         loginer.login(loginInfo.email, loginInfo.password)
             .then( () =>{
                 navigation.navigate('TasksScreen')
-                console.log("success!")
             })
             .catch( (error) => {
                 setLoading(false);

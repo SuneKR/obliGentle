@@ -21,7 +21,7 @@ class model(taskModels.model):
 
 class modelUpdate(taskModels.modelUpdate):
     progress: Optional[int]
-    isActive: Optional[int]
+    isActive: Optional[bool]
 
 # it's class for converting different tasks to a project
 

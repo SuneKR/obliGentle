@@ -1,0 +1,126 @@
+%%%%%%
+%	Præambel
+%%%%%%
+
+%\documentclass{report}
+
+%	Pakker
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[cc]{titlepic}
+\usepackage{verbatim}
+\usepackage{lipsum}
+\usepackage{rotating}
+\usepackage{fancyvrb}
+\usepackage{titling}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[danish]{babel}
+\usepackage{datetime}
+\usepackage{tabularx}
+\usepackage{newclude}
+\usepackage{tikz}
+\usepackage{tablefootnote}
+
+%	Bibloteker
+
+\usetikzlibrary{shapes, arrows}
+
+%	Opsætning
+
+\graphicspath{{./billeder/}}
+
+%	kommandoer
+
+\newcommand{\pic}[2][png]{
+	\includegraphics[width=\textwidth]{./#2.#1}
+}
+
+\newcommand{\fragCom}[1]{
+	\textcolor{LimeGreen}{\texttt{\textbf{#1}}}
+}
+
+\newcommand{\logDay}[2][2]{\section*{\formatdate{#2}{#1}{2023}}}
+
+%environmental setup
+
+\lstset{
+	breaklines=true,
+	breakatwhitespace=true,
+	texcl=true,
+	extendedchars=false,
+	frame=single,
+	tabsize=2
+}
+
+\lstset{literate=%
+	{æ}{{\ae}}1
+	{ø}{{\o}}1
+	{å}{{\aa}}1
+}
+
+%	titel and Aarhus Tech titlecard
+\newcommand{\writer}{Sune Koch Rønnow}
+%\newcommand{\advisor}{Rasmus Ladefoged Wolffram \& Kenneth Løvgren}
+\newcommand{\advisorTwo}{Rasmus Ladefoged Wolffram}
+\newcommand{\advisorOne}{Kenneth Løvgren}
+\newcommand{\advisor}{\advisorOne{} \& \advisorTwo{}}
+\newcommand{\projectName}{ObliGentle}
+\newcommand{\reportType}{unavngivenreport}
+\newcommand{\reportName}{
+	\projectName{}: \reportType{}
+}
+
+\newcommand{\subtitle}[1]{%
+	\posttitle{%
+		\par\end{center}
+	\begin{center}\large#1\end{center}
+	\vskip0.5em}%
+}
+
+\title{\reportName{}}
+\subtitle{Svendeprøve ved \\ \advisorOne{} \\ \& \\ \advisorTwo{} \\ \vspace{0.75\baselineskip} Aarhus Tech}
+\author{\writer{} \\ sune@kochroennow.dk}
+\date{\today}
+%\date{\formatdate{6}{10}{2023}}
+
+\newcommand{\makeTechTitlecard}{
+	\chapter*{Titelblad}
+	\begin{table}[h]
+	\center
+	\begin{tabularx}{\textwidth}{p{.3\linewidth} X}
+	\textbf{Deltagere}		&	\writer{}												\\
+	\textbf{Projektnavn} 	&	\projectName{}											\\
+	\textbf{Skole}			&	Aarhus Tech \newline{} Hasselager Allé 2, 8260 Viby J	    \\
+	\textbf{Projektperiode}	&	\formatdate{13}{11}{2023} - \formatdate{15}{12}{2023}		\\
+	\textbf{Afleveringsdato}&	\formatdate{8}{12}{2023}									\\
+	\textbf{Vejleder}		&	\advisor{}												\\
+	\end{tabularx}
+	\end{table}
+	\section*{Underskrifter}
+	\vspace{3\baselineskip}
+	\hrule
+	\noindent\small \writer{} \null\hfill Dato\\
+	\vspace{2\baselineskip}
+	\hrule
+	\noindent\small \advisorOne{} \null\hfill Dato\\
+	\vspace{2\baselineskip}
+	\hrule
+	\noindent\small \advisorTwo{} \null\hfill Dato\\
+}
+
+% tikz setup
+
+\tikzstyle{terminator} = [rectangle, draw, text centered, rounded corners, minimum height=2em, fill=Magenta!40]
+\tikzstyle{process} = [rectangle, draw, text centered, minimum height=2em, fill=Blue!40]
+\tikzstyle{positive} = [rectangle, draw, text centered, minimum height=2em, fill=Green!40]
+\tikzstyle{negative} = [rectangle, draw, text centered, minimum height=2em, fill=Red!40]
+\tikzstyle{decision} = [diamond, draw, text centered, minimum height=2em, fill=Yellow!40]
+\tikzstyle{input}=[trapezium, draw, text centered, trapezium left angle=60, trapezium right angle=120, minimum height=2em, fill=Cyan!40]
+\tikzstyle{connector} = [draw, -latex']
+\tikzstyle{semiConnector} = [draw, -latex',dotted]
