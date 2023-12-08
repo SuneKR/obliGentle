@@ -45,16 +45,26 @@ class ClientController {
         });
     }
 
-    register(email, password, fullName) {
+    register(email, password) {
+      delete this.apiClient.defaults.headers['Authorization'];
+      
       const registerData = {
         email,
         password,
-        full_name: fullName,
         is_active: true
       };
 
       return this.apiClient.post('/auth/register', registerData).then(
         (response) => { return response.data; });
+    }
+
+    forgottenPassword(email) {
+      const forgottenData = {
+        email
+      };
+
+      return this.apiClient.post('/auth/forgot-password', forgottenData)
+        .then((response) => { return response.data; })
     }
 
     logout() {

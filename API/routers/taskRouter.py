@@ -20,17 +20,16 @@ from models import taskModels
 
 class taskRouter(interface.routerInterface):
     # class constructor    
-    def __init__(self,dbname="test"):
-        super().__init__(taskType="task", taskModel=taskModels, dbname="test")
+    def __init__(self):
+        super().__init__(taskType="task", taskModel=taskModels)
         self.taskType = "task"
         self.taskModel = taskModels
-        self.dbname="test"
         self.router = APIRouter()
         
         # routes
         # includes the 
         self.router.add_api_route("/", super().routeToCreation, methods=["POST"], response_description="Create")
-        self.router.add_api_route("/{id}", super().routeToSingularity, methods=["GET"], response_description="Read one")
+        self.router.add_api_route("/{id}", super().routeToOneThing, methods=["GET"], response_description="Read one")
         self.router.add_api_route("/", super().routeToEverything, methods=["GET"],response_description="Read all")
         self.router.add_api_route("/{id}", super().routeToUpdate, methods=["PUT"],response_description="Update")
         self.router.add_api_route("/{id}", super().routeToOblivion, methods=["DELETE"],response_description="Delete")

@@ -65,7 +65,7 @@ async def authenticated_route(user: User = Depends(current_active_user)):
     return {"message": f"Hello {user.email}!"}
 
 @app.get("/status")
-async def getStatus(): return {"status": "Running"}
+async def getStatus(user: User = Depends(current_active_user)): return {"status": "Running"}
 
 # The following are routes to the routers
 
@@ -80,10 +80,10 @@ app.include_router(fastapi_users.get_users_router(UserRead, UserUpdate), prefix=
 
 ## These are the different task routes
 
-app.include_router(aRouter.appointmentRouter().router,tags=["appointments"],prefix="/appointments")
-app.include_router(cRouter.choreRouter().router,tags=["chores"],prefix="/chores")
-app.include_router(pRouter.projectRouter().router,tags=["projects"],prefix="/projects")
-app.include_router(tRouter.taskRouter().router,tags=["tasks"],prefix="/tasks")
+app.include_router(aRouter.appointmentRouter().router, prefix="/appointments", tags=["appointments"])
+app.include_router(cRouter.choreRouter().router, prefix="/chores" ,tags=["chores"])
+app.include_router(pRouter.projectRouter().router,prefix="/projects", tags=["projects"])
+app.include_router(tRouter.taskRouter().router, prefix="/tasks", tags=["tasks"])
 
 # The async database connection
 # It links to it's own separate configuration file (later)
@@ -95,6 +95,7 @@ async def on_startup():
         database=dbc,
         document_models=[
             User,
+            taskModels.model
         ],
     )
 

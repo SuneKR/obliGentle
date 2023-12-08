@@ -7,7 +7,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 // Local imports
 //import { AddTaskScreen, TaskDetailScreen, TaskScreen } from './screens';
-import { ForgottenScreen, LoginScreen, RegistrationScreen } from 'screens';
+import { ForgottenScreen, LoginScreen, RegistrationScreen, TasksScreen,
+  ChoresScreen, ProjectsScreen, AppointmentsScreen
+} from 'screens';
 
 // Variables
 const Stack = createStackNavigator();
@@ -38,6 +40,26 @@ function MyStack() {
         name="RegistrationScreen"
         component={ RegistrationScreen }
         options={ { title: 'New user' } }
+      />
+      <Stack.Screen
+        name="AppointmentsScreen"
+        component={ AppointmentsScreen }
+        option={ { title: 'Appointments' } }
+      />
+      <Stack.Screen
+        name="ChoresScreen"
+        component={ ChoresScreen }
+        option={ { title: 'Chores' } }
+      />
+      <Stack.Screen
+        name="ProjectsScreen"
+        component={ ProjectsScreen }
+        option={ { title: 'Projects' } }
+      />
+      <Stack.Screen
+        name="TasksScreen"
+        component={ TasksScreen }
+        option={ { title: 'Tasks' } }
       />
       { /*
       <Stack.Screen

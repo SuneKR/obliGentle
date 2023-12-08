@@ -2,16 +2,12 @@
 // Imports
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Button, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { Form, useNavigate } from 'react-router-dom';
+import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 // Local imprts
 import { newStyles } from 'designs';
 import { ClientController } from 'controllers';
 import config from '../../config';
-import { FormInput } from 'components';
-
-
 
 
 const LoginScreen = ({ navigation }) => {
@@ -19,7 +15,7 @@ const LoginScreen = ({ navigation }) => {
     //const [email, setEmail] = useState("");
     //const [password, setPassword] = useState("");
     const [error, setError] = useState({ email: "", password: ""})
-    const [loginForm, setLoginForm] = useState({ email: '', password: ''})
+    const [loginInfo, setLoginInfo] = useState({ email: '', password: ''})
     const [loading, setLoading] = useState(false);
 
     //const navigate = useNavigate();
@@ -27,25 +23,25 @@ const LoginScreen = ({ navigation }) => {
     const loginer = new ClientController(config);
 
     const onLogin = (event) => {
-        console.log(`Login: Email: ${ loginForm.email } Password: ${ loginForm.password }`);
+        console.log(`Login: Email: ${ loginInfo.email } Password: ${ loginInfo.password }`);
         event.preventDefault();
         setError(false);
         setLoading(true)
 
-        if(loginForm.email.length <= 0 )
+        if(loginInfo.email.length <= 0 )
         {
             setLoading(false)
             return setError({ email: "Please enter email address" })
         }
-        if(loginForm.password.length <= 0 )
+        if(loginInfo.password.length <= 0 )
         {
             setLoading(false)
             return setError({ email: "Please enter password" })
         }
 
-        loginer.login(loginForm.email, loginForm.password)
+        loginer.login(loginInfo.email, loginInfo.password)
             .then( () =>{
-                //navigate('/tasks')
+                navigation.navigate('TasksScreen')
                 console.log("success!")
             })
             .catch( (error) => {
@@ -53,63 +49,67 @@ const LoginScreen = ({ navigation }) => {
                 setError(true);
                 console.log(error)
             })
+    }
 
+    const onRegister = () => {
+        navigation.navigate("RegistrationScreen");
+    }
+
+    const onForget = () => {
+        navigation.navigate("ForgottenScreen");
     }
 
     return (
         <View style={ newStyles.container }>
-            <Image style={ newStyles.image } source={ require('../../assets/aarhusTechLogo.png') } />
-
             <StatusBar style="auto"/>
 
-            <form onSubmit={ (event) => onLogin(event) }>
+            <View>
                 <View style={ newStyles.inputView }>
-                    <FormInput style={ newStyles.inputView }
+                    <Text>Login:</Text>
+                    <TextInput style={ newStyles.textInput }
                         Type={ "text"}
                         name={ "email" }
                         label={ "Email" }
                         error={ error.email }
-                        value={ loginForm.email }
-                        onChange={ (event) => setLoginForm({ ...loginForm, email: event.target.value }) }                        
+                        value={ loginInfo.email }
+                        onChange={ (event) => setLoginInfo({ ...loginInfo, email: event.target.value }) }                        
                     />
+                    <Text>{ "\n" }</Text>
                 </View>
                 <View style={ newStyles.inputView }>
-                    <FormInput style={ newStyles.textInput }
+                    <Text>Password:</Text>
+                    <TextInput style={ newStyles.textInput }
                         Type={ "password"}
                         name={ "password" }
                         label={ "Password" }
                         error={ error.password }
-                        value={ loginForm.password }
-                        onChange={ (event) => setLoginForm({ ...loginForm, password: event.target.value }) }
-                        secureText={ true }
-                        placeholder="Password"
+                        value={ loginInfo.password }
+                        onChange={ (event) => setLoginInfo({ ...loginInfo, password: event.target.value }) }
+                        secureTextEntry={ true }
                         placeholderTextColor="#003f5c"
                     />
-                    <Button style={ newStyles.loginText}
-                        title={ "Login" }
-                        loading={ loading }
-                        error={ error.password }
-                        onPress={ (event) => onLogin(event) }
-                        />
+                    <Text>{ "\n" }</Text>
                 </View>
-            </form>
-
-            <View>
-                <Text>Options:</Text>
-            </View>
-
-            <View style={ { flexDirection: 'row', justifyContent: 'center' } }>
-                <Button style={ newStyles.registerBtn }
-                    onPress={ () => navigation.navigate('RegistrationScreen') }
-                    title="Registration"
-                />
-                <Button style={ newStyles.forgottenBtn }
-                    onPress={ () => navigation.navigate('ForgottenScreen') }
-                    title="Forgot Password?"
-                />
-                
-                    
-                
+                <View style={ newStyles.buttonView }>
+                    <TouchableOpacity  style={ newStyles.priBtn }
+                        loading={ loading }
+                        onPress={ (event) => onLogin(event) }
+                    >
+                        <Text>Login</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity  style={ newStyles.secBtn }
+                        loading={ loading }
+                        onPress={ (event) => onRegister(event) }
+                    >
+                        <Text>Register</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity  style={ newStyles.secBtn }
+                        loading={ loading }
+                        onPress={ (event) => onForget(event) }
+                    >
+                        <Text>Forgotten Password</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
     )
@@ -120,5 +120,13 @@ export default LoginScreen;
 /*
 onSubmitEditing={ ()=> this.passwordInput.focus() }
 ref={ (input) => this.passwordInput = input }
+<Image style={ newStyles.image } source={ require('../../assets/aarhusTechLogo.png') } />
 
+width: '80%',
+        borderRadius: 25,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: 20,
+        backgroundColor: '#ff1493'
 */

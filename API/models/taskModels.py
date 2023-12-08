@@ -5,13 +5,18 @@
 
 # imports
 
+from beanie import Document
 from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel, Field
+from bson.objectid import ObjectId
+
+from configurations.database import get_user_db
 
 # The datamodels class including the config.
 
-class model(BaseModel):
+class model(Document):
+    _id: Optional[ObjectId] = Field(alias="id")
     name: str = Field(...)
     description: str = Field(...)
     type: str = "task"
@@ -21,6 +26,9 @@ class model(BaseModel):
     class Config:
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
+        
+    class Settings:
+        name = str(get_user_db())
 
 # the model for updating the class
 # which allow for only updating some values
