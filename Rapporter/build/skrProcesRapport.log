@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.30)  8 DEC 2023 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.30)  8 DEC 2023 13:37
 entering extended mode
 **./skrProcesRapport.tex
 (skrProcesRapport.tex
@@ -1017,7 +1017,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 3.
  [2
 
-])
+]
+Overfull \hbox (3.12837pt too wide) detected at line 52
+ []\T1/cmr/m/n/9 VIII
+ []
+
+
+Overfull \hbox (3.12837pt too wide) detected at line 60
+ []\T1/cmr/m/n/9 XIII
+ []
+
+
+Overfull \hbox (3.12837pt too wide) detected at line 61
+ []\T1/cmr/m/n/9 XIII
+ []
+
+
+Overfull \hbox (2.87286pt too wide) detected at line 62
+ []\T1/cmr/m/n/9 XIV
+ []
+
+
+Overfull \hbox (2.87286pt too wide) detected at line 63
+ []\T1/cmr/m/n/9 XIV
+ []
+
+
+Overfull \hbox (6.46782pt too wide) detected at line 66
+ []\T1/cmr/m/n/9 XVII
+ []
+
+
+Overfull \hbox (6.46782pt too wide) detected at line 67
+ []\T1/cmr/m/n/9 XVII
+ []
+
+
+Overfull \hbox (2.87286pt too wide) detected at line 68
+ []\T1/cmr/m/n/9 XIX
+ []
+
+)
 \tf@toc=\write6
 \openout6 = `skrProcesRapport.toc'.
 
@@ -1413,27 +1453,67 @@ Overfull \hbox (39.2524pt too wide) in paragraph at lines 58--58
 ) [17
 
 ]
-Overfull \vbox (38.50961pt too high) has occurred while \output is active []
+Overfull \vbox (13.63658pt too high) has occurred while \output is active []
 
 
-[18] [19]
+[18]
 Kapitel 4.
-[20
+[19
+
+] [20]
+Kapitel 5.
+
+Overfull \hbox (11.85037pt too wide) in paragraph at lines 410--410
+[][][]\T1/cmr/m/n/8 https://github.com/SuneKR/obliGentle/blob/main/Efter%20afle
+vering/efterAFlevering.md| 
+ []
+
+[21
+
+] [22]
+Kapitel 6.
+[23
 
 ]
 Bilag A.
 [1
 
 
-] [2] (D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.aux)
+] [2]
+Bilag B.
+[3
+
+] [4] [5] [6] [7] [8] [9]
+Overfull \hbox (45.45769pt too wide) in paragraph at lines 817--821
+\T1/cmr/m/n/9 løsninger(https://mui.com/material-ui/react-tooltip/#main-content
+)(https://mui.com/material-
+ []
+
+[10] [11]
+Overfull \hbox (28.24347pt too wide) in paragraph at lines 916--919
+\T1/cmr/m/n/9 sions. Jeg tog ud-gangs-punkt i an-be-fa-lin-ger fra den-ne si-de
+: https://reactnativecentral.com/top-
+ []
+
+[12]
+Overfull \hbox (63.54224pt too wide) in paragraph at lines 947--950
+\T1/cmr/m/n/9 users.github.io/fastapi-users/12.1/configuration/full-example/ ht
+tps://fastapi-users.github.io/fastapi-
+ []
+
+[13] [14] [15] [16]
+Bilag C.
+[17
+
+] [18] [19] (D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.aux)
 Package rerunfilecheck Info: File `skrProcesRapport.out' has not changed.
-(rerunfilecheck)             Checksum: 55CB833504619462FF320BDB9C8852EA;5433.
+(rerunfilecheck)             Checksum: 482168443E52C9FDF6FBE8630C2EC941;8483.
  ) 
 Here is how much of TeX's memory you used:
- 26860 strings out of 478868
- 512504 string characters out of 2849283
- 1002482 words of memory out of 3000000
- 44098 multiletter control sequences out of 15000+600000
+ 26960 strings out of 478868
+ 513659 string characters out of 2849283
+ 1002492 words of memory out of 3000000
+ 44145 multiletter control sequences out of 15000+600000
  421888 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,17n,88p,1310b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1457,9 +1537,9 @@ C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.
 pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
 1728.pk>
 Output written on D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.pdf (
-23 pages, 301702 bytes).
+43 pages, 397817 bytes).
 PDF statistics:
- 1157 PDF objects out of 1200 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1452 PDF objects out of 1728 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 549 words of extra memory for PDF output out of 10000 (max. 10000000)
 

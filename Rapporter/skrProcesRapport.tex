@@ -390,7 +390,52 @@ Grundet min begrænsede erfaring og entusiasme for Ionic og frontend udvikling g
 Det har været rigtig lærerigt at lære et helt nyt framework fra bunden af og havde det ikke været en svendeprøve, så kunne jeg nok også have hygget mig med det, men det var simpelthen et dårligt valg til en svendeprøve, så jeg skulle have holdt fast i Ionic.
 Det har simpelthen taget for lang tid og alt for meget arbejdstid er gået med frontend udvikling i stedet for noget der kan vises frem, så jeg skulle have fokuseret mere på at fremvise mine kvalifikationer end at tillære mig nye.
 
+\chapter{Mangler og videreudvikling}
+
+\section{Mangler}
+Grundet tidspres og mange problemer med React Native, har jeg måtte aflevere et program med nogle mangler.
+
+\begin{itemize}
+\item Det har problemer med at fetch'e på task menu'en, selvom API virker og det har virket tidligere
+\item Den tager sin database for access-token i stedet for brugeren.
+\item Jeg har ikke fået implementeret 2faktor autorisering i frontend, så derfor har jeg også fjernet den fra backend
+\item Jeg har ikke fået lagt API'en på nettet, så applikationen kan kun køres lokalt
+\item jeg fik ikke lavet noget AI til programmet
+\item fordi appointments, chore og project skærme er udvidelser af task skærmen, så de ikke implementeret færdigt endnu, selvom de er klar til
+\item Der mangler et brugervenligt og pænt design
+\end{itemize}
+
+Mange af disse er jo ikke store ting, men da jeg skulle samle komponenter af flere mindre programmer, som umiddebart virkede, så endte jeg med alle disse fejl.
+
+Jeg vil dog prøve at få nogen af dem inden det mundlige forsvar. Jeg notere ændringer, som jeg laver her\footnote{https://github.com/SuneKR/obliGentle/blob/main/Efter\%20aflevering/efterAFlevering.md}
+
+\section{Videreudvikling}
+
+Der var dog flere idéer, som jeg tidligere i processen indså, at jeg ikke kunne nå, men stadig er gode idéer at kunne implementere i programmet:
+
+\begin{itemize}
+\item Flere OAuth forskellige muligheder
+\item Billedhåndtering
+\item Tag profil direkte fra enheden
+\item Muligheder for sprog
+\item Del opgaver med andre profiler
+\item Email påmindelse
+\item Mulighed for at vælge design temaer
+\item Mulighed for at oprette andre slags opgaver med dets egne regler
+\item Ai som styrer notifikationer
+\item AI som tilføjer flere opgavetyper for en
+\item Stemme til AI
+\end{itemize}
+
+
 \chapter{Konklusion}
+
+Det har været et lærerigt projekt og selvom jeg er ret frustreret over at aflevere noget, som ikke helt virker, som det skal, så er jeg egentlig ok tilfreds med meget af koden og jeg tror med lidt finpudsning, så kan det blive et godt projekt.\par{}
+Da jeg skrev case, kravspecifikationen og problemformuleringen var tanken, at jeg ville vælge noget, som var realiserbart og med mulighed for at bygge videre på det. \par{}
+Den helt store fejl, har dog været at vælge at bygge frontend’en i React Native. Det var det forkerte valg. Som nævnt tidligere, er det ikke fordi, at jeg ikke har fået noget ud af det, men det har ikke været tidseffekt og har efterladt mig en situation, hvor jeg fået en del ud af det selv, men som ikke gav mig optimale betingelser for at demonstrere min egen formåen.\par{}
+Angående proces var jeg egentlig ok tilfreds, men man kan selvfølgelig ikke være helt tilfreds med den, når det braser sammen i sidste øjeblik. Det har været meget hektisk her til sidst og den sidste del af processen har også været meget frustrerende.\par{}
+Men jeg synes egentlig, at jeg har fået noget fornuftigt ud af det i alt roden og produktet, på trods af manglende finjusteringer, kan godt noget, ligesom jeg også er godt tilfreds med mit skriftlige produkt, omend den del også har holdt hårdt.\par{}
+Hvis jeg slut skal fremhæve to ting, så er det mine metodiske overvejelser i metodeafsnittet og implementeringen af i min arkitektur. Det er selvfølgelig tydligere tidligere i processen, men i det er der og skaber en god bund for, hvad der ellers er usleppent projekt.
 
 \clearpage
 
@@ -398,34 +443,49 @@ Det har simpelthen taget for lang tid og alt for meget arbejdstid er gået med f
 \appendix
 \renewcommand{\thechapter}{\Alph{chapter}}
 
-\chapter{Foreløbig literaturliste}
+\chapter{Literaturliste}
 
-Dette er ikke en begrænsning af fremtidige anvendte ressourcer, men beskrivelse af allerede anvendte ressourcer.
+Disse er formentlig ikke dækkende for alle henvisning. Find flere henvisninger i materialet.
 
 \section{Internet ressourcer}
 \begin{itemize}
+\item Agilemanifesto.org
+\item Agileit.dk
+\item Agilealliance.org
 \item atlassian.com
+\item back4app.com
 \item baeldung.com
 \item code.visualstudio.com
+\item conda-forge.org
 \item christophergs.com
 \item codevoweb.com
 \item colorhexa.com
 \item ctan.org
+\item developer.android.com
+\item docs.parseplatform.org
+\item fastapi.tiangolo.com
+\item flaticon.com
 \item devwithdave.co.uk
 \item geeksforgeeks.org
 \item github.com
-\item fastapi.tiangolo.com
-\item flaticon.com
+\item howtogreek.org
 \item ionicframework.com
+\item npmjs.com
+\item medium.com
 \item merriam-webster.com
 \item mongodb.com
 \item multimediedesigneren.dk
+\item nodejs.org
 \item ordbogen.com
 \item ordnet.dk
 \item overleaf.com
 \item panabee.com
+\item pandoc.org
 \item purepng.com
 \item pythontutorial.net
+\item pypi.org
+\item reactnative.dev
+\item scrum.org
 \item scrumguides.org
 \item shortcut.com
 \item stackexchange.com
@@ -436,6 +496,748 @@ Dette er ikke en begrænsning af fremtidige anvendte ressourcer, men beskrivelse
 \item whois.domaintools.com
 \item wikipedia.org
 \end{itemize}
+
+\chapter{Logbog}
+
+Dette er min logbog og inkluderer også min daglige ajourføring.
+Logbogen er skrevet i en uformel tone og jeg har i høj grad også selv brugt logbogen til at reflektere.\par{}
+De er navngivet efter [årstal][måned][dato]
+
+\section{231113}
+
+Brugte dagen på at blive introduceret til svendeprøve samt at lave case og problemformulering. Samt forberede meget af det andet materiale til godkendelse.
+ 
+Brugte noget tid på at komme på et navn. Jeg endte med at vælge "obligentle", som en sammentrækning af "Oblige/Obligation" og "Gentle", hvilket flugter ret godt med, hvad jeg gerne vil have programmet til at kommunikere, at det er en nænsom måde at få ordnet ens forpligtelser. Jeg burde teste navnet, men nu må vi se, om det er noget, som jeg får tid til.
+Desuden er både obligentle.com og obligentle.dk ledigt i skrivende stund, hvilket også er godt tegn.
+Igennem whois.domaintools.com kan jeg også konstatere, at det også er tilfældet for:
+•	Net
+•	Org
+•	Info
+•	Biz
+•	Us
+ 
+Jeg kommer ikke til at købe så mange domæner, men det betyder nok, at jeg ikke bruger et etableret firmas navn.
+ 
+Jeg lavede et første udkast til case og problemformulering og fik det  sendt til Kenneth og Rasmus.
+Umiddelbart blev det godkendt, men Kenneth, som mine primære vejleder, ville gerne lige mødes og snakke om det. Umiddelbart advarer han om, at jeg kan have slået et for stort brød om. Personligt, tror jeg i højere grad, at det handler om, at jeg ikke får beskrevet noget for åbent, men nu må vi se.
+ 
+Jeg mangler at beskrive, hvorledes jeg vil håndtere projektstyringen. Det har jeg i sinde at beskrive i morgen, men det bliver noget morgen-opsummering med nogle faste spørgsmål.
+ 
+Jeg fik også aftalt korrektur læsning med min kusine, men der mangler stadig lidt detaljer.
+
+\section{231114}
+Mødtes med vejleder i morges om projektet. På den ene side, bekræftede Kenneth, at der var kød nok på projektet, men senere på dagen efterlyste han noget mere teknisk dybde og en ting som 2fa eller at kunne sende mails.
+Mit take-away er, at jeg i så fald skal vælge 2-3 at de ekstra features, som er "dybere" teknisk - for ikke blot at vise det, men for at vise det på en overbevisende maner. Jeg har oprettet en liste i OneNote med feature-ideer, hvor jeg har skrevet en note om det - det er alligevel lettere end at designe frontend.
+Mockup farvevalget blev også diskuteret og jeg var alene i min entusiasme. Jeg må have en blind mands sans for farver.
+ 
+Jeg lavede tidsplanen, mock-up, krav spec og rettede gårsdagens arbejde.
+Mock-up blev ret detaljeret. Det var en hjælp for mig.
+ 
+Kenneth anbefalede, at jeg lavede et flowchart. Det havde jeg egentlig håbet at slippe for, for jeg synes ikke, at de er særlig anvendelige og tager lang tid at lave, men han har en pointe, så det vil jeg lave i morgen og så komme det senere i gang med at programmere. Muligvis giver det mening, 
+eventuelt sammen med nogle database datamodeller.
+ 
+I forbindelse med tidsplanen designede jeg også processen:
+•	Dagligt laver jeg en ajourføring, som tager udgangspunkt i en række faste spørgsmål
+•	Onsdag formiddag planlægger jeg sprint og skriver det ind i et kanban board
+•	Tirsdag eftermiddag evaluerer jeg det foregående sprint med særligt fokus på proces og tidsplan
+Dette lyder for meget som en scrum/agile, men det er det jo ikke helt. Så derfor burde jeg overveje muligvis at ændre ordvalget lidt - ligesom jeg har gjort med den daglige ajourføring.
+
+\section{231115}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Flowchart, Oplader*, nej
+ 
+Hvad er dagens prioriteter?
+Flowchart \& Kanban**
+ 
+(*) Jeg mangler min oplader. Nhat og Morten sagde, at det var til at låne. Ellers må jeg tage hjem og hente min egen. Så det var til at ordne. Det ordnede sig ret nemt.
+ 
+(**) Foruden at lave sprintopgaver, vil jeg også afsøge hvilket kanban board er bedst.
+Dagens prioriteter er i rækkefølge:
+•	Flowchart
+•	Afsøge bedste Kanban løsninger
+•	Planlægge sprint
+•	Begynde at kode
+Det er hensigt at komme til at kode i dag. Med fordel kunne man også beskrive datamodeller, men det bliver kun, hvis der er tid til det, fordi det kan også gøres senere.
+ 
+Nhat foreslog i øvrigt, at jeg brugte Flutter eller React native i stedet for Iconic.  Det må afsøges, men lyder som en god idé.
+ 
+Jeg kodede flowchart'et i LaTeX. Det oplever jeg personligt som at være lettere, særligt fordi jeg synes flowcharts er uforholdsvis besværlige i forhold til udbytte, så det hjælper altid, at man får lov at programmere lidt.
+Jeg skulle lige skifte bekendtskab med TikZ igen og havde lidt problemer med at få dvipnames fra xcolor-pakken til at spille sammen med TikZ-pakken, men endte med en løsning (umiddelbart er det lavet så smart, at rækkefølgen af importerne har betydning i denne sammenhæng og det var vigtigt, at xcolors skulle indlæses først).
+Jeg valgte at fokusere på login processen, som blev ret minutiøst. For "aftale", "projekter" og "tjanser" fokuserede jeg meget på processerne og ikke så meget de enkelte knapper. Det kommer jeg dog til at gøre senere. Angående "indstillinger", "profil" og "kalender" blev de nærmest kun nævnt.
+Jeg satser dog på at lave et opdateret flowchart senere, når der er mere programmeret
+ 
+Desuden fandt jeg fodnote problem i tabellerne, navnlig at de ikke blev lavet. Jeg fiksede det ved at importere tabelfoodnote. Den lavede dog 3 dublet fodnoter, men jeg besluttede, at det var mindre vigtigt at fikse nu og det var vigtigere at få mit materiale godkendt.
+ 
+Jeg endte med at vælge shortcut som Kanban  board. Det brugte vi også på H3. Jeg har i mellemtiden brugt trello hjemme, men jeg synes ikke helt, at den kunne det samme, så derfor føles valget rigtigt - endvidere tillader det mig at sammenligne 1-1 med vores forhenværende projekt, hvilket var rart, da jeg satte det op.
+Det kan ikke undgå at slå mig, at det er lidt underligt at bruge et produktivitetsredskab til et program, som også er lidt en kritik af produktivitetsredskaber. Men det giver jo mening i den forstand, at shortcut og andre lignende værktøjer virker for godt som arbejdsredskaber, men jeg ikke gider at opgøre min fritid i produktivitets sprints og lignende.
+ 
+Jeg fik oprettet en masse opgaver. Helt sikkert ikke alle, men nok til, at der er en del at tage fat i. Det fungere i hvert fald allerede godt og giver en del overblik.
+ 
+Jeg gik i gang med at oprette projektet og tog den beslutning, at jeg vil oprette et helt nyt python miljø i anconda, som jeg vil bruge til at under svendeprøven. Jeg kaldte miljøet for "svendeprove" og oprettede det som python 3.11.0.
+Føler ikke, at det var strengt nødvendigt, men at det giver mig en rene oplevelse og på sigt gør, at jeg muligvis kan undgå bøvl, fordi jeg er ikke er den bedste til at gøre rent eller holde orden i mine python miljøer.
+Jeg oprettede projektet og forbandt det til github.
+Jeg besluttede mig for, at jeg vil forsøge at bruge "Comment first", altså man skriver alle kommentarer og måske lidt pseudo kode, før man begynder at kode - i modsætning til at gøre det efter. Jeg er spændt på, hvor længe jeg kan holde det, men nu forsøger jeg. Det har også den fordel, at selvom jeg skal vente på godkendelse, før jeg egentlig må kode, så er der ingen regler om at skulle vente med at kommentere på ting. Jeg gik i gang med at lave "comment first" af main.py filen - det var ikke så meget, men det hjalp lidt.
+ 
+Det sidste af dagen gik med at researche 2FA og bruge best practice og fandt et python modul, FastAPI-users, som understøttede både 2FA og hjalp med brugerhåndtering. Jeg fandt også en artikel til at implementere 2FA selv.
+På den ene side vil jeg godt demonstrere, at jeg selv kan finde ud af det. På den anden side, så er det formentlig sikkerhedsmæssigt mere forsvarligt og jeg kan formentlig finde nogle andre steder at vise noget teknisk formåen.
+ 
+I dag var en lang dag, så i morgen har jeg planlagt at korte lidt af dagen af til gengæld. Jeg er den heldige situation, at jeg burde kunne fokusere på lige at få lavet API'en i morgen, så det kunne jo være mægtigt rart. 
+Alt i alt en god og produktiv dag, hvis jeg selv skal sige det.
+
+\section{231116}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, Grøntlys(*), Nej
+ 
+Hvad er dagens prioriteter?
+Metode og Datamodels
+ 
+(*) Mangler grønt lys med at gå i gang.
+ 
+Jeg tager det roligere i dag, har overarbejdet meget i starten af ugen, men kigger lidt på metodeafsnittet. Hvis jeg får grønt lys, så skal jeg dog i gang og få lavet mest muligt.
+Jeg orkede ikke lige at rette gårsdagens log, da jeg kiggede på det. Det gør jeg senere i dag, men lader den del af punktet stå somikke-udfyldt indtil jeg har udfyldt det.
+ 
+Jeg har besluttet mig for at prøve FastAPI-user og se om det ikke giver mening i forhold til sikkerhed. Det er sikrere og om det viser nok teknisk dybde, må vi se, men ellers får jeg nok mere tid.
+Jeg bør lave en liste over alle anvendte moduler, som jeg bruger.
+ 
+I samme henseende besluttede jeg mig for, at jeg vil prøve at bruge flutter på mandag. Så har jeg en hel dag til at kigge på det, men kan stadig nå at lave en helt rudimentær front i iconic, hvis det ikke dur, om tirsdagen. Jeg ved også, hvor meget jeg mangler inden review, så jeg bruger dagen på noget, hvis nødvendigt.
+Det kunne være fedt at nå så langt med de andre ting inden da som muligt, da jeg i så fald ville udvikle i flutter og eventuelt også komme længere end tidsplanen og virkelig for fordybet mig i det.
+ 
+Dagen gik med at kigge på metodeafsnittet, men det var ærligt talt ikke min mest produktive dag, men jeg har også lagt mig i selen de 3 første dage, så derfor tænker jeg egentlig, at det går.
+
+\section{231117}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, nej
+ 
+Hvad er dagens prioriteter?
+API
+ 
+Jeg startede dagen med at rydde op i kanban boardet og sørget for, at det var opdateret.
+Jeg endte dog også med at smide en del ekstra opgaver ind i backlogen udenfor iteration. Mange af dem er opgaver, som skal laves på et tidspunkt, men som jeg ikke nødvendigvis vil presse ind i dette sprint.
+Jeg endte også med at justere mine "space" på shortcut for at optimere min effektivitet.
+Jeg arbejdede primært på API'en og fik også lavet noget, men blev afbrudt af noget familiemæssigt og kom ikke tilbage til det senere på dagen.
+Jeg fik dog koordineret rette-muligheder sammen med Kusine og vi aftalte, at jeg sendte til hende i word format og ventede med at opsætte det i LaTeX til efter hun har haft mulighed for at rette det.
+
+\section{231120}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, ja*
+ 
+Hvad er dagens prioriteter?
+API og frontend
+ 
+(*) Jeg kan se på mit arbejdsflow sidste uge, at jeg arbejdede en del over, hvilket gik ud over torsdag og fredag, hvor jeg simpelthen var mindre oplagt og effektiv. Det må jeg tage med retrospektivt i morgen.
+ 
+Snakkede med Kenneth, som anbefalede mod flutter og anden ukendt frontend, samt at skifte MongoDB ud med firebase.
+Over weekenden har jeg tænkt over det med teknisk dybde og lave noget med AI. Jeg besluttede mig for, at jeg laver app'en færdig som beskrevet, og så bagefter forsøger at lave noget AI ovenpå. Det ville gøre, at jeg endte med at have et færdigt produkt, som jeg lavede det mere usikre ovenpå. Det bærer faren med, at jeg muligvis skal lave noget færdigt, men på den anden side, så er det ikke nødvendigvis entydigt skidt og jeg tror ikke, at det bliver helt grundlæggende, at jeg må lave noget om.
+Kenneths kritik mod flutter handler om, at jeg bør fokusere på, hvad jeg kan. Men Nhats kritik er også gyldig.
+Jeg laver API'en færdig, så overvejer jeg det lige igen.
+ 
+Jeg arbejdede også med min anaconda environment, som virkede, men meldte fejl på pakkerne. Det handlede om, at jeg skulle, installerede dem ved at bruge conda-forge kanelen(https://conda-forge.org/\#about), som er et "community"-drevet "repository", som tilbyder mange pakker, som ikke er anaconda default "repositories". Jeg installerede dem først bare direkte, men endte med at tilføje conda-forge til environmentets channels, således det bare skulle virke fremover.
+Hans kritik mod flutter handler om, at jeg bør fokusere på, hvad jeg kan. Men Nhats kritik er også rigtigt. Laver api'en færdig, også kigger jeg på det.
+ 
+Endte med at få lavet datamodellerne færdige, men må indrømme, at mit "comment first" princip snarere blevet en iterativ udvidelse af skiftevis kode og kommentarer, men det hjælper mig til at skrive bedre kode og kommentarer, så jeg holder fast i den.
+ 
+Jeg endte med at sidde lidt fast i, hvordan jeg bedst muligt kunne skrive hjælpe funktionerne toDict funktionerne. Endte med ikke at ville sidde fast i det og ikke fokusere på at skrive den optimalt i forhold til "inheritance", men bare skrive den grimt.
+ 
+Jeg endte med også at være lidt mentalt brugt, imens jeg skrev mine routers og endte med at tage en pause. Oplevede at jeg gik i gang med at skrive det dumt i stedet for at holde mig til SOLID principperne og det gik op for mig, at hvis jeg ikke passede på, så endte jeg formentlig med at skulle skrive det helt om.
+Jeg har generelt set oplevet, at jeg var ret brugt og måtte tvinge mig selv i gang.
+
+\section{231121}
+Jeg prøvede flere forskellige ting for at komme i gang og få lavet noget, men for at være ærlig, så var hovedet ikke bare til det i dag.
+Jeg prøvede at koncentrere mig om forskellige opgaver, om at skrive, om at kode, prøvede at tage pauser og prøvede at tvinge mig selv.
+Det gav ikke alverden og jeg besluttede mig til sidste for, at det ikke gav alverden og jeg måtte prøve igen om aftenen eller tage fat igen i morgen.
+Uanset om det fungerer i aften, så må procesevalueringen udskydes til i morgen.
+ 
+Det fungerede heller ikke om aftenen.
+
+\section{231122}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Gårsdagen*, nej, gårsdagen*
+ 
+Hvad er dagens prioriteter?
+App skitse**; \& retrospektiv
+ 
+(*) Det åbenlyse svar er, at en dag inddrages fra weekenden og alt udskydes med en dag.
+Jeg tror, at jeg kørte mig selv for hårdt i sidste uge og weekenden og havde brug for en hviledag.
+Men må lige tage mere under retrospektivet senere i dag.
+Det her ikke optimalt, men til gengæld føler jeg mig mere ovenpå i dag.
+ 
+(**) lave API'en færdig, lav en rudimentær frontend og få dem til at spille sammen.
+Hvis der er tid, så begynd at implementere fastapi-users
+ 
+Jeg stødte ind i nogle udfordringer med at lave klasser med inheritance i routerne. Jeg fejlsøgte ved at lave en metode som funktioner uden for en klasse, men det drillede stadig at få oprettet det rigtigt med inheritance.
+Jeg endte med at bruge en del tid på at research'e problematikken og endte med at udskyde evalueringen.
+
+\section{231123}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Routers*,routers*, ja**
+ 
+Hvad er dagens prioriteter?
+App skitse**
+ 
+(*) Problemet med nedarving mellem de forskellige "router" klasser, skal der styr på i dag. Føler, at jeg er tæt på at finde og løse problemet og derfor lader jeg det tage topprioritet i dag.
+ 
+(**) Jeg vil have styr på "appskitsen", en rudimentær frontend koblet på API. Det blokerer lidt processen, så derfor udskyder jeg lige procesevalueringen og planlægningen af næste forløb indtil der er styr på den.
+ 
+Jeg føler mig egentlig ok med det, selvom selvfølgelig er irriterende at have tekniske problemer. Jeg tror også, at jeg skal huske, at jeg har en ekstra dag i denne uge - så planen sikkert ikke er helt så skidt ud, som jeg først var bange for.
+ 
+Fik styr på "router"'ne og fik nedarving til at virke, sådan da. For POST og PUT nedarvingen, blev jeg nødt til at skrive metoderne fra bunden for alle klasser. Det vil jeg fikse senere, lige nu har jeg brugt nok tid på det.
+Ellers fungerer det godt. Jeg har tilføjet endnu en "read" metode, som finder alle af en gruppe, som bruges til alle "tasks" af en type. Lige nu bruger jeg router interfacen både, som interface og som router for task. Det skal jeg også gøre noget ved, men python lader mig gøre det, så det er ok for nu, indtil jeg lige får styr på nogle andre ting.
+Begge ting er tilføjet til backlogen.
+Lige nu sætter jeg databasen i routerne. Det kommer til at ændre sig, så lige nu er det bare en midlertidig løsning.
+ 
+Jeg testede også API'en og den virkede.
+Jeg venter dog med at dokumentere det, indtil jeg har fikset de to overstående problemer, fordi så har jeg brug for at test'e det igen.
+ 
+Jeg besluttede mig for, at det reactNative i stedet for iconic. Det besværlige er Android Studio og ikke iconic kontra reactNative, så derfor kunne jeg lige så godt køre med det. Jeg installerede reactNative og opdaterede android studio, hvilket tog en krig, så endte med at evaluere sidste sprint og planlægge næste (se Nederste på siden).
+Jeg fik gennemført installation, opdateringer og initieret en app. Desværre havde jeg problemer med gradle. Jeg forsøgte at fikse på selv og ved at bruge reactNative doktoren. Det hjalp dog ikke og da react-native doktoren ville have en genstart, opgav jeg for i aften.
+ 
+Havde også brugt tid på at studerede hosting muligheder og købte et webhotel ved AzeHosting, som jeg vil bruge til API og web-applikationen. Til databasen vil jeg lige se, om der er mulighed for også at ligge den der, det lignede det ikke, men ellers påtænker jeg at bruge mongodb atlas.
+
+\section{231124}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, gradle*, nej
+ 
+Hvad er dagens prioriteter?
+Frontend
+ 
+(*) Gradle drillede i går. Det skal jeg lige fikse
+ 
+Det var lidt optimistisk at tænke, at man bare kunne lave en rudimentær frontend. Mere realistisk er det nok, at man bruger lang tid til at sætte frontend op og få det til at fungere, men selve programmeringen er rimelig overkommelig.
+Så målet er en funktionel frontend, så kan jeg gøre den pæn senere.
+ 
+Det tog en del tid at arbejde i gradle og android studio, men det gav ikke megen resultat. Fandt dog ud af, at den åbenbart havde installeret to versioner, så jeg slettede alt android studio fra computeren for kun at installere den nyeste version.
+Det var godt nok helt sært med Android Studio. Det fyldte over 150 GB i min appData mappe og en af versionerne kunne kun afinstalleres derinde fra.
+Uanset om det giver pote, så var det nok ret fornuftigt at få rydde op i det.
+Det får mig til at tænke på, om alle de problemer, som jeg har haft med Android Studio og lagt til grund for min dybfølte ringeagt af det produkt, handler om en installationsfejl, som bare har gjort det unødvendigt besværligt og langsomt.
+Jeg installerede den også på mit data drev, så det kan fylde mere.
+Dog kunne det ikke længere starte og fandt endnu en gemt mappe i min APP data, hvor den også fyldte. Det var heldigvis løst ved at slette en txt fil i app-data mappen, som jo er det mest naturlige for et program at genere. Efterfølgende skulle jeg installere SDK'erne igen.
+ 
+Kenneth anbefalede, at jeg brugte expo i stedet for CLI med android studio. Jeg fik det umiddelbart til at virke, så det tror jeg er vejen fremad.
+Det endte med at have taget dagen.
+Jeg fik også sat tablet op, men havde ikke tid til at teste, om expo også kunne gøre på den.
+Kenneth anbefalede at bruge Expo for at undgå at skulle bruge 
+
+\section{231127}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, nej
+ 
+Hvad er dagens prioriteter?
+App
+ 
+I dag skal jeg have APP'en op og helst også fastAPI-users.
+Weekenden gik mest med at holde fri og der blev udviklet meget ekstra, desværre. Jeg fik dog undersøgt lidt.
+Der er ingen pointe i at slå mig selv i hovedet over det. Det er, hvad det det.
+
+Jeg fik tablet til at tage virke med expo.
+ 
+Jeg fik også den web applikation til at køre og gik i gang med at skrive en rudimentær frontend og jeg fik sat nogle routes op.
+ 
+Gik i gang med at få den til at fetch'e data, men blev ikke færdig med det.
+Det var sgu overmodigt bare at tage fat i react native, når jeg ikke rigtig kendte det. Det er jo til at lære, men det hele tager bare lidt ekstra tid. Jeg må indrømme, at jeg ikke er sikker på, at iconic havde været bedre, men stadig er det værd at have med.
+ 
+Lavede i øvrigt en aftale med Nhat om, at han vil hjælpe mig i gang med at programmere noget AI på onsdag. 
+
+\section{231128}
+Denne opfølgning er skrevet dagen efter, d. 29/11-23
+ 
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, arbejdsrytme*, Evaluering**
+ 
+Hvad er dagens prioriteter?
+App
+ 
+(*) Jeg endte med ikke at få lavet så meget i løbet af dagen, men så til gengæld at sidde og programmere til 3 i nat. Det er sgu lidt træls i forhold til døgnrytme, men nu er der 9,5 dag tilbage, så tror jeg, at jeg med fordel bare kan give lidt kast på døgnrytmen og bare arbejde mest muligt.
+Det er alligevel mere en test af, hvor meget jeg kan lave på 4 uger, end en simulering af en arbejdsmarkedssituation.
+ 
+(**) Evalueringen planlægningen i morgen. Det skyldes, at dette er skrevet dagen efter, så derfor ligges evalueringen, hvor den rent faktisk laves. Nu er det sket begge gange, så det skal forandres.
+ 
+Routing skulle laves lidt om og jeg endte med at tilføje TaskScreen og en HomeScreen.
+Jeg havde i første omgang brugt camel case (eller lower camel case, om man vil), men react ville have mig til at bruge pascal case, så det lavede jeg dem om til.
+Jeg lavede også en index fil for "screens" mappe, således jeg lettere kunne hente.
+ 
+Jeg laver også nogle components, hvor jeg skrev DataFetcher.js, som jeg bruger til at hente og vise dagen for alle de forskellige slags task. Lavede det således, at jeg kunne DataFetcher i hver screen med en string, som modererer api kaldet. Lige nu kører alt igennem DataFetcher. Det er er ikke realistisk, at det kan komme til det.
+Lavede også en styles fil. Jeg lavede ikke en index fil til components mappen, fordi jeg synes, at components er lidt misvisende. Så jeg vil lige finde på et bedre navn.
+ 
+Jeg stødte ind i lidt problemmer med CORS (Cross origin ressource sharing), hvilket jeg så måtte implementere i API'en. Det var heldigvis lige til.
+ 
+For at tjekke, om jeg kunne få vist en task’s forskellige egenskaber, så lavede jeg et tooltip, som viste task'ens type og beskrivelse, når jeg holdt over tasken.
+Det gav nogle udfordringer, da det tooltip, som jeg brugte fra material-ui krævede, at "wrapper" det eller medsender en reference og "prop". Det viste sig at kunne løses med at ligge det hele ind i <div>, hvilket var meget nemt, men det tog mig lidt tid at komme dertil. Primært fordi Material-ui forslog nogle andre og mere besværlige løsninger(https://mui.com/material-ui/react-tooltip/\#main-content)(https://mui.com/material-ui/guides/composition/\#wrapping-components).
+Jeg er dog i tvivl, om det var lidt spild af tid. Jeg retfærdiggjorde det, at det ikke skadede at få styr på wrappers, men med løsningen, som det endte med at blive, altså bare sætte den i <div>, tror jeg muligvis bare er lidt specifik for denne pakke, at den er skrevet til at have brug for det.
+Jeg tror med fordel, at når jeg arbejder til sent, så skal jeg sætte nogle klare mål. Fordi jeg har nået en del og det er sgu fint, hvad jeg har lavet, men det her med tooltip'et er nok lidt spildt arbejde og havde jeg haft en klar målsætning, når jeg arbejder sent, så kunne jeg nok have undgået det.
+
+\section{231129}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Evaluering*, Træt**, evaluering*
+ 
+Hvad er dagens prioriteter?
+App \& AI***
+ 
+(*) Evalueringen laves i dag og derefter planlægges næste sprint. Evalueringen er begge gange blevet udskudt og lagt umiddelbart før planlægningen. Det skal også evalueres.
+ 
+(**) Jeg kan godt mærke, at jeg fået 4 timers søvn. Jeg havde tænkt mig at arbejde sent i dag, da det passer med, at jeg har en aftale i aften i nærheden af skolen, men lad os se, om jeg holder til det.
+ 
+(***) Jeg har en rudimentær frontend, som kan hente data fra API'en. Nu skal den også kunne alt det andet og være til at navigere i. Design og brugeroplevelse er dog ikke med i dagens mål.
+Klokken 1 vil Nhat komme forbi og hjælpe mig i gang med AI. Det er vigtigt, at jeg lige er klar til det. Jeg skal ikke nødvendigvis gå i gang med at udvikle der - jeg er der for at få noget viden om, hvordan jeg går i gang med det, når jeg kommer dertil.
+ 
+Jeg foretog evalueringen og laver en nu tidsplan.
+Dokumentationsdage: fredag, søndag, tirsdag
+Programmeringsdage: torsdag, lørdag, mandag, onsdag
+ 
+Dokumentationsdage skal jeg nå at skrive 10 sider minimum.
+Programmeringsdage skal jeg nå en af følgende ting:
+•	Funktionel APP og brugerhåndteringer
+•	AI funktionalitet
+•	Design og brugeroplevelse
+•	Lagt på nettet og test på tablet
+ 
+Det var det vigtigste.
+Jeg fik også lavet planlægningen.
+Som jeg også  har noteret i procesevalueringen, så har jeg simpelthen glemt at bruge git. Det er sgu ikke så smart.
+For at gøre det lettere, har jeg lavet et nyt repository, hvor både front- og backend er i samme mappe - skal dog stadig huske at få det gjort.
+Det tog lidt ekstra tid, fordi jeg kom til at dumme mig, da jeg lavede et samlet repository-
+ 
+Nhat var syg, så intet møde om AI. Jeg må lige selv læse op på det.
+Det er godt nok lidt noget rod det her. Jeg må hitte ud af det, men jeg tror, at jeg har ladet mig vejlede til at gøre det projekt væsentligt mere kompliceret og besværligt end nødvendigt.
+Jeg holder mig til planen og det skal nok gå, men jeg er blevet talt langt væk fra det originale projekt, som trods alt er blevet godkendt og man må kunne forvente, at det kan bestå uden alle de har ekstra ting, som hele tiden kommer ind fra højre.
+
+\section{231130}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+ Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, nej
+ 
+Hvad er dagens prioriteter?
+Operationer
+ 
+Det var egentlig meningen, at jeg ville tage det mest af dagen fri, fordi der ligesom er så kort tid tilbage, at jeg ikke får tid til at se familie eller alverden venner inden afleveringen på fredag.
+Familien endte dog med at måtte aflyse grundet vejret, men tog det stadig afslappet.
+ 
+Jeg implementerede lidt operationer i app'en, men det var ikke alverden. Fordi jeg gik lidt i stå i hvilken måde, som jeg helst ville gøre det på. Jeg endte med at lave noget research, men også bare få holdt fri og hvilet, således at jeg kan komme i gennem den næste uge.
+ 
+Jeg blev så ikke færdig med APP og brugerhåndtering i dag, så det må jeg gøre færdig i morgen efter jeg har skrevet 10 sider (hvilket jeg formentlig næsten har i forskellige dokumenter, som lige skal samles og revideres, før de kan sendes til vurdering).
+
+\section{231201}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+ Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, nej
+ 
+Hvad er dagens prioriteter?
+Skriv 10 sider
+ 
+Jeg startede med at bruge pandoc til at konvertere min latex til word, således jeg nemmere kunne konvertere og sende, hvad jeg allerede har lavet til retning, som jeg har lovet min korrekfløse.
+Jeg kom dog overraskende hurtigt op i nærheden af de 10 sider med hvad jeg allerede havde lavet, men besluttede mig for at forsøge at få lavet så mange sider, som jeg lige kunne overskue nu her, sådan at jeg have det mindre bekymring og der blot var bedre tid til korrekturlæsningnen og for mig til at genoverveje det.
+ 
+Jeg mødtes desuden med Kenneth og talte lidt forventninger og lignende. Jeg følte det projekt, som jeg havde lavet, var blevet talt en del ned i det omfang og vi fik talt ind på, hvad der menes. Han kan selvfølgelig ikke sige noget specifikt, men jeg fornemmelsen af, at jeg havde ret i min vurdering i, at det sådan set er fint projekt, men det selvfølgelig mangler noget større teknisk, hvis det skal ligge helt op i den gode ende.
+Så det er noget mere til at forholde sig til og er jo mere end muligt, men det er godt nok, at det ikke står og falder med AI implementeringen, for nu overvejer jeg bare at lave noget andet end AI til at give den tekniske tyngde, som givet er nødvendig.
+ 
+Jeg havde sidst på eftermiddagen et kaffemøde med en holdkammerat og endte med at få lavet 21 sider på det tidspunkt og mangler stadig logbøgerne, som lige skal skimtes og flyttes til et andet format.
+Jeg føler, at jeg godt kan presse lidt flere sider ud i dag. Selv bare nogle mindre og kedelige ting, så som læsevejledning og indledninger, ville være rart at få styr på.
+Meget af det, som jeg skriver, er sammenfatninger af ting af kladder, som skulle skrives færdig. De er færdige, så derfor ville det være fedt at få lidt mere, men natten er ung, så mon ikke, at det bliver muligt.
+Jeg mangler også at skrive om mine anvendte Python moduler og noget om JavaScript og mine anvendte JavaScript moduler.
+
+Jeg skrev logbogen og procesevalueringen over, samt fik skrevet den procesvejledningen og rettet det lidt til.
+Det endte med at være 6 sider til produktrapporten, 13 sider til produktrapporten og 15 siders log- og evalueringsbog.
+Hvilket jeg er ret godt tilfreds med.
+
+\section{231202 \& 231203}
+Fordi det er weekend, laver jeg ikke daglig ajourføring, men opsummerer blot begge dage sammenlagt.
+ 
+Begge dage gik med at arbejde på operationer.
+ 
+Påopfordring fra min holdkammerat installerede jeg også flere react native extensions.
+Jeg tog udgangspunkt i anbefalinger fra denne side: https://reactnativecentral.com/top-vscode-extensions-react-native/
+Jeg har også godt vidst, at der var fordele ved at installere flere extensions eller muligvis bruge en IDE, sådet var også bare for at få gjort.
+ 
+Jeg var blevet træt af, at den hele tiden åbnede nye faneblade, så jeg lavede et nyt script i package.json og kaldte det "webnb".
+ 
+Jeg endte med at være glad for syntaksen i "Parse" og skrive min kode op i mod det, men det var en fejl. Da jeg endte med at finde ud af, at det ikke virkede med parse servere.
+Der var gået en del tid med at skrive koden og forsøge at fikse diverse problemer.
+Det var ikke kun med parse, som der var problemer, så derfor var det svært at finde den egentlige fejl.
+ 
+Fik også lavet flere andre dele, så som navigation, tab menu, screens og diverse designting. Flere af disse ting, kan formentlig kan godt reddes.
+Men det må tiden vise.
+
+\section{231204}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja,ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, ja*
+ 
+Hvad er dagens prioriteter?
+Operationer
+ 
+(*) I weekenden arbejde jeg meget målrettet uden at tænke så meget over proces og deslige. Det fortsætter jeg med. Jeg har målene, som jeg satte mig selv i fredags, men arbejder eksempelvis ikke med kanban bræt - det må jeg få styr på i evalueringen.
+ 
+Jeg fik lavet alle operationerne til task-klassen, men ikke til de andre endnu.
+Jeg fik også lavet hele backend'en med fastapi-users inklusiv oauth2, men der mangler en frontend login og oauth2 mangler formentlig lidt opsætning.
+ 
+Det meste af FastAPI-users er baseret på deres kode eksempler:
+https://fastapi-users.github.io/fastapi-users/12.1/configuration/full-example/
+https://fastapi-users.github.io/fastapi-users/12.1/configuration/oauth/
+ 
+Hvilket skal beskrives i rapporten.
+Alternativt hvis der er tid, så kunne man også med fordel skrive det om, så det passer mere ind i koden.
+ 
+Det er lige nu ret rodet og koden for håndteringen af task er fordelt på app.js og TaskModel, hvilket skal ryddes og gøres meget mere SOLID.
+ 
+Der er også en del ting, som muligvis kan bruges.
+
+\section{231205}
+
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+ 
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+ 
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, Evaluering*
+ 
+Hvad er dagens prioriteter?
+Skrive 10+ sider
+ 
+(*) Egentlig skulle evalueringen være i dag, men de sidste gange har jeg flyttet det til onsdag. Det ville give mening at gøre det samme i dag, men desværre på den anden side, så er i dag sidste dag, at der kan blive sendt til korrektur.
+ 
+Jeg forsøger at skrive så meget muligt i dag, overskuden tid vil jeg kigge på en bruger frontend og sidst vil jeg lave en evaluering, så må vi se, hvad jeg kan nå.
+ 
+Jeg kommer til at skrive nogle ting i dag, som konkluderer på hele projektet, selvom dele ikke er færdigt.
+Det kan selvfølgelig kun være udkast, men jeg er ret sikker på, hvad jeg vil konkludere om 2 dage.
+ 
+Jeg fik skrevet 14 sider. Hovedsageligt på processrapporten.
+Jeg tror, at den er ved at være klar.
+ 
+Jeg arbejdede på API'en, men stødte ind i et problem med at uvicorn op og køre. Jeg endte med at sove på, men det er potentielt ret skidt og skal fikses hurtigst muligt.
+
+\section{231206}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja,ja
+
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, miljøfejl*, slutevaluering**
+
+Hvad er dagens prioriteter?
+Program færdig
+
+(*) Der er pludselig kommet en fejl i python miljøet, hvor den ikke genkender alle mine imports og derfor ikke vil køre min backend.
+Jeg opdagede fejlen i går, efter jeg var færdig med at skrive. Forsøgte at løse det, men jeg var simpelthen for træt. Nu må jeg løse det i dag. 
+Hvis jeg ikke får styr på det, så er det potentielt ret skidt, men der er ingen grund til at stresse over det.
+
+(**) Jeg skal have lavet slut evalueringen i dag. Jeg vil blot have styr på programmet først. Men laver det seneste ved aftensmadstid.
+
+Jeg prøvede forskellige ting, men endte med at gå i gang med at afinstallere nogle gamle python miljøer, som lignede roede emd det.
+Før jeg kunne få det tjekket røg mit net dog, som jeg lige måtte fikse. Jeg endte med at installere et nyt miljø, men det vidste sig ikke at være fejlen - hvert fald ikke udelukkende.
+
+Jeg endte også med at skrive oauth ud af router.
+Efter megen fejlfinding, så endte det med at være mine modeller, som jeg havde skrevet ind i mine app startup forbindelse.
+
+Jeg venter med at skrive de ting ind igen, så nu får jeg styr på brugerfrontenden, så skriver jeg 2faktor autoriserignen ind og derfeter skriver jeg det hele sammen.
+Så genindfører vi det, som vi rent faktisk kan tjekke det.
+
+Jeg aftalte med også med min korrekfleuse, at hun muligvis kunne rette lidt i morgen også, så hvis jeg får tid til det.
+Nu vil jeg lige tage et kvarters pause, før procesevalueringen og derefter har jeg hele aftenen til at klø på med at få programmet færdigt.
+
+Jeg endte med at sidde og lave controllers, som arvede fra hinanden. 
+
+
+\section{231207}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Ja, ja, ja
+
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Nej, nej, nej
+
+Hvad er dagens prioriteter?
+Præsentabelt
+
+Det prioriteter lidt mere udpenslet:
+Programmet skal gøres præsentabelt og let tilgængeligt.
+Derefter skal jeg ligge det op på nettet og tjekke det på tablet'en.
+Derefter skal jeg sætte rapport op.
+
+Herefter skal jeg rydde op i kode og afpudse. Hvis der er mere tid, så tager vi det, når vi kommer tættere på.
+
+Jeg arbejder blot fra toppen af, indtil jeg kan mærke, at jeg har brug for at en pause. Så tager jeg hjem, holder en kort pause og vurdere, hvad jeg har tid og prioriteter.
+Hvis det værste er ude, kan jeg altid skippe at sætte opgaven op i LaTeX og aflevere i word og går det helt skidt, så må jeg undværer at ligge programmet op på nettet.
+
+Jeg mødtes med først Kenneth og derefter Jeanette og lige gennemgå, hvor jeg var.
+Kenneth nævnte, at jeg først skulle afleverer fredag 23.59 i morgen.
+Jeg talte også om, hvad jeg realistisk ville kunne justere ved programmet efter aflevering. Det kommer ikke med i rapport vurderingen, så det er mest oplagte er nogle fin pudsninger og desgin.
+Jeg aftalte med Jeanette at holde et oplæg for hende mandag 1230.
+
+Jeg gik i gang med at justere min controllers, men blev lidt distraheret af, at jeg gerne ville undgå i relative stier i mine imports. Det justerede jeg efter dette eksempel (https://stackoverflow.com/questions/43681091/how-to-use-import-with-absolute-paths-with-expo-and-react-native) og det virker. Jeg fik også billedet til at virke.
+Det var dog nogle fjollede prioriteringer og jeg vender tilbage til at fokusere på controllers.
+
+Jeg fik styr på login skærmen og mangler bare resten, men metoden er der. Jeg tog hjem til frokost og holdt derefter en kort pause.
+Efterfølgende lavede jeg lige et overblik over prioriteterne.
+
+	1. Få sammenflettet resten af frontenden
+	2. Få lagt API'en på nettet og sikre mig app'en kører på tablet
+	3. Få sat opgaven op i LaTeX og skrevet det sidste
+	4. Ryd op i kode og gør frontend pænere
+	5. Sørg for alt er eksporteret, i rette formater og kan afleveres
+
+1 har første prioritet
+Når den er færdig, så prioritere jeg opgave nummer 2 og 3. Ideelt set, tager jeg det i den rækkefølge, men 3'eren kan potentielt vente til efter aflevering, så hvis jeg er sent på den.
+
+4 og 5 bliver i morgen, hvor pænere frontend delen godt kan vente til efter aflevering - hvis nødvendigt.
+5 bliver nødt til at være noget af det sidste, som jeg gør, men bør heller ikke gøres senere end 12, så jeg er sikker på, at jeg har 2 timer til at få styr på det.
+
+
+\section{231208}
+Daglig ajourføring
+Holdes hver arbejdsformiddag, helst inden 10. Skriv kun ja, nej eller stikord. Hvis noget skal udbydes, så gør det nede i loggen.
+
+Gårsdagen log: Fuldendt? Tilstrækkelig? Renskrevet?
+Nej, nej, nej
+
+Arbejdsproces: Opfølgninger? Blokeringer? Forandres?
+Fejl*, nej, nej
+
+Hvad er dagens prioriteter?
+Aflevering**
+
+(*)  Der er to fejl i programmet og den vil ikke hente rigtigt. Den vil ikke fetch'e tasks rigtigt og den henter den forkerte bruger database. Begge ting burde være overkommeligt, men det lykkes mig ikke at fikse i morges.
+Desuden er der kun for en type task.
+Alle virker som mindre ting.
+
+(**)  Der skal afleveres i dag. Det inkludere rapporterne og at gøre programmet parat.
+
+Jeg når forhåbentligt både at få lave aflevering og rettet de fejl, men prioritere afleveringer, også må jeg skrive mig ud af det og ændrer det inden forsvaret, hvis jeg ikke når det.
+Udover de fejl, så er der også et par andre ting, som jeg gerne vil lave, men nok ikke når. Det inkludere at få API'en på nettet, applikationen på table't og leget med AI - men det tænker jeg, at jeg kan have med til svendeprøven.
+
+Jeg skriver rapporterne i LaTeX og jeg har lagt dem i samme programmeringsprojektet, så rapporterne burde også komme på GitHub.
+
+Jeg har skrevet til Kenneth, om han har tid til at snakke i dag, sådan han også lige er forberedt på det.
+Der var travlt indtil sidste minut, fik lov til at udskyde deadlinen til 15.
+
+\chapter{procesevalueringer}
+
+Dette er mine procesevalueringer.
+Ligesom logbogen er de af forskellige længde og karakter; og er først og fremmest brugt til egen refleksion og derfor muligvis lidt interne.\par{}
+De er navngivet efter [årstal][måned][dato]
+
+\section{231123}
+Procesevaluering:
+Den umiddelbart største ting procesmæssigt er, at jeg har ladet mig stresse lidt over, at jeg oplevede en kritik af, at projektet manglede teknisk dybde.
+Det var planen at lave produktet og skrive det meste af procesrapporten, så meget af den jeg kunne, i de 2 første uger og bagefter bygge en eller flere fede features på.
+Det er nu blevet til, at den feature er noget AI, og jeg har skubbet flere ting ind i grund applikationen. Jeg kan stadig nå planen, selvom jeg nok må se de her to første sprint lidt mere samlet.
+Det er også den stress, som har ført til, at jeg har arbejdet meget over og bagefter været lidt smadret. Så det skal jeg være mere opmærksom på.
+Desuden var det en hård omgang at rejse til København og spille rollespil i weekenden. Det var for ambitiøst, men heldigvis har jeg ikke planlagt det for andre weekender.
+
+\section{231129}
+Procesevaluering:
+Min sidste evaluering var ikke så struktureret, så laver det lidt om. Sidste gang læste jeg dagbøger og evaluerede det lidt.
+For at få mere ud af det, deler jeg evalueringen op i 4 dele, sidste evaluering, sprintprocessen, tidsplan og produkt, og drager nogle konklusioner heraf.
+ 
+Sidste evaluering:
+I sidste evaluering fokuserede jeg på projektets tekniske dybde. Tildeles at det havde stresset mig at få den kritik og jeg derfor ville tilføje AI i projektet.
+Desuden konkluderede jeg, at jeg skulle arbejde mere regelmæssigt, således jeg ikke var udmattet efter at have arbejdet meget i en periode.
+Sidst men ikke mindst slog jeg mig selv i hovedet for at være taget til rollespil i København i weekenden.
+ 
+Det er noget pjat med, at jeg ikke skulle være taget væk i weekenden.
+Det var fornuftigt at ændre projektet, også for at få AI med, men jeg skal huske, at det kan være i større eller mindre grad.
+ 
+Sprintproces:
+Jeg havde et kortere sprint grundet, at jeg havde flyttet sidste evaluering til torsdag eftermiddag.
+To dage gik med problemer android studio og senere at sætte expo op.
+Desuden har det bare taget længere tid end beregnet at lave frontend’en, fordi jeg ikke rigtigt kendte react native.
+ 
+Jeg bør dog overveje at ligge evaluering umiddelbart før planlægning, da det reelt har været udfaldet de sidste to uger.
+Desuden har jeg haft gode erfaringer, egentlig, med at arbejde mindre regelmæssigt og blive sent oppe og programmere. Jeg bør overveje klart at definere nogle mål, når jeg gør det.
+Det var dumt, at jeg ikke tog et framework, hvor jeg havde mere erfaring og selvom jeg kun har lidt erfaring med iconic er det bedre end intet. Det har til gengæld været lærerigt.
+ 
+Tidsplan:
+På Produkt siden er jeg lidt bagud, men ikke mere, end det er realistisk nok, at jeg komme efter det.
+På dokumentationsfløjen er jeg meget bagefter.
+Jeg har lagt en del buffer ind og den blev lidt ædt af at skulle lave noget AI.
+Jeg har dog også weekenden, som jeg vidst, at jeg ville komme til at bruge.
+ 
+Det vigtigste er at komme i mål, så selvom næste uge står i AI's tegn, så står det faktisk mere dokumentation og få lavet produktet færdigt tegn.
+Jeg skal have lagt en plan med Iben, min korrekturlæsende kusine, for hvornår jeg kan aflevere til hende.
+Af erfaring skal jeg stadig have lidt buffer.
+ 
+Produkt:
+Det går ok og det skal nok blive til noget.
+Jeg skal have lavet app færdig, implementeret FastAPI-users og lagt det op på nettet.
+Expo kan kører på app'en, men lige nu udvikler jeg på web-applikationen.
+Jeg har et møde om AI udvikling med Nhat senere i dag og derefter skal jeg have lavet en plan for det.
+ 
+Prioritet er at blive færdigt med noget og bygge videre derpå.
+Så prioritet er:
+•	APP færdig (bare funktionelt - ikke design)
+•	Brugerhåndting
+•	Noget AI
+•	Lagt på nettet
+•	Refactor koden
+•	APP design/UX (alt ikke funktionelt)
+•	Test på tablet
+•	Mere AI
+Det burde godt kunne lade sig gøre
+ 
+Jeg har glemt at bruge Git. Det skal jeg huske at gøre.
+ 
+Konklusion:
+Jeg skulle ikke have valgt react native og jeg skulle ikke slå mig selv i hovedet for at være mere demotiveret i midt forløbet, særligt når det er der, hvor det allermest kedeligste er.
+Men nu kan jeg også mærke, at der skal ske noget.
+Jeg tror dog, blot at jeg skal læne mig  ind i det med døgnrytme og få arbejdet, når energien er til det i stedet for at tvinge mig selv til at arbejde så regelmæssigt som muligt.
+ 
+Dokumentation er det største problem, så jeg laver fredag, søndag og tirsdag til dokumentationsdage.
+Formålet er få brugt dem til at lave mest muligt dokumentation, mindst 10 sider (efter 10 sider må jeg gerne programmere), og sendt dem til Iben.
+ 
+Programmeringsdage i dag, i morgen, lørdag, mandag og onsdag skal jeg programmere. Prioriteringer er følgende:
+•	Funktionel APP og brugerhåndteringer
+•	AI funktionalitet
+•	Design og brugeroplevelse
+•	Lagt på nettet og test på tablet
+ 
+Desuden vil jeg gerne nå at refactor koden og muligvis også nå andre features. Formentlig bliver det første AI ikke så imponerede.
+Der er 5 dage til 4 opgaver, så udover i dag skal jeg nå en per dag. De er på ingen måde lige de opgaver . Det er bare vigtigt, at det fremgang og de behøves ikke tages i rækkefølge.
+ 
+Torsdag og fredag friholdes i udgangspunkt til opsætning af opgave, skrive det sidste samt rette og finde fejl.
+Det er også min buffer.
+Forhåbentlig kan jeg holde tidsplanen, som den er nu, men nu er det ikke noget, som projektet står og falder på.
+ 
+Husk at bruge Git hver dag.
+
+\section{231206}
+Procesevaluering:
+Procesevalueringen er delt  i 4 deler, sidste evaluering, sprintprocessen, tidsplan og produkt, og drager nogle konklusioner heraf.
+
+Sidste evaluering:
+Jeg var noget optimistisk om, hvad det vil kræve at få programmet færdigt, men i bund og grund havde jeg delt det op i disse 4 hovedpunkter.
+
+	• Funktionel APP og brugerhåndteringer
+	• AI funktionalitet
+	• Design og brugeroplevelse
+	• Lagt på nettet og test på tablet
+
+Jeg har ikke noget at lave det med AI og det bliver knippet med at få programmet færdigt i aften og jeg skal realistisk set, nok bruge lidt af morgen dagen også.
+
+Sidste uge konkluderede jeg også, at reactNative var en fejl. Det er stadig min overbevisning, men så det vil jeg ikke bruge mere tid på her.
+
+Sprintproces:
+På dokumentationsfronten går det godt.
+Processrapporten tror jeg, at jeg har skrevet næsten det hele af. Jeg har sendt det til retning, men det er ikke rettet. Jeg forventer, at der mangler mellem 1 til to sider, som skal skrives. Jeg ved eksempelvis der mangler at skrive AI og indledningen, men der kommer formentlig også andre ting frem, når der bliver skrevet sammen og ikke bare er i småt bider.
+Produktrapporten mangler der nok en cirka 5-7 sider, herunder en gennemgang af programmet, installation og erhvervelse af programmet og en rækketest. Det tager selvfølgelig noget tid, men er ret håndterligt.
+
+Arbejdsmæssigt har det været en hård uge og været 14-16 timers arbejde dagligt fra siden mandag og typisk til ret sent om aftenen. I weekenden var tættere 12 timers arbejde dagligt. Det har sgu været en hård omgang, men også nødvendigt. Heldigvis, er vi også snart færdigt.
+
+Tidsplan:
+Tidsplanen er jo røget af vinduet, for den 4 punktsplan.
+Det er også blevet blandet sammen.
+
+AI funktionaliteten må vi se på senere, men de 3 andre ting er realistisk nok kan blive implementeret.
+Om end det med at få den på nettet og testet på tablet er længere væk, end at få app'en op, som bare lige skal laves færdig.
+
+
+Produkt:
+Produktet sejler, men holder sig flydende.
+Det skal forstås på den måde, at der er ret rodet lige nu, men næsten alle dele virker til at være der. Så det skal bare samles og gøres klar.
+Jeg er dog i tvivl, om det er realistisk at nå noget AI.
+
+Programmet har været præget af fejl i flere af miljøerne.
+Backenden er færdig. Frontend skal lige udvides til at passe med det hele.
+Hovedproblemet er, at fejlene, så derfor skal app'en lige samles systematisk.
+Jeg starter med login, så 2 faktor, så de forskellige opgaver typer.
+
+Konklusion:
+Jeg skal samlet programmet og udvidet det der, hvor der mangler lidt.
+Jeg starter med samle login
+Derefter 2faktor
+Derefter task
+Derefter appointments, chores og projects
+Derefter hvad end der er tid og overskud til.
+
+At få det på nettet og tablet kan vente til i morgen.
+Hvis jeg kan nå at få skrevet noget brugervejledning til produktrapporten, ville det være perfekt.
+
+AI er lavest prioritet.
+Målsætning er, at få det andet næsten færdigt, også se på, om det er muligt og ellers skrive mig ud af, hvordan jeg ville gøre det.
+
+
+
+
+
+
 
 %%%%%%
 %	Afslutning
