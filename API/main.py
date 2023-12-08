@@ -65,7 +65,7 @@ async def authenticated_route(user: User = Depends(current_active_user)):
     return {"message": f"Hello {user.email}!"}
 
 @app.get("/status")
-async def getStatus(user: User = Depends(current_active_user)): return {"status": "Running"}
+async def getStatus(): return {"status": "Running"}
 
 # The following are routes to the routers
 
