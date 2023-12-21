@@ -17,13 +17,6 @@ from configurations.database import get_user_db, User
 # Used 1password to generate a 32 alfanumeric secret
 SECRET = "L43juhs46P3kr.PL9m-9NEFVmTNJmcFL"
 
-'''
-google_oauth_client = GoogleOAuth2(
-    os.getenv("GOOGLE_OAUTH_CLIENT_ID", ""),
-    os.getenv("GOOGLE_OAUTH_CLIENT_SECRET", ""),
-)
-'''
-
 class UserManager(ObjectIDIDMixin, BaseUserManager[User, PydanticObjectId]):
     reset_password_token_secret = SECRET
     verification_token_secret = SECRET

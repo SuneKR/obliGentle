@@ -24,20 +24,3 @@ class User(BeanieBaseUser, Document):
 
 async def get_user_db():
     yield BeanieUserDatabase(User)
-
-'''
-class OAuthAccount(BaseOAuthAccount):
-    pass 
-
-class User(BeanieBaseUser, Document):
-    oauth_accounts: List[OAuthAccount] = Field(default_factory=list)
-
-async def get_user_db():
-    yield BeanieUserDatabase(User, OAuthAccount)
-
-#databaseName = "obliGentle"
-
-#app.mongodb_client = AsyncIOMotorClient(dbc.databaseURL)
-#app.mongodb = app.mongodb_client[dbc.databaseName]
-
-'''

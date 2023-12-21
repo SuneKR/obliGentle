@@ -35,20 +35,3 @@ class choreRouter(interface.routerInterface):
     
     async def routeToUpdate(self, id: str, req: choreModels.modelUpdate, user: User = Depends(current_active_user)) -> choreModels.model:
         return await super().routeToUpdate(id, req, user)
-    
-    ''''
-    async def routeToCreation(self, request: Request, task: choreModels.model = Body(...)):
-        task = jsonable_encoder(task)
-        creationInsert = await request.app.mongodb[user.id].insert_one(task)
-        creationCheck = await request.app.mongodb[user.id].find_one({"_id": creationInsert.inserted_id})
-        return JSONResponse(status_code=status.HTTP_201_CREATED, content=choreModels.modelToDict(creationCheck))
-    
-    async def routeToUpdate(self, id: str, request: Request, task: choreModels.modelUpdate = Body(...)):
-        task ={dictKey: dictVal for dictKey, dictVal in task.dict().items() if dictVal is not None}
-        if len(task) >= 1:
-            updater = await request.app.mongodb[user.id].update_one({"_id": ObjectId(id)}, {"$set": task})
-            if updater == True:
-                if updated := await request.app.mongodb[user.id].find_one({"_id": ObjectId(id)}) is not None: return updated
-        if updateFinished := await request.app.mongodb[user.id].find_one({"_id": ObjectId(id)}) is not None: return updateFinished
-        raise HTTPException(status_code=404, detail=f"Task {id} not found")
-    '''

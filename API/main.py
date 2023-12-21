@@ -4,15 +4,8 @@
 #imports
 
 from beanie import init_beanie
-#import beanie.init_beanie
-#import beanie
-from fastapi import Depends, FastAPI, status
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from motor.motor_asyncio import AsyncIOMotorClient
-from pymongo import MongoClient
-#import uvicorn
-#from beanie import init_beanie
-from fastapi_users_db_beanie import BeanieUserDatabase
 
 #local imports
 
@@ -120,26 +113,4 @@ async def on_startup():
             taskModels.model,
         ],
     )
-
-'''
-
-@app.on_event("startup")
-#async def on_startup():
-async def on_startup():
-    await init_beanie(
-        database=dbc,
-        document_models=[
-            appointmentModels.model,
-            choreModels.model,
-            projectModels.model,
-            taskModels.model,
-            User,
-        ],
-    )
-
-# For running the application with uvicorn
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", log_level="info")
-'''
 
