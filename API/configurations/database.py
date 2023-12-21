@@ -3,14 +3,15 @@ from typing import List
 
 import motor.motor_asyncio
 from beanie import Document
-#from fastapi_users.db import BeanieBaseUser, BeanieUserDatabase
 from fastapi_users_db_beanie import BeanieBaseUser, BeanieUserDatabase
 
 from pydantic import Field
 
-
-databaseURL = "mongodb://localhost:27017"
-databaseName = "obliGentle"
+# this is for a school project. Otherwise I wouldn't include the passcode
+#databaseURL = "mongodb://localhost:27017"
+#databaseURL = "mongodb+srv://obligentle:8iqFgThXkPxzd4PEEQmW2iydsfqKCWtCGik7ssZGFxPTgGg6hAzEGdD7Lb4g6RiK@obliGentle.litujjv.mongodb.net"
+databaseURL = "mongodb+srv://obligentle:8iqFgThXkPxzd4PEEQmW2iydsfqKCWtCGik7ssZGFxPTgGg6hAzEGdD7Lb4g6RiK@obligentle.litujjv.mongodb.net/?retryWrites=true&w=majority"
+databaseName = "ObliGentle"
 
 client = motor.motor_asyncio.AsyncIOMotorClient(
     databaseURL, uuidRepresentation="standard"
