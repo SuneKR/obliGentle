@@ -1,4 +1,4 @@
-
+/* eslint-disable react/prop-types */
 // Imports
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
@@ -7,7 +7,7 @@ import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 // Local imprts
 import { newStyles } from 'designs';
 import { ClientController } from 'controllers';
-import config from '../../config';
+import config from 'config';
 
 
 const LoginScreen = ({ navigation }) => {
@@ -109,17 +109,3 @@ const LoginScreen = ({ navigation }) => {
 }
 
 export default LoginScreen;
-
-/*
-onSubmitEditing={ ()=> this.passwordInput.focus() }
-ref={ (input) => this.passwordInput = input }
-<Image style={ newStyles.image } source={ require('../../assets/aarhusTechLogo.png') } />
-
-width: '80%',
-        borderRadius: 25,
-        height: 50,
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: 20,
-        backgroundColor: '#ff1493'
-*/

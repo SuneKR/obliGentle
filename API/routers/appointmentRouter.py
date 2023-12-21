@@ -27,8 +27,8 @@ class appointmentRouter(interface.routerInterface):
         
         self.router.add_api_route("/", self.routeToCreation, methods=["POST"], response_description="Create")
         self.router.add_api_route("/{id}", super().routeToOneThing, methods=["GET"], response_description="Read one")
-        self.router.add_api_route("/", super().routeToSomething, methods=["GET"],response_description="Read all")
-        self.router.add_api_route("/{id}", self.routeToUpdate, methods=["PUT"],response_description="Update")
+        self.router.add_api_route("/", super().routeToSomething, methods=["GET"], response_description="Read all")
+        self.router.add_api_route("/{id}", self.routeToUpdate, methods=["PUT"], response_description="Update")
         self.router.add_api_route("/{id}", super().routeToOblivion, methods=["DELETE"],response_description="Delete")
     
     async def routeToCreation(self, task: appointmentModels.model, user: User = Depends(current_active_user)) -> dict:

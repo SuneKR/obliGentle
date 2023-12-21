@@ -11,8 +11,7 @@ module.exports = function(api) {
             config: './config',
             components: './components',
             controllers: './controllers',
-            designs: './designs',
-            engine: './engines',            
+            designs: './designs',          
             screens: './screens'
           },
         },

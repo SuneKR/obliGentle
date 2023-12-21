@@ -14,8 +14,8 @@ import os
 #from configurations.database import get_user_db, User
 from configurations.database import get_user_db, User
 
-# A secret to yet be defined
-SECRET = "undefined"
+# Used 1password to generate a 32 alfanumeric secret
+SECRET = "L43juhs46P3kr.PL9m-9NEFVmTNJmcFL"
 
 '''
 google_oauth_client = GoogleOAuth2(

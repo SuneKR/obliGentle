@@ -1,23 +1,16 @@
-import HomeScreen from './HomeScreen';
-import AppointmentsScreen from './AppointmentsScreen';
-import CalendarScreen from './CalendarScreen';
-import ChoresScreen from './ChoresScreen';
-import NewTaskScreen from './NewTaskScreen';
-import ProfileScreen from './ProfileScreen';
-import ProjectsScreen from './ProjectsScreen';
-import SettingsScreen from './SettingsScreen';
-import TasksScreen from './TasksScreen';
-
-import AddTaskScreen from './taskScreens/AddTaskScreen';
-import TaskDetailScreen from './taskScreens/TaskDetailScreen';
-import TaskScreen from './taskScreens/TaskScreen';
+import AppointmentsScreen from './taskScreens/AppointmentsScreen';
+import CalendarScreen from './otherScreens/CalendarScreen';
+import ChoresScreen from './taskScreens/ChoresScreen';
+import ProfileScreen from './otherScreens/ProfileScreen';
+import ProjectsScreen from './taskScreens/ProjectsScreen';
+import SettingsScreen from './otherScreens/SettingsScreen';
+import TasksScreen from './taskScreens/TasksScreen';
 
 import ForgottenScreen from './loginScreens/ForgottenScreen';
 import LoginScreen from './loginScreens/LoginScreen';
 import RegistrationScreen from './loginScreens/RegistrationScreen';
 
-export { HomeScreen, AppointmentsScreen, CalendarScreen, ChoresScreen, NewTaskScreen, ProfileScreen, 
+export { AppointmentsScreen, CalendarScreen, ChoresScreen, ProfileScreen, 
     ProjectsScreen, SettingsScreen, TasksScreen,
-    AddTaskScreen, TaskDetailScreen, TaskScreen,
-    ForgottenScreen, LoginScreen, RegistrationScreen
+    ForgottenScreen, LoginScreen, RegistrationScreen,
 }

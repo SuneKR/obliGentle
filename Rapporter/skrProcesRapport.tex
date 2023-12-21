@@ -21,8 +21,6 @@
 
 \chapter{Formalia}
 
-\section{Indledning}
-
 \section{Læsevejledning}
 I forbindelse med svendeprøven er vi blevet pålagt at aflevere to rapporter, en om projektets proces og en om dets produkt. Dette er procesrapporten, som  fokuserer på min overvejelser og refleksioner i forhold til projektet.
 Jeg antager, at læseren har en teknisk viden på niveau med en færdiguddannet datateknikker.
@@ -57,7 +55,7 @@ Særligt fokuserede jeg på:s
 \item Indstille mig på, at processen kan ændres efter behov og de daglige ajourføringer og særlig sprintevalueringen skal danne et rum for dette
 \end{itemize}
 
-Derudover forsøgte jeg også at have de 12 principper\footnote{http://agilemanifesto.org/principles.html}\footnote{https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/}, hvor princip 1 og 4 naturligvis blev  ret frit fortolket, da jeg dårligt kan agere min egen kunde.Apar{}
+Derudover forsøgte jeg også at have de 12 principper\footnote{http://agilemanifesto.org/principles.html}\footnote{https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/}, hvor princip 1 og 4 naturligvis blev  ret frit fortolket, da jeg dårligt kan agere min egen kunde.\par{}
 Jeg forsøgte endvidere at planlægge både for mit produkt og dokumentation og delte forløbet op i 3 sprints, hvor jeg havde 2 halve uger til start og slut, som fokuserede på helholdsvis at begynde og afslutte forløbet.\par{}
 Sidste men ikke mindst, så brugte jeg kanban-bræt for at holde overblik over opgaver. I slutningen af projektet, bevægede jeg mig lidt væk fra brættet og styrede det mere igennem logbogen, ajourføringerne og evalueringerne, men særligt i starten af projektet var det et vanvittigt godt redskab.
 \begin{lstlisting}
@@ -145,7 +143,7 @@ Til projektet har jeg lavet et min nyt environment med \textit{Anaconda}\footnot
 
 \subsection{Anvendte Python og FastAPI moduler}
 
-\begin{table}[H]
+\begin{table}[htp]
 \centering
 \rowcolors{2}{White}{Gray!25}
 \begin{tabularx}{\textwidth}{p{.20\linewidth} X X}
@@ -158,14 +156,14 @@ Anvendelse
 \\
 
 
-Beanie\tablefootnote{https://pypi.org/project/beanie/} 
+Beanie\tablefootnote{https://pypi.org/project/beanie/}
 &
 Asynkron ODM for MongoDB baseret på pydantic
 &
 FastAPI-users dependant	
 \\
 
-FastAPI\tablefootnote{https://pypi.org/project/fastapi/} 
+FastAPI\tablefootnote{https://pypi.org/project/fastapi/}
 &
 API framework
 &
@@ -403,6 +401,7 @@ Grundet tidspres og mange problemer med React Native, har jeg måtte aflevere et
 \item jeg fik ikke lavet noget AI til programmet
 \item fordi appointments, chore og project skærme er udvidelser af task skærmen, så de ikke implementeret færdigt endnu, selvom de er klar til
 \item Der mangler et brugervenligt og pænt design
+\item forgotten password kan produce den relevante token, men ikke sende en mail til brugeren.
 \end{itemize}
 
 Mange af disse er jo ikke store ting, men da jeg skulle samle komponenter af flere mindre programmer, som umiddebart virkede, så endte jeg med alle disse fejl.

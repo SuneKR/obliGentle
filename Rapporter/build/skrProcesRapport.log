@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.30)  8 DEC 2023 13:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.30)  11 DEC 2023 11:48
 entering extended mode
 **./skrProcesRapport.tex
 (skrProcesRapport.tex
@@ -789,6 +789,98 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 /libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip61
+\enit@outerparindent=\dimen271
+\enit@toks=\toks51
+\enit@inbox=\box72
+\enit@count@id=\count343
+\enitdp@description=\count344
+)
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen272
+\lightrulewidth=\dimen273
+\cmidrulewidth=\dimen274
+\belowrulesep=\dimen275
+\belowbottomsep=\dimen276
+\aboverulesep=\dimen277
+\abovetopsep=\dimen278
+\cmidrulesep=\dimen279
+\cmidrulekern=\dimen280
+\defaultaddspace=\dimen281
+\@cmidla=\count345
+\@cmidlb=\count346
+\@aboverulesep=\dimen282
+\@belowrulesep=\dimen283
+\@thisruleclass=\count347
+\@lastruleclass=\count348
+\@thisrulewidth=\dimen284
+)
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/cfr-lm\cfr-lm.sty
+Package: cfr-lm 2015/02/01 v1.5 cfr-lm for use with LatinModern v2.004
+
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/nfssext-cfr\nfssext-cfr.
+sty
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/svn-prov\svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: nfssext-cfr 2017/03/28 (SVN Rev: 6140){} specially mangled by cfr; bas
+ed on 2003/03/14 v1.2 Experimental NFSS Extensions
+\c@taken=\count349
+LaTeX Info: Redefining \itshape on input line 515.
+LaTeX Info: Redefining \scshape on input line 523.
+LaTeX Info: Redefining \upshape on input line 537.
+LaTeX Info: Redefining \swshape on input line 544.
+LaTeX Info: Redefining \textin on input line 549.
+LaTeX Info: Redefining \textsw on input line 553.
+LaTeX Info: Redefining \textscu on input line 580.
+)
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 180.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 181.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 182.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 183.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 184.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 185.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 186.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 187.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 195.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 196.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 197.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 198.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 199.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 200.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 201.
+)
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepart
+table.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box73
+)
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/tablefootnote\tablefootn
 ote.sty
 Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
@@ -846,26 +938,26 @@ File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\p
 gflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box72
-\pgfnodeparttwobox=\box73
-\pgfnodepartthreebox=\box74
-\pgfnodepartfourbox=\box75
-\pgfnodeparttwentybox=\box76
-\pgfnodepartnineteenbox=\box77
-\pgfnodeparteighteenbox=\box78
-\pgfnodepartseventeenbox=\box79
-\pgfnodepartsixteenbox=\box80
-\pgfnodepartfifteenbox=\box81
-\pgfnodepartfourteenbox=\box82
-\pgfnodepartthirteenbox=\box83
-\pgfnodeparttwelvebox=\box84
-\pgfnodepartelevenbox=\box85
-\pgfnodeparttenbox=\box86
-\pgfnodepartninebox=\box87
-\pgfnodeparteightbox=\box88
-\pgfnodepartsevenbox=\box89
-\pgfnodepartsixbox=\box90
-\pgfnodepartfivebox=\box91
+\pgfnodepartlowerbox=\box74
+\pgfnodeparttwobox=\box75
+\pgfnodepartthreebox=\box76
+\pgfnodepartfourbox=\box77
+\pgfnodeparttwentybox=\box78
+\pgfnodepartnineteenbox=\box79
+\pgfnodeparteighteenbox=\box80
+\pgfnodepartseventeenbox=\box81
+\pgfnodepartsixteenbox=\box82
+\pgfnodepartfifteenbox=\box83
+\pgfnodepartfourteenbox=\box84
+\pgfnodepartthirteenbox=\box85
+\pgfnodeparttwelvebox=\box86
+\pgfnodepartelevenbox=\box87
+\pgfnodeparttenbox=\box88
+\pgfnodepartninebox=\box89
+\pgfnodeparteightbox=\box90
+\pgfnodepartsevenbox=\box91
+\pgfnodepartsixbox=\box92
+\pgfnodepartfivebox=\box93
 )))
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
 /libraries\tikzlibraryarrows.code.tex
@@ -874,22 +966,55 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
 ryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen271
-)))
+\arrowsize=\dimen285
+))
+\c@tablenotesi=\count350
+\enitdp@tablenotes=\count351
+)
+LaTeX Font Info:    Trying to load font information for T1+clm2j on input line 
+16.
+
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/cfr-lm\t1clm2j.fd
+File: t1clm2j.fd 2010/05/25 Fontinst v1.933 font definitions for T1/clm2j.
+)
 (D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.aux)
 \openout1 = `skrProcesRapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    Checking defaults for OML/lmm/m/it on input line 16.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+6.
+
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/lmsy/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+16.
+
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/lmr/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+6.
+
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/lmex/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+16.
+
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -901,17 +1026,17 @@ LaTeX Font Info:    ... okay on input line 16.
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen272
-\scratchbox=\box92
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen273
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count352
+\scratchdimen=\dimen286
+\scratchbox=\box94
+\nofMPsegments=\count353
+\nofMParguments=\count354
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen287
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
+\everyMPtoPDFconversion=\toks53
 )
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
 se.sty
@@ -923,7 +1048,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count349
+\c@lstlisting=\count358
 Package hyperref Info: Link coloring OFF on input line 16.
  (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -934,7 +1059,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 estring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count350
+\c@section@level=\count359
 )
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
@@ -958,11 +1083,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 19.
 
 [1
@@ -998,8 +1123,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \setcounter{AM@survey}{0}
 \setcounter{float@type}{8}
 \setcounter{IncludeDepth}{0}
+\setcounter{taken}{0}
+\setcounter{tablenotesi}{0}
 }
 {C:/Users/mail/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/clm2j/b/n' in size <24.88> not available
+(Font)              Font shape `T1/clm2j/bx/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `T1/clm2j/b/n' in size <14.4> not available
+(Font)              Font shape `T1/clm2j/bx/n' tried instead on input line 19.
+
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
@@ -1013,64 +1145,33 @@ l.20 \tableofcontents
 
 ]
 (D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
+LaTeX Font Info:    Font shape `T1/clm2j/b/n' in size <9> not available
+(Font)              Font shape `T1/clm2j/bx/n' tried instead on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 3.
- [2
-
-]
-Overfull \hbox (3.12837pt too wide) detected at line 52
- []\T1/cmr/m/n/9 VIII
- []
-
-
-Overfull \hbox (3.12837pt too wide) detected at line 60
- []\T1/cmr/m/n/9 XIII
- []
-
-
-Overfull \hbox (3.12837pt too wide) detected at line 61
- []\T1/cmr/m/n/9 XIII
- []
-
-
-Overfull \hbox (2.87286pt too wide) detected at line 62
- []\T1/cmr/m/n/9 XIV
- []
-
-
-Overfull \hbox (2.87286pt too wide) detected at line 63
- []\T1/cmr/m/n/9 XIV
- []
-
-
-Overfull \hbox (6.46782pt too wide) detected at line 66
- []\T1/cmr/m/n/9 XVII
- []
-
-
-Overfull \hbox (6.46782pt too wide) detected at line 67
- []\T1/cmr/m/n/9 XVII
- []
-
-
-Overfull \hbox (2.87286pt too wide) detected at line 68
- []\T1/cmr/m/n/9 XIX
- []
-
 )
 \tf@toc=\write6
 \openout6 = `skrProcesRapport.toc'.
 
- [3]
+ [2
+
+]
 Kapitel 1.
+LaTeX Font Info:    Font shape `T1/clm2j/b/n' in size <20.74> not available
+(Font)              Font shape `T1/clm2j/bx/n' tried instead on input line 22.
+LaTeX Font Info:    Trying to load font information for TS1+clm2j on input line
+ 32.
+(C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/cfr-lm\ts1clm2j.fd
+File: ts1clm2j.fd 2008/02/13 Fontinst v1.928 font definitions for TS1/clm2j.
+)
 (dele/case.tex
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
-[]|\T1/cmr/m/n/10 Fagområder som
+[]|\T1/clm2j/m/n/10 Fagområder som
  []
 
 
-Underfull \hbox (badness 7468) in paragraph at lines 43--43
-[]|\T1/cmr/m/n/10 Valgfri spe-ci-a-le-fag
+Underfull \hbox (badness 7326) in paragraph at lines 43--43
+[]|\T1/clm2j/m/n/10 Valgfri spe-ci-a-le-fag
  []
 
 
@@ -1078,468 +1179,708 @@ Overfull \hbox (34.5021pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-[4
+) [3
 
-]) [5] [6
-
-]
+] [4]
 Kapitel 2.
-[7
+[5
 
-] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[][][]\T1/cmr/m/n/8 https://blog.bitsrc.io/not-all-microservices-need-to-be-res
-t-3-alternatives-to-the-classic-
+] [6]
+LaTeX Font Info:    Font shape `T1/clm2j/b/n' in size <8> not available
+(Font)              Font shape `T1/clm2j/bx/n' tried instead on input line 106.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+[][][]\T1/clm2j/m/n/8 https://blog.bitsrc.io/not-all-microservices-need-to-be-r
+est-3-alternatives-to-the-classic-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-[][][]\T1/cmr/m/n/8 https://dev.to/denisveleaev/5-solid-principles-with-javascr
-ipt-how-to-make-your-code-
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[][][]\T1/clm2j/m/n/8 https://dev.to/denisveleaev/5-solid-principles-with-javas
+cript-how-to-make-your-code-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-[][][]\T1/cmr/m/n/8 https://blog.logrocket.com/solid-principles-single-responsi
-bility-in-javascript-
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[][][]\T1/clm2j/m/n/8 https://blog.logrocket.com/solid-principles-single-respon
+sibility-in-javascript-
  []
 
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[][][]\T1/cmr/m/n/8 https://www.mongodb.com/developer/languages/python/farm-sta
-ck-fastapi-react-
+[7]
+LaTeX Font Info:    Font shape `T1/clm2j/b/n' in size <12> not available
+(Font)              Font shape `T1/clm2j/bx/n' tried instead on input line 114.
+
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[][][]\T1/clm2j/m/n/8 https://www.mongodb.com/developer/languages/python/farm-s
+tack-fastapi-react-
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
-[]|\T1/cmr/m/n/10 Asynkron ODM for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
-\T1/cmr/m/n/10 MongoDB ba-se-ret på
- []
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 246--246
-\T1/cmr/m/n/10 json en-coding, CORS og
+[9]
+Overfull \hbox (3.66899pt too wide) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 Beanie$[]$| 
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 246--246
-[]|\T1/cmr/m/n/10 Asynchronous Ser-ver Ga-
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 Asynkron ODM for
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 246--246
-[]|\T1/cmr/m/n/10 Til at ge-ne-re-re Ob-jec-tId
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+\T1/clm2j/m/n/10 MongoDB ba-se-ret på
  []
 
 
-Overfull \hbox (5.48299pt too wide) in paragraph at lines 246--246
-[]|\T1/cmr/m/n/10 FastAPI_users[]| 
+Overfull \hbox (11.82697pt too wide) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 FastAPI$[]$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
-[]|\T1/cmr/m/n/10 HTTPX
+Underfull \hbox (badness 1796) in paragraph at lines 245--245
+\T1/clm2j/m/n/10 json en-coding, CORS og
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.4})
- has been already used, duplicate ignored
+
+Underfull \hbox (badness 1888) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 Asynchronous Ser-ver Ga-
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 Til at ge-ne-re-re Ob-jec-tId
+ []
+
+
+Underfull \hbox (badness 7397) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 til da-ta-mo-del-ler, så-le-des
+ []
+
+
+Overfull \hbox (5.62299pt too wide) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 FastAPI_users[][][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
+[]|\T1/clm2j/m/n/10 HTTPX
+ []
+
+! Undefined control sequence.
+<argument> \z 
+              
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `@' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+I expected to see one of: + - * / )
+
+! Undefined control sequence.
+<argument> \z 
+              
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `@' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+I expected to see one of: + - * / )
+
+! Undefined control sequence.
+<argument> \z 
+              
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `@' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+I expected to see one of: + - * / )
+
+! Undefined control sequence.
+<argument> \z 
+              
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `@' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+I expected to see one of: + - * / )
+
+! Undefined control sequence.
+<argument> \z 
+              
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `@' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \item
+            beanie: https://pypi.org/project/beanie/
+I expected to see one of: + - * / )
+
+! Extra }, or forgotten \endgroup.
+\TPT@close ...\unskip \fi \color@endgroup \egroup 
+                                                  
+l.251 \end{threeparttable}
+                          
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{tablenotes} on input line 246 ended by \end{threeparttabl
+e}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.251 \end{threeparttable}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.252 \end{table}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.252 \end{table}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{tablenotes} on input line 246 ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (58.72313pt too wide) in paragraph at lines 256--256
+[][][]\T1/clm2j/m/n/8 https://web.archive.org/web/20070916144913/https://wp.net
+scape.com/newsref/pr/newsrelease67.html| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 Promise-baseret http-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 react-native-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 Modal kom-po-nent, som
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 Giver in-for-ma-tio-ner om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 react-
+ []
+
+
+Overfull \hbox (16.85104pt too wide) in paragraph at lines 333--333
+\T1/clm2j/m/n/10 navigation/bottom-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 react-
+ []
+
+
+Overfull \hbox (17.11302pt too wide) in paragraph at lines 333--333
+\T1/clm2j/m/n/10 navigation/native[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+[]|\T1/clm2j/m/n/10 react-
+ []
+
+
+Overfull \hbox (12.244pt too wide) in paragraph at lines 333--333
+\T1/clm2j/m/n/10 navigation/stack[]| 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.25}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.14}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.15}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.16}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.17}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.19}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.20}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.21}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.22}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.23}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.24}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.25}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \end{table}
+l.334 \end{table}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{Hfootnote.26}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 \end{table}
+l.334 \end{table}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{Hfootnote.27}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 \end{table}
+l.334 \end{table}
                  
-Overfull \hbox (55.85352pt too wide) in paragraph at lines 251--251
-[][][]\T1/cmr/m/n/8 https://web.archive.org/web/20070916144913/https://wp.netsc
-ape.com/newsref/pr/newsrelease67.html| 
- []
-
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 Promise-baseret http-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 react-native-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 Modal kom-po-nent, som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 expo-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 Giver in-for-ma-tio-ner om
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 react-
- []
-
-
-Overfull \hbox (16.81343pt too wide) in paragraph at lines 328--328
-\T1/cmr/m/n/10 navigation/bottom-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 react-
- []
-
-
-Overfull \hbox (16.6747pt too wide) in paragraph at lines 328--328
-\T1/cmr/m/n/10 navigation/native[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmr/m/n/10 react-
- []
-
-
-Overfull \hbox (12.28688pt too wide) in paragraph at lines 328--328
-\T1/cmr/m/n/10 navigation/stack[]| 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.27}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.28}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.29}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.30}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.31}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.32}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.33}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.34}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.35}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.36}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.37}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.38}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.39}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.40}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.41}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Hfootnote.42}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \end{table}
-                  [14] [15] [16]
 Kapitel 3.
 (dele/tidsplanRea.tex
-Underfull \hbox (badness 6001) in paragraph at lines 58--58
-[]|\T1/cmr/m/n/10 Lav \T1/cmr/m/it/10 ca-se\T1/cmr/m/n/10 , \T1/cmr/m/it/10 pro
--blem-for-mu-
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 Lav \T1/clm2j/m/it/10 ca-se\T1/clm2j/m/n/10 , \T1/clm2j/m/i
+t/10 pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-\T1/cmr/m/it/10 le-ring\T1/cmr/m/n/10 , \T1/cmr/m/it/10 Kravs-spe-ci-fi-ka-tion
-\T1/cmr/m/n/10 ,
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/it/10 blem-for-mu-le-ring\T1/clm2j/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 58--58
-\T1/cmr/m/n/10 Lav en ru-di-men-tær fron-
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/it/10 Kravs-spe-ci-fi-ka-
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 58--58
-\T1/cmr/m/n/10 og skit-ser en over-ord-net
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/it/10 tion\T1/clm2j/m/n/10 , \T1/clm2j/m/it/10 tids-plan\T1/clm2j/m
+/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-\T1/cmr/m/n/10 Skriv før-ste ud-kast til
+Underfull \hbox (badness 1077) in paragraph at lines 70--70
+\T1/clm2j/m/it/10 mo-ck-up \T1/clm2j/m/n/10 og send
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 58--58
-[]|\T1/cmr/m/n/10 Beskriv lø-ben-de pro-gram
+Underfull \hbox (badness 1082) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 dem til god-ken-
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 58--58
-[]|\T1/cmr/m/n/10 Beskriv te-ste-ne, fe-a-tu-res
+Underfull \hbox (badness 4660) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 Realiseret, samt
  []
 
 
-Overfull \hbox (39.2524pt too wide) in paragraph at lines 58--58
-\T1/cmr/m/n/10 Dokumentationsmaraton 
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 Begynd beg-ge
  []
 
-) [17
 
-]
-Overfull \vbox (13.63658pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 rap-por-ter-ne og
+ []
 
 
-[18]
+Underfull \hbox (badness 2478) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 skit-ser en over-
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 Skriv før-ste ud-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 og tek-no-lo-gi-af-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 Realiseret, dog
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 uden ru-di-men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 Beskriv lø-ben-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 de pro-gram
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 duktrap-por-ten,
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 og er-fa-rin-ger og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 ud-for-drin-ger til
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 og sik-re der er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 kom-men-te-ret
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 Fra-sor-ter fra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 feature-listen,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 hvad der ik-ke
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 kan nås, im-ple-
+ []
+
+
+Underfull \hbox (badness 6078) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 Beskriv te-ste-ne,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 fe-a-tu-res (bå-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 kas-se-re-de og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 do-ku-men-ta-tion,
+ []
+
+
+Overfull \hbox (39.29103pt too wide) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 Dokumentationsmaraton 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\T1/clm2j/m/n/10 realisteret do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 ku-e-met-na-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 pro-ble-mer med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 at sam-le fron-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+\T1/clm2j/m/n/10 tend, ba-ck-end
+ []
+
+)
 Kapitel 4.
-[19
-
-] [20]
 Kapitel 5.
 
-Overfull \hbox (11.85037pt too wide) in paragraph at lines 410--410
-[][][]\T1/cmr/m/n/8 https://github.com/SuneKR/obliGentle/blob/main/Efter%20afle
-vering/efterAFlevering.md| 
+Overfull \hbox (12.86716pt too wide) in paragraph at lines 416--416
+[][][]\T1/clm2j/m/n/8 https://github.com/SuneKR/obliGentle/blob/main/Efter%20af
+levering/efterAFlevering.md| 
  []
 
-[21
-
-] [22]
 Kapitel 6.
-[23
-
-]
 Bilag A.
-[1
-
-
-] [2]
 Bilag B.
-[3
 
-] [4] [5] [6] [7] [8] [9]
-Overfull \hbox (45.45769pt too wide) in paragraph at lines 817--821
-\T1/cmr/m/n/9 løsninger(https://mui.com/material-ui/react-tooltip/#main-content
-)(https://mui.com/material-
+Underfull \hbox (badness 10000) in paragraph at lines 823--827
+\T1/clm2j/m/n/10 content)(https://mui.com/material-ui/guides/composition/#wrapp
+ing-
  []
 
-[10] [11]
-Overfull \hbox (28.24347pt too wide) in paragraph at lines 916--919
-\T1/cmr/m/n/9 sions. Jeg tog ud-gangs-punkt i an-be-fa-lin-ger fra den-ne si-de
-: https://reactnativecentral.com/top-
+
+Underfull \hbox (badness 3333) in paragraph at lines 922--925
+\T1/clm2j/m/n/10 ti-ve exten-sions. Jeg tog ud-gangs-punkt i an-be-fa-lin-ger f
+ra den-ne si-de:
  []
 
-[12]
-Overfull \hbox (63.54224pt too wide) in paragraph at lines 947--950
-\T1/cmr/m/n/9 users.github.io/fastapi-users/12.1/configuration/full-example/ ht
-tps://fastapi-users.github.io/fastapi-
+
+Underfull \hbox (badness 1577) in paragraph at lines 953--956
+\T1/clm2j/m/n/10 users.github.io/fastapi-users/12.1/configuration/full-example/
+ https://fastapi-
  []
 
-[13] [14] [15] [16]
 Bilag C.
-[17
 
-] [18] [19] (D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.aux)
+! LaTeX Error: \begin{tablenotes} on input line 246 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1252 \end{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.aux)
 Package rerunfilecheck Info: File `skrProcesRapport.out' has not changed.
-(rerunfilecheck)             Checksum: 482168443E52C9FDF6FBE8630C2EC941;8483.
- ) 
-Here is how much of TeX's memory you used:
- 26960 strings out of 478868
- 513659 string characters out of 2849283
- 1002492 words of memory out of 3000000
- 44145 multiletter control sequences out of 15000+600000
- 421888 words of font info for 59 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 91i,17n,88p,1310b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1
-000.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecbx1200.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecbx0800.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecrm0800.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecrm0600.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts
-/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\mail\AppData\Local\MiKTeX\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\mail\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\mail\AppData\Loc
-al\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\mail\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\mail\A
-ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\m
-ail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Us
-ers\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <
-C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.
-pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-1728.pk>
-Output written on D:\progTemp\obliGentle\Rapporter\build\skrProcesRapport.pdf (
-43 pages, 397817 bytes).
-PDF statistics:
- 1452 PDF objects out of 1728 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
- 549 words of extra memory for PDF output out of 10000 (max. 10000000)
+(rerunfilecheck)             Checksum: 3F71F1C330CC217FAFA89BF8FC2311E5;2819.
 
+! You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.1252 \end{document}
+                     
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: \begin{tablenotes} on input line 246 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1252 \end{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ./skrProcesRapport.tex
+                          
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 27953 strings out of 478868
+ 530727 string characters out of 2849283
+ 1139957 words of memory out of 3000000
+ 45170 multiletter control sequences out of 15000+600000
+ 502674 words of font info for 101 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 91i,21n,88p,1310b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -14,8 +14,8 @@ from models import taskModels
 
 class model(taskModels.model):
     type: str = "chore"
-    priority: int = Field(...)
-    interval: int = Field(...)
+    priority: Optional[int] = 0
+    interval: Optional[int] = 14
     
     
 

@@ -16,7 +16,7 @@ from models import taskModels
 class model(taskModels.model):
     type: str = "appointment"
     dueDate: datetime = datetime.now() + timedelta(days=7)
-    isActive: bool = Field(...)
+    isActive: Optional[bool] = True
 
 # it's updating class
 

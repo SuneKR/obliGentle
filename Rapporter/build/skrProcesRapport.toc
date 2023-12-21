@@ -1,68 +1,18 @@
 \babel@toc {danish}{}\relax 
-\contentsline {chapter}{\numberline {1}Formalia}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Indledning}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Læsevejledning}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}problemformulering}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}case}{5}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Metode- og teknologivalg}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Udvikling og planlægning}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}RESTful API Arkitektur}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Software design: SOLID-principper}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Single-Responsibility Principle}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Open-Closed Principle}{10}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Liskov Substitution Principle}{10}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Interface Segregation Principle}{10}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Dependency Inversion Principle}{10}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}”Duck typing” og interfaces}{10}{subsection.2.3.6}%
-\contentsline {section}{\numberline {2.4}Tech Stack: FAR(n)M}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Sprog: Python}{11}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}FastAPI}{11}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Anvendte Python og FastAPI moduler}{12}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Sprog: JavaScript}{13}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Framework: React Native}{13}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Anvendte JavaScript og React Native modul}{14}{subsection.2.4.6}%
-\contentsline {subsection}{\numberline {2.4.7}MongoDB}{15}{subsection.2.4.7}%
-\contentsline {subsection}{\numberline {2.4.8}GitHub}{15}{subsection.2.4.8}%
-\contentsline {subsection}{\numberline {2.4.9}MongoDB Compass}{16}{subsection.2.4.9}%
-\contentsline {subsection}{\numberline {2.4.10}OneNote}{16}{subsection.2.4.10}%
-\contentsline {subsection}{\numberline {2.4.11}Swagger UI}{16}{subsection.2.4.11}%
-\contentsline {subsection}{\numberline {2.4.12}TexMaker og MikTek}{16}{subsection.2.4.12}%
-\contentsline {subsection}{\numberline {2.4.13}Visual Studio Code}{16}{subsection.2.4.13}%
-\contentsline {chapter}{\numberline {3}Tidsplan}{17}{chapter.3}%
-\contentsline {chapter}{\numberline {4}udvalgte refleksioner}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}AI}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}”Comment first”-kodning}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Modulærudvikling}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}React Native}{20}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Mangler og videreudvikling}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Mangler}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Videreudvikling}{21}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Konklusion}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Literaturliste}{I}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Internet ressourcer}{I}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Logbog}{III}{appendix.B}%
-\contentsline {section}{\numberline {B.1}231113}{III}{section.B.1}%
-\contentsline {section}{\numberline {B.2}231114}{III}{section.B.2}%
-\contentsline {section}{\numberline {B.3}231115}{IV}{section.B.3}%
-\contentsline {section}{\numberline {B.4}231116}{V}{section.B.4}%
-\contentsline {section}{\numberline {B.5}231117}{VI}{section.B.5}%
-\contentsline {section}{\numberline {B.6}231120}{VI}{section.B.6}%
-\contentsline {section}{\numberline {B.7}231121}{VII}{section.B.7}%
-\contentsline {section}{\numberline {B.8}231122}{VII}{section.B.8}%
-\contentsline {section}{\numberline {B.9}231123}{VIII}{section.B.9}%
-\contentsline {section}{\numberline {B.10}231124}{IX}{section.B.10}%
-\contentsline {section}{\numberline {B.11}231127}{IX}{section.B.11}%
-\contentsline {section}{\numberline {B.12}231128}{X}{section.B.12}%
-\contentsline {section}{\numberline {B.13}231129}{X}{section.B.13}%
-\contentsline {section}{\numberline {B.14}231130}{XI}{section.B.14}%
-\contentsline {section}{\numberline {B.15}231201}{XII}{section.B.15}%
-\contentsline {section}{\numberline {B.16}231202 \& 231203}{XII}{section.B.16}%
-\contentsline {section}{\numberline {B.17}231204}{XIII}{section.B.17}%
-\contentsline {section}{\numberline {B.18}231205}{XIII}{section.B.18}%
-\contentsline {section}{\numberline {B.19}231206}{XIV}{section.B.19}%
-\contentsline {section}{\numberline {B.20}231207}{XIV}{section.B.20}%
-\contentsline {section}{\numberline {B.21}231208}{XV}{section.B.21}%
-\contentsline {chapter}{\numberline {C}procesevalueringer}{XVII}{appendix.C}%
-\contentsline {section}{\numberline {C.1}231123}{XVII}{section.C.1}%
-\contentsline {section}{\numberline {C.2}231129}{XVII}{section.C.2}%
-\contentsline {section}{\numberline {C.3}231206}{XIX}{section.C.3}%
+\contentsline {chapter}{\numberline {1}Formalia}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Læsevejledning}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}problemformulering}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}case}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Metode- og teknologivalg}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Udvikling og planlægning}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}RESTful API Arkitektur}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Software design: SOLID-principper}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Single-Responsibility Principle}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Open-Closed Principle}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Liskov Substitution Principle}{8}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Interface Segregation Principle}{8}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Dependency Inversion Principle}{8}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}”Duck typing” og interfaces}{8}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Tech Stack: FAR(n)M}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Sprog: Python}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}FastAPI}{9}{subsection.2.4.2}%

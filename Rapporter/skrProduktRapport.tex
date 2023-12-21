@@ -19,37 +19,21 @@
 \makeTechTitlecard
 \tableofcontents
 
-\chapter{Materiale til Godkendelse}
+\chapter{Læsevejledning}
 
-\section{Problemformulering}
-\label{probform}
+I forbindelse med svendeprøven er vi blevet pålagt at aflevere 2 rapporter, en om projektets proces og en om dets produkt. Dette er produktrapporten og fokuserer på gennemgang af brugen af projektet.\par{}
+Brugervejledningen er skrevet, således at den ikke kræver nogen særlig teknisk viden.
+Den tekniske dokumentation forudsætter en teknisk viden svarende til en færdiguddannet datateknikker.\par{}
+Kravspecifikationen er skrevet med henblik  på at være læselig for alle, men da den inkluderer fagudtryk, er den fulde forståelse er muligvis ikke tilgængelig for alle.
 
-Lav en opgave organiserings-/kalenderapplikation, hvor brugere har mulighed for at styrer forskellige typer opgaver:
-\begin{itemize}
-\item \textbf{Aftaler}: Opgaver som bruger skal gøre på eller inden et bestemt tidspunkt og bliver automatisk færdiggjort på det pågældende tidspunkt.
-\item \textbf{Projekter}: Opgaver som brugeren selv har valg, hvor brugeren kan notere progres og færdiggørelse. 
-\item \textbf{Tjanser}: Tilbagevendende opgaver som brugeren skal have gjort ved lejlighed og hvor der kun virker de vigtigste.
-\end{itemize}
-
-Applikationen skal være skal laves som en \textit{RESTful API} med\textit{Crossplatform} brugerflader. Det skal være muligt for brugere at tilgå deres profil både fra et \textit{webinterface} og en \textit{android app}.\par{}
-
-Applikationen skal være modulært opbygget og mulighed for jeg eller andre udviklere, kan udviklere videre på.\par{}
-
-Applikationen skal i udgangspunkt sættes op online og have en \textit{proof-of-concept} tilgængelig.
-
-\section{Casebeskrivelse}
-\label{case}
-
-\include*{./dele/case}
-
-\section{Kravsspecifikation}
+\chapter{Kravsspecifikation}
 \label{kravspec}
 
-\projectName{} er en opgave-organiserings-/kalenderapplikation, som har til formål at hjælpe brugeren med at organisere deres hverdag ved at give brugeren en positiv oplevelse med, hvad brugeren faktisk når og mindre skyldfølelse med hvad brugeren ikke når. \projectName{} forsøger at opnå dette ved behandle opgaver forskelligt og deler\footnote{I hvert fald i første omgang} op i 3 slags opgaver. Aftaler, opgaver som skal være færdige til eller før et bestemt tidspunkt, projekter, selvvalgte opgaver fokusere på fremskridt i stedet færdiggørelse, og tjanser, gentagende opgaver.
+\projectName{} er en opgave-organiserings-/kalenderapplikation, som har til formål at hjælpe brugeren med at organisere deres hverdag ved at give brugeren en positiv oplevelse med, hvad brugeren faktisk når og mindre skyldfølelse med hvad brugeren ikke når. \projectName{} forsøger at opnå dette ved behandle opgaver forskelligt og deler\footnote{I hvert fald i første omgang} op i 3 slags opgaver. Aftaler: Opgaver som skal være færdige til eller før et bestemt tidspunkt, Projekter: selvvalgte opgaver med fokus på fremskridt i stedet for færdiggørelse, 3) Tjanser: Gentagende opgaver.
 
 \subsection{Funktionalitet}
 
-\projectName{} er i sin essens 3 klasser/lister, som hver rummer opgaver. De forskellige klasser/lister har forskellige regler. Endvidere har det også følgende funktioner:
+\projectName{} er i sin essens 3 klasser/lister, som hver rummer opgaver. De forskellige klasser/lister har forskellige regler. Endvidere har de også følgende funktioner:
 \begin{itemize}
 \item uulighed for at tilføje nye opgaver
 \item mulighed for at vise udvalgte opgaver
@@ -83,6 +67,12 @@ Sidst men ikke mindst bliver \projectName{} kun en prototype og ikke alle funkti
 \item Kan ikke logge ind logge ind med den forkerte \textit{two factor authentication} kode
 \item Virker på forskellige enheder på forskellige netværk
 \end{itemize}
+
+\chapter{Brugervejledning}
+
+I skrivende stund kører ikke, som den skal. Dette er noget, som jeg regner med at få udbedret inden svendeprøven, men lige nu virker, så virker login og registeringssiden.\par{}
+Det er desværre ikke meningsfuld at beskrive, hvordan ikke fungerede del af et program ikke virker.\par{}
+Derfor har jeg inkluderet flowchart'et og mock'et fra godkendelsesproceduren, således det er muligt at se hensigten. Håber på at få programmet til at virke og lave noget dokumentation til den ved samme lejlighed.\par{}
 
 \section{Flowchart}
 
@@ -154,114 +144,315 @@ Her vises, en endnu udesignet, profilfane, hvor det vil være muligt at få et o
 \pic[jpg]{mockUpIndstillinger}
 Her vises, en endnu udesignet, indstillingsfane, hvor det vil være muligt at styre en række ting fra. Eksempelvis antallet af tjanser, aftaler og projekter eller lignende ting.
 
-\section{Estimeret Tidsplan}
-\label{estTid}
+\chapter{Teknisk dokumentation}
 
-\include*{./dele/tidsplanEst}
+\section{Få programmeret til at køre}
 
-\begin{comment}
+Indtil videre er det nødvendigt bruge \fragCom{uvicorn main:app --reload} fra \textit{./API/}-mappen for at få backenden til at køre og bruge \fragCom{npm run web} eller \fragCom{npm run webnb}\footnote{hvis man ikke ønsker applikationen selv skal åbne sig i en ny browser} fra \textit{./UI/}-mappen for at få fronten til at køre.\par{}
+Backenden virker som den skal, men frontenenden fejler desværre på en centralskærm.\par{}
 
-\section{Kravsspecifikation}
-\label{kravspec}
+Jeg håber på at udbedre dette og lave en ny vejledning\par{}
 
-\projectName{} er et virtuel bræt, som udgør det et alternativ den helt almindelige bordflade, som normalt bruges til rollespil og brætspil. I modsætning til mange eksisterende \textit{Virtual TableTop (VTT)}s, er \projectName{}s designet og optimeret til at fungere i et hybridformat, hvor brugerne sidder sammen om et bord, men stadig gerne vil opnå flere af fordele ved at have et virtuel flade, men ønsker at holde fokus på spillet og situationen dem i mellem fremfor at blive suget helt ind i digitalt rum.\par{}
-Essentielt er det også, at \projectName{} vil lade brugerne bestemme og give dem mulighederne for at definere, hvilke regler og funktion, som er implementeret i deres session.\par{}
+\section{Testkonditioner}
 
-\subsection{Funktionalitet}
+Det er muligt at logge ind, lave en bruger og anmode om at få en reset password token fra fronten i skrivende tidspunkt.\par{}
+Det er ikke imponerende, men det betyder, at de fleste frontend test ikke giver mening.
+Jeg har dog testet alle end points.\par{}
 
-\projectName{} er i sin simpleste form en digitalt flade, hvor brugerne kan flytte brikker på.
-Endvidere har det også følgende funktioner:
-\begin{itemize}
-\item mulighed for at skifte brættets udseende og egenskaber
-\item mulighed for at vælge, manipulere og ændre forskellige brikker
-\item mulighed for at gemme, bevare og have flere sessioner
-\item mulighed for at let at kunne tilføje ekstra funktioner til programmet\footnote{Altså programmet er skrevet modulært; skal ikke forstås som om brugere selv kan ændre programmet}
-\end{itemize}
+\section{Testede API routes}
 
-\subsection{Begrænsninger}
+Disse routes er testet fra localhost:
 
-\projectName{} er optimeret til være et værktøj ved fysiske spil og ikke sit eget virtuelle rum. Derfor vil i udgangspunket ikke indeholde mulighed for, at en bruger kan gemme information fra andre brugere.\par{}
-Det er også tanken, at \projectName{}, så vidt muligt, kun skal implementere regler i det omfang, at brugerne kan slå det og styrer dem selv.\par{}
-Sidst men ikke mindst bliver \projectName{} kun en prototype og ikke alle funktioner vil være færdigudviklet.
+\begin{table}[H]
+\centering
+\rowcolors{2}{White}{Gray!25}
+\begin{tabularx}{\textwidth}{X X X}
 
-\subsection{Testkonditioner}
+[HTTP request metoden] /[route]
+&
+funktion
+&
+Test 8/12
+\\
 
-\begin{itemize}
-\item API'en skal kunne tilgås
-\item Skal virke crossplatform i både en \textit{browser} og på en \textit{tablet}
-\item Skal kunne gemme sessioner
-\item Skal kunne oprette nye session
-\item Skal stadig fungere efter der implementeres en ny feature.
-\end{itemize}
 
-\section{Estimeret Tidsplan}
-\label{estTid}
+GET	/
+&
+Root
+&
+\textcolor{ForestGreen}{succes!}
+\\
 
-\include*{./dele/tidsplanEst}
 
-\section{Mockup}
-\label{mockup}
+GET	/authticated-route
+&
+Authenticated Route
+&
+\textcolor{ForestGreen}{succes!}
+\\
 
-Dette \textit{mock up} er meget spartansk. Jeg håber, og regner med, at der bliver tid til at lave et pænere og bedre design, men dette \textit{mock up} er det design, som jeg gerne vil hen til, før jeg begynder at implementere \textit{features} og yderligere design.\footnote{billedet af tablet'en er fundet her: https://purepng.com/photo/25263/electronics-android-tablet}\par{}
+GET /status
+&
+Getstatus
+&
+\textcolor{Bittersweet}{Fejlet!}
+\\
 
-\section{Flowchart}
-\label{flowchart}
 
-Dette flowchart afspejler, at prototypen i sit udgangspunkt er meget simpel. Når prototypen tager mere form, vil det formentligt var nødvendigt at revidere dette \textit{flowchart}.\par{}
+POST /auth/jwt/login
+&
+Auth:Jwt.Login
+&
+\textcolor{ForestGreen}{succes!}
+\\
 
-\section{Note angående tidligere projekt}
-\label{tidlProj}
+POST /auth/jwt/logout
+&
+Auth:Jwt.Logout
+&
+\textcolor{ForestGreen}{succes!}
+\\
 
-På \textbf{H5} lavede jeg et lignende projekt kaldet \textbf{\textit{encoutner Assistient}}, som var specifik til rollespil. Dette projekt blev ikke færdigt og endte udelukkende med et \textit{proof-of-concept} og endte med at have signifikante arkitektoniske udfordringer.\par{}
-For at undgå selvplagiering har jeg valgt at generalisere dette projekt og skrive det i en helt anden tech-stack.\par{}
-Den ældre rapport kan udleveres ved forsørgelse og projektet kan findes på git her\footnote{https://github.com/SuneKR/encounterAssitient}.
+POST /auth/register
+&
+Register:Register
+&
+\textcolor{ForestGreen}{succes!}
+\\
 
-\end{comment}
+POST /auth/forgot-password
+&
+Reset:Forgot Password
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /auth/reset-password
+&
+Reset:Reset Password
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /auth/request-verify-token
+&
+Verify:Request-Token
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /auth/verify
+&
+Verify:Verify
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /users/me
+&
+Users:Current User
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+PATCH /users/me
+&
+Users:Patch Current User
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /users/{id}
+&
+Users:User
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+DELETE /users/{id}
+&
+Users:Delete User
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+PATCH /users/{id}
+&
+Users:Patch User
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /appointments/
+&
+Routetosomething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /appointments/
+&
+Routetocreation
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /appointments/{id}
+&
+Routetoonething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+PUT /appointments/{id}
+&
+Routetoupdate
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+DELETE /appointments/{id}
+&
+Routetooblivion
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{White}{Gray!25}
+\begin{tabularx}{\textwidth}{X X X}
+
+[HTTP request metoden] /[route]
+&
+funktion
+&
+Test 8/12
+\\
+
+GET /chores/
+&
+Routetosomething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /chores/
+&
+Routetocreation
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /chores/{id}
+&
+Routetoonething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+PUT /chores/{id}
+&
+Routetoupdate
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+DELETE /chores/{id}
+&
+Routetooblivion
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+
+
+GET /projects/
+&
+Routetosomething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /projects/
+&
+Routetocreation
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /projects/{id}
+&
+Routetoonething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+PUT /projects/{id}
+&
+Routetoupdate
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+DELETE /projects/{id}
+&
+Routetooblivion
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /tasks/
+&
+Routetoeverything
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+POST /tasks/
+&
+Routetocreation
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+GET /tasks/{id}
+&
+Routetoonething
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+PUT /tasks/{id}
+&
+Routetoupdate
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+DELETE /tasks/{id}
+&
+Routetooblivion
+&
+\textcolor{ForestGreen}{succes!}
+\\
+
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{evaluering af fejlet GET /status}
+Route fejlede, da den ved en fejl var sat til at kræve autorisering. Det er ikke meningen, så derfor tæller det selvfølgelig som en fejl, selvom det er rettet nu.
 
 \clearpage
 
 \pagenumbering{Roman}
 \appendix
 \renewcommand{\thechapter}{\Alph{chapter}}
-
-\chapter{Foreløbig literaturliste}
-
-Dette er ikke en begrænsning af fremtidige anvendte ressourcer, men beskrivelse af allerede anvendte ressourcer.
-
-\section{Internet ressourcer}
-\begin{itemize}
-\item atlassian.com
-\item baeldung.com
-\item code.visualstudio.com
-\item christophergs.com
-\item codevoweb.com
-\item colorhexa.com
-\item ctan.org
-\item devwithdave.co.uk
-\item geeksforgeeks.org
-\item github.com
-\item fastapi.tiangolo.com
-\item flaticon.com
-\item ionicframework.com
-\item merriam-webster.com
-\item mongodb.com
-\item multimediedesigneren.dk
-\item ordbogen.com
-\item ordnet.dk
-\item overleaf.com
-\item panabee.com
-\item purepng.com
-\item pythontutorial.net
-\item scrumguides.org
-\item shortcut.com
-\item stackexchange.com
-\item thefreedictionary.com
-\item thesaurus.com
-\item realpython.com
-\item vuejs.org
-\item whois.domaintools.com
-\item wikipedia.org
-\end{itemize}
 
 %%%%%%
 %	Afslutning

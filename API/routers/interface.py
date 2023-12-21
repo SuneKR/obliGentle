@@ -33,7 +33,9 @@ class routerInterface:
     # Create route
     #@router.post("/", response_description="Create")
     async def routeToCreation(self, task: taskModels.model, user: User = Depends(current_active_user)) -> dict:
-        await task.create()
+        taskWithOwner = task
+        taskWithOwner.owner = str(user.id)
+        await taskWithOwner.create()
         return {"message": "Task added"}
     
     '''
@@ -60,7 +62,9 @@ class routerInterface:
     ## read all
     #@router.get("/", response_description="Read all")
     async def routeToEverything(self, user: User = Depends(current_active_user)) -> list[taskModels.model]:
-        tasks = await self.taskModel.model.find_all().to_list()
+        tasks = []
+        for task in await self.taskModel.model.find_all().to_list():
+            if(task.owner == str(user.id)): tasks.append(task)
         return tasks
     ''''
     async def routeToEverything(self, request: Request, user: User = Depends(current_active_user)):
@@ -74,7 +78,9 @@ class routerInterface:
     async def routeToSomething(self, user: User = Depends(current_active_user)) -> list[taskModels.model]:
         tasks = []
         for task in await self.taskModel.model.find_all().to_list():
-            if(self.taskModel.modelToDict(task)["Type"] == self.taskType): tasks.append(task)
+            if(task.owner == str(user.id)): 
+                if(task.type == str(self.taskType)):
+                    tasks.append(task)
         return tasks
     
     ''''
@@ -111,9 +117,10 @@ class routerInterface:
     # delete route
     #@router.delete("{id}", response_description="Delete")
     async def routeToOblivion(self, id: str, user: User = Depends(current_active_user)) -> dict:
-        expiring = await self.taskModel.model.get(id)
-        if not expiring: raise HTTPException(status_code=404, detail="Task not found") 
-        await expiring.delete()
+        oblivious = await self.taskModel.model.get(id)
+        if not oblivious: raise HTTPException(status_code=404, detail="Task not found") 
+        await oblivious.delete()
+        return oblivious
     
     '''
     async def routeToOblivion(self, id: str, request: Request, user: User = Depends(current_active_user)):

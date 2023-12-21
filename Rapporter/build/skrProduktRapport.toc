@@ -1,0 +1,14 @@
+\babel@toc {danish}{}\relax 
+\contentsline {chapter}{\numberline {1}Læsevejledning}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Kravsspecifikation}{4}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Funktionalitet}{4}{subsection.2.0.1}%
+\contentsline {subsection}{\numberline {2.0.2}Begrænsninger}{4}{subsection.2.0.2}%
+\contentsline {subsection}{\numberline {2.0.3}Testkonditioner}{5}{subsection.2.0.3}%
+\contentsline {chapter}{\numberline {3}Brugervejledning}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Flowchart}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Mockup}{8}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Teknisk dokumentation}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Få programmeret til at køre}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testkonditioner}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Testede API routes}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}evaluering af fejlet GET /status}{15}{subsection.4.3.1}%

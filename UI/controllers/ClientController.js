@@ -3,7 +3,12 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 import * as moment from 'moment';
 
+// local imports
 import config from 'config';
+
+//configurations
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+axios.defaults.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
 
 class ClientController {
   constructor (overrides) {
@@ -65,9 +70,9 @@ class ClientController {
   }
 
   logout() {
-    this.apiClient.post('/auth/jwt/logout')
     localStorage.removeItem('token');
     localStorage.removeItem('user');
+    return this.apiClient.post('/auth/jwt/logout');
   }
 
   // task Operations
@@ -85,10 +90,10 @@ class ClientController {
   }
   deleteAppointment(appointmentId) { return this.apiClient.delete(`appointments/${ appointmentId }`)}
   getAppointment(appointmentId) { return this.apiClient.get(`appointments/${ appointmentId }`); }
-  getAppointments() { return this.apiClient.get(`appointments/`); }
+  getAppointments() { return this.apiClient.get(`appointments/`).then(({ data }) => { return data; }); }
   updateAppointment(appointmentId, name, description, dueDate, isActive) {
     const appointmentData = { name, description, dueDate, isActive };
-    return this.apiClient.put(`appointments/${ appointmentId}`, appointmentData);
+    return this.apiClient.put(`appointments/${ appointmentId }`, appointmentData);
   }
 
   createChore(name, description, priority, interval) {
@@ -97,10 +102,10 @@ class ClientController {
   }
   deleteChore(choreId) { return this.apiClient.delete(`chores/${ choreId }`)}
   getChore(choreId) { return this.apiClient.get(`chores/${ choreId }`); }
-  getChores() { return this.apiClient.get(`chores/`); }
+  getChores() { return this.apiClient.get(`chores/`).then(({ data }) => { return data; }); }
   updateChore(choreId, name, description, priority, interval) {
     const choreData = { name, description, priority, interval };
-    return this.apiClient.put(`chores/${ choreId}`, choreData);
+    return this.apiClient.put(`chores/${ choreId }`, choreData);
   }
 
   createProject(name, description, porgress, isActive) {
@@ -109,10 +114,10 @@ class ClientController {
   }
   deleteProject(projectId) { return this.apiClient.delete(`projects/${ projectId }`)}
   getProject(projectId) { return this.apiClient.get(`projects/${ projectId }`); }
-  getProjects() { return this.apiClient.get(`projects/`); }
+  getProjects() { return this.apiClient.get(`projects/`).then(({ data }) => { return data; }); }
   updateProjects(projectId, name, description, porgress, isActive) {
     const projectData = { name, description, porgress, isActive };
-    return this.apiClient.put(`projects/${ projectId}`, projectData);
+    return this.apiClient.put(`projects/${ projectId }`, projectData);
   }
 
   createTask(name, description) {
@@ -121,10 +126,13 @@ class ClientController {
   }
   deleteTask(taskId) { return this.apiClient.delete(`tasks/${ taskId }`)}
   getTask(taskId) { return this.apiClient.get(`tasks/${ taskId }`); }
-  getTasks() { return this.apiClient.get(`tasks/`); }
+  getTasks() {
+    return this.apiClient.get(`tasks/`)
+      .then(({ data }) => { return data; });
+   }
   updateTask(taskId, name, description) {
     const taskData = { name, description };
-    return this.apiClient.put(`tasks/${ taskId}`, taskData);
+    return this.apiClient.put(`tasks/${ taskId }`, taskData);
   }
 }
 
@@ -134,10 +142,10 @@ function localStorageTokenInterceptor(config) {
 
   if (tokenString) {
     const token = JSON.parse(tokenString);
-    const decodedAccessTokrn = jwtDecode(token.access_token);
-    const isAccessTokenValid = moment.unix(decodedAccessTokrn.exp).toDate() > new Date()
+    const decodedAccessToken = jwtDecode(token.access_token);
+    const isAccessTokenValid = moment.unix(decodedAccessToken.exp).toDate() > new Date()
     if (isAccessTokenValid) { headers['Authorization'] = `Bearer ${ token.access_token }`; }
-    else { alert('Sessions have expired. Please login again'); }
+    //else { alert('Sessions have expired. Please login again'); }
   }
 
   config['headers'] = headers;

@@ -14,8 +14,8 @@ from models import taskModels
 
 class model(taskModels.model):
     type: str = "project"
-    progress: int = Field(...)
-    isActive: bool = Field(...)
+    progress: Optional[int] = 0
+    isActive: Optional[bool] = True
 
 # it's updating class
 
