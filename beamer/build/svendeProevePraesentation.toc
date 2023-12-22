@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Introduktion}{1}{0}{1}
-\beamer@sectionintoc {2}{Mangler}{6}{0}{2}
-\beamer@sectionintoc {3}{Produktfremvisning}{9}{0}{3}
-\beamer@sectionintoc {4}{Efterrefleksioner}{11}{0}{4}
-\beamer@sectionintoc {5}{Konklusion}{12}{0}{5}
+\beamer@sectionintoc {2}{Mangler}{7}{0}{2}
+\beamer@sectionintoc {3}{Produktfremvisning}{10}{0}{3}
+\beamer@sectionintoc {4}{Efterrefleksioner}{12}{0}{4}
+\beamer@sectionintoc {5}{Konklusion}{13}{0}{5}

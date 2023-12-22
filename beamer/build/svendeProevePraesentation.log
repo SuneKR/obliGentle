@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.30)  21 DEC 2023 23:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.30)  22 DEC 2023 09:09
 entering extended mode
 **./svendeProevePraesentation.tex
 (svendeProevePraesentation.tex
@@ -1021,20 +1021,20 @@ Package pdftex.def Info: ./pics/buddyJesus.png  used on input line 96.
  [4
 
  <./pics/buddyJesus.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 104
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
 .
 
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 104
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
 .
 
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 104.
+ut line 105.
 
 (C:\Users\mail\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathke
 rncmss.fd
@@ -1059,6 +1059,14 @@ thkerncmss.
 ] [13
 
 ]
+<./pics/coding.jpg, id=458, 459.21562pt x 366.61969pt>
+File: ./pics/coding.jpg Graphic file (type jpg)
+<use ./pics/coding.jpg>
+Package pdftex.def Info: ./pics/coding.jpg  used on input line 192.
+(pdftex.def)             Requested size: 194.7261pt x 155.45824pt.
+ [14
+
+ <./pics/coding.jpg>]
 \tf@nav=\write6
 \openout6 = `svendeProevePraesentation.nav'.
 
@@ -1075,10 +1083,10 @@ ed.
 (rerunfilecheck)             Checksum: 3EBAAABC8366BB86A4F37F62B9B96B71;535.
  ) 
 Here is how much of TeX's memory you used:
- 21465 strings out of 478868
- 402745 string characters out of 2849283
+ 21475 strings out of 478868
+ 402911 string characters out of 2849283
  690093 words of memory out of 3000000
- 38858 multiletter control sequences out of 15000+600000
+ 38864 multiletter control sequences out of 15000+600000
  413734 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,124p,432b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1089,9 +1097,9 @@ i600\ecss1440.pk> <C:\Users\mail\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
 ec/dpi600\ecss0600.pk><C:/Users/mail/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/symbols/msam10.pfb>
 Output written on D:\progTemp\obliGentle\beamer\build\svendeProevePraesentation
-.pdf (13 pages, 790386 bytes).
+.pdf (14 pages, 932715 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

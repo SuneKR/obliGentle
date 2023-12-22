@@ -91,7 +91,6 @@ const AppointmentDetail = ({ taskObject }) => {
                         editable
                         onChangeText={ text => setDueDate(text) }
                         value={ dueDate }
-                        placeholder='Write the appointments due date'
                     />
                     <Button
                         onPress={ () => handleIsActive() }

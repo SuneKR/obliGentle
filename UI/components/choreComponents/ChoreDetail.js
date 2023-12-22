@@ -14,7 +14,7 @@ const ChoreDetail = ({ taskObject }) => {
     const id = taskObject._id;
     const [name, setName] = useState(taskObject.name);
     const [description, setDescription] = useState(taskObject.description);
-    const [priority, setPriority] = useState(taskObject.priority);
+    const [priority, setPriority] = React.useState(taskObject.priority);
     const [interval, setInterval] = useState(taskObject.interval);
 
     const choreMaster = new ClientController(config);
@@ -81,7 +81,7 @@ const ChoreDetail = ({ taskObject }) => {
                     />
                     <TextInput style={ styles.modalBody }
                         editable
-                        onChangeText={ text => setPriority(text) }
+                        onChangeText={ num => setPriority(num) }
                         value={ priority }
                     />
                     <TextInput style={ styles.modalBody }
